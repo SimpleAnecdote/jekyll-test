@@ -1,13 +1,13 @@
-# Haystack
+# [Haystack](/)
 
-- [Products](http://#)
+- Products
     + App
     + CRM Auto Sync
     + Email Signature
-- [Pricing](http://#)
-- [Blog](http://#)
+- Pricing
+- Blog
 - [FAQS](/faq)
-- [About us](http://#)
-- [Contact us](http://#)
+- About us
+- Contact us
 ^
-- [Log in](http://#)
+- Log in

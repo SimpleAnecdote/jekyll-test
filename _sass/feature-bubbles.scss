@@ -1,0 +1,23 @@
+.feature-bubbles {
+
+	h1 {
+		text-align: center;
+	}
+
+	ul {
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: flex-start;
+		align-items: center;
+
+	    li {
+	    	flex: 0 1 auto;
+	    	min-width: 80px;
+	    	max-width: 300px;
+	    }
+	}
+
+}

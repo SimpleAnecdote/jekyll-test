@@ -1,5 +1,3 @@
-# Footer
-
 - Product
     + Haystack Premium
     + CMS Sync

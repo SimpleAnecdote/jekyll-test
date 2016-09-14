@@ -1,0 +1,29 @@
+.premium-home {
+
+	.rollout-plan {
+
+		h2 {
+			text-align: center
+		}
+
+		ol {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: flex-start;
+			align-items: flex-start;
+
+			li {
+				max-width: 200px;
+				text-align: center;
+				outline: 1px solid black;
+				h3 {
+					border-bottom: 1px solid black;
+					min-height: 50px;
+				}
+			}
+		}
+	}
+
+}

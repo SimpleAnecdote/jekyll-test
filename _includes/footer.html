@@ -1,5 +1,38 @@
-<footer>
+<!-- <footer>
 
 {% markdown common/footer.md %}
+
+</footer> -->
+
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+  	<ul>
+  	{% for item in site.data.footer.footer %}
+  		<li><a href="{{item.url}}">{{item.label}}</a></li>
+	{% endfor %}
+  	</ul>
+
+  	{% for section in site.data.footer.sections %}
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">{{ section.label }}</h1>
+      <ul class="mdl-mega-footer__link-list">
+		{% for link in section.links %}
+        <li><a href="{{link.url}}">{{link.label}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+  </div>
+
+<!--   <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div> -->
 
 </footer>

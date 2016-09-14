@@ -1,26 +1,26 @@
 footer {
 
-	border-top: 1px solid black;
+	// border-top: 1px solid black;
 
-	ul {
+	// ul {
 
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: flex-start;
-		align-items: flex-start;
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	flex-wrap: wrap;
+	// 	justify-content: center;
+	// 	align-content: flex-start;
+	// 	align-items: flex-start;
 
-	    li {
-	    	flex: 0 1 auto;
-	    	min-width: 80px;
-	    	max-width: 300px;
+	//     li {
+	//     	flex: 0 1 auto;
+	//     	min-width: 80px;
+	//     	max-width: 300px;
 
-	    	ul li {
-	    		display: block;
-	    		width: 100%;
-	    	}
-	    }
-	}
+	//     	ul li {
+	//     		display: block;
+	//     		width: 100%;
+	//     	}
+	//     }
+	// }
 
 }

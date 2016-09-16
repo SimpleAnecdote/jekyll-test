@@ -1,17 +1,26 @@
 .text-content {
+
 	margin: auto;
-	max-width: 960px;
+	max-width: $fixed-column-width;
 	padding: 24px;
 
 	h1 {
-		// @include typo-display-1;
-		// @media (min-width: 600px) {
-		// 	@include typo-display-4;
-		// }
+		@include typo-display-1;
+		@media #{$gt-xs} {
+			font-size: 56px;
+		}
+		color: $hs-blue-grey-200;
+		margin-top: 1.5em;
 	}
 
 	h2 {
-		@include typo-display-3;
+		margin-top: 3em;
+		@include typo-headline;
+		color: $hs-blue-grey-900;
+	}
+
+	p {
+		color: $hs-blue-grey-700;
 	}
 
 }

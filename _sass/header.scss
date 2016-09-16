@@ -14,13 +14,16 @@ header {
 		padding: 0;
 
 		.logo {
-			height: 36px;
+			height: 28px;
 		}
 
 		@media (min-width: $header-type-breakpoint) {
 			padding: 0 24px;
 			height: 72px;
 			align-self: stretch;
+			.logo {
+				height: 36px;
+			}
 		}
 	}
 }

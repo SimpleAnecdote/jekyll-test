@@ -1,7 +1,17 @@
 .feature-bubbles {
 
+	text-align: center;
+	padding: 96px $mobile-gutter;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: center;
+
 	h1 {
-		text-align: center;
+		@include typo-display-1;
+		color: $hs-blue-grey-200;
 	}
 
 	ul {
@@ -11,13 +21,40 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: flex-start;
-		align-items: center;
+		align-items: flex-start;
 
-	    li {
-	    	flex: 0 1 auto;
-	    	min-width: 80px;
-	    	max-width: 300px;
-	    }
+		padding-left: 0;
+
+		li {
+
+			flex: 0 1 auto;
+			padding: $mobile-gutter;
+			list-style-type: none;
+
+			h3 {
+				@include typo-headline;
+				color: $hs-primary-800;
+			}
+
+			@media #{$gt-xs} {
+				max-width: 296px;
+				padding: $desktop-gutter;
+				h3 {
+					padding: 0px 24px;
+				}               
+			}
+		}
 	}
 
+	&.dim {
+		background-color: $hs-blue-grey-50;
+		ul li {
+			h3 { color: $hs-primary-500; }
+		}
+	}
+
+	> a {
+		@extend .mdl-button;
+		@extend .mdl-button--primary;
+	}
 }

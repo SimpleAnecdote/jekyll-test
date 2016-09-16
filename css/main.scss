@@ -3,15 +3,17 @@
 ---
 @charset "utf-8";
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 // @import
 //     // "syntax-highlighting"
 // ;
 
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"mdl/material-design-lite.scss",
+	"haystack-variables",
+	"general",
 	"header",
     "feature-bubbles",
     "video-banner",

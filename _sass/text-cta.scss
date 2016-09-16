@@ -1,4 +1,28 @@
 .text-cta {
 	text-align: center;
-	padding: 48px;
+	padding: 96px 16px;
+
+	h1 {
+		@include typo-display-1;
+		color: $hs-blue-grey-200;
+	}
+
+	a {
+
+		&.mdl-button--raised.mdl-button--colored {
+			background-color: #4CAF50;			
+		}
+
+		@media #{$gt-xs} {
+			text-transform: none;
+			height: 50px;
+			padding: 0 24px;
+			vertical-align: center;
+			padding-top: 14px;
+			font-size: 24px;
+			font-weight: 300;
+			margin-bottom: 24px;			
+		}
+	}
+
 }

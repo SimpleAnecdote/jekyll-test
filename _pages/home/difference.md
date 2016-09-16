@@ -12,6 +12,4 @@
 
 - ### Share With Anyone, Update Everyone
 
-    Anyone can get your employees’ digital card, even if they don’t have the app.
-
-    Any changes to employees’ details get updated directly on other people’s devices.
+    Anyone can get your employees’ digital card, even if they don’t have the app. Any changes to employees’ details get updated directly on other people’s devices.

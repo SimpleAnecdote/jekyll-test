@@ -1,0 +1,76 @@
+// When we want a fixed width layout, use this width.
+$fixed-column-width: 960px;
+$mobile-gutter: 16px;
+$desktop-gutter: 24px;
+
+$gt-xs: "(min-width: 640px)";
+
+$hs-blue-grey-50: unquote("rgb(#{$palette-blue-grey-50})");
+$hs-blue-grey-100: unquote("rgb(#{$palette-blue-grey-100})");
+$hs-blue-grey-200: unquote("rgb(#{$palette-blue-grey-200})");
+$hs-blue-grey-300: unquote("rgb(#{$palette-blue-grey-300})");
+$hs-blue-grey-400: unquote("rgb(#{$palette-blue-grey-400})");
+$hs-blue-grey-500: unquote("rgb(#{$palette-blue-grey-500})");
+$hs-blue-grey-600: unquote("rgb(#{$palette-blue-grey-600})");
+$hs-blue-grey-700: unquote("rgb(#{$palette-blue-grey-700})");
+$hs-blue-grey-800: unquote("rgb(#{$palette-blue-grey-800})");
+$hs-blue-grey-900: unquote("rgb(#{$palette-blue-grey-900})");
+
+$hs-orange-50: unquote("rgb(#{$palette-orange-50})");
+$hs-orange-100: unquote("rgb(#{$palette-orange-100})");
+$hs-orange-200: unquote("rgb(#{$palette-orange-200})");
+$hs-orange-300: unquote("rgb(#{$palette-orange-300})");
+$hs-orange-400: unquote("rgb(#{$palette-orange-400})");
+$hs-orange-500: unquote("rgb(#{$palette-orange-500})");
+$hs-orange-600: unquote("rgb(#{$palette-orange-600})");
+$hs-orange-700: unquote("rgb(#{$palette-orange-700})");
+$hs-orange-800: unquote("rgb(#{$palette-orange-800})");
+$hs-orange-900: unquote("rgb(#{$palette-orange-900})");
+
+$hs-cyan-50: unquote("rgb(#{$palette-cyan-50})");
+$hs-cyan-100: unquote("rgb(#{$palette-cyan-100})");
+$hs-cyan-200: unquote("rgb(#{$palette-cyan-200})");
+$hs-cyan-300: unquote("rgb(#{$palette-cyan-300})");
+$hs-cyan-400: unquote("rgb(#{$palette-cyan-400})");
+$hs-cyan-500: unquote("rgb(#{$palette-cyan-500})");
+$hs-cyan-600: unquote("rgb(#{$palette-cyan-600})");
+$hs-cyan-700: unquote("rgb(#{$palette-cyan-700})");
+$hs-cyan-800: unquote("rgb(#{$palette-cyan-800})");
+$hs-cyan-900: unquote("rgb(#{$palette-cyan-900})");
+
+$hs-blue-50: unquote("rgb(#{$palette-blue-50})");
+$hs-blue-100: unquote("rgb(#{$palette-blue-100})");
+$hs-blue-200: unquote("rgb(#{$palette-blue-200})");
+$hs-blue-300: unquote("rgb(#{$palette-blue-300})");
+$hs-blue-400: unquote("rgb(#{$palette-blue-400})");
+$hs-blue-500: unquote("rgb(#{$palette-blue-500})");
+$hs-blue-600: unquote("rgb(#{$palette-blue-600})");
+$hs-blue-700: unquote("rgb(#{$palette-blue-700})");
+$hs-blue-800: unquote("rgb(#{$palette-blue-800})");
+$hs-blue-900: unquote("rgb(#{$palette-blue-900})");
+$hs-blue-A100: unquote("rgb(#{$palette-blue-A100})");
+$hs-blue-A200: unquote("rgb(#{$palette-blue-A200})");
+$hs-blue-A400: unquote("rgb(#{$palette-blue-A400})");
+$hs-blue-A700: unquote("rgb(#{$palette-blue-A700})");
+
+$hs-primary-50: $hs-blue-50;
+$hs-primary-100: $hs-blue-100;
+$hs-primary-200: $hs-blue-200;
+$hs-primary-300: $hs-blue-300;
+$hs-primary-400: $hs-blue-400;
+$hs-primary-500: $hs-blue-500;
+$hs-primary-600: $hs-blue-600;
+$hs-primary-700: $hs-blue-700;
+$hs-primary-800: $hs-blue-800;
+$hs-primary-900: $hs-blue-900;
+
+$hs-accent-50: $hs-orange-50;
+$hs-accent-100: $hs-orange-100;
+$hs-accent-200: $hs-orange-200;
+$hs-accent-300: $hs-orange-300;
+$hs-accent-400: $hs-orange-400;
+$hs-accent-500: $hs-orange-500;
+$hs-accent-600: $hs-orange-600;
+$hs-accent-700: $hs-orange-700;
+$hs-accent-800: $hs-orange-800;
+$hs-accent-900: $hs-orange-900;

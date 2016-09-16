@@ -1,0 +1,21 @@
+---
+
+links:
+
+- label: Pricing
+  url: http://example.com
+
+- label: Blog
+  url: http://example.com
+
+- label: FAQ
+  url: /faq
+
+- label: About Us
+  url: http://example.com
+
+- label: Contact Us
+  url: http://example.com
+
+- label: Log in
+  url: http://example.com

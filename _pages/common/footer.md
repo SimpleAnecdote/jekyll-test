@@ -1,6 +1,6 @@
 - Product
     + Haystack Premium
-    + CMS Sync
+    + CRM Sync
     + FAQs
     + Pricing
     + Affiliate Program

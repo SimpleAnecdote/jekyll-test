@@ -3,11 +3,22 @@
 	padding: 96px 16px;
 
 	h1 {
-		@include typo-display-1;
+		@extend .mdl-typography--display-1;
 		color: $hs-blue-grey-200;
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+
+	p {
+		@extend .mdl-typography--headline;
+		color: $hs-blue-grey-400;
+		margin-top: 0.5em;
+		margin-bottom: 0;
 	}
 
 	a {
+
+		margin-top: 1.5em;
 
 		&.mdl-button--raised.mdl-button--colored {
 			background-color: #4CAF50;			

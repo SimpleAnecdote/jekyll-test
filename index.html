@@ -62,6 +62,16 @@ layout: default
 		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="#">Start Now</a>
 	</div>
 
+	<div class="testimonials">
+		{% for testimonial in site.data.homepage-testimonials.testimonials %}
+			<p><img src="{{testimonial.avatarUrl}}"></p>
+			<blockquote>
+				<p>{{testimonial.quote}}</p>
+			</blockquote>
+			<span>{{testimonial.citation}}</span>
+		{% endfor %}
+	</div>
+
 	<!-- <div>
 		<h3>(Premium company logos go here)</h3>
 	</div>

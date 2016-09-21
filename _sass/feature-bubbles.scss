@@ -31,9 +31,21 @@
 			padding: $mobile-gutter;
 			list-style-type: none;
 
+			// Icon
+			p > i {
+				font-size: 112px;
+				color: $hs-blue-grey-100;
+			}
+
+			// Header
 			h3 {
 				@include typo-headline;
-				color: $hs-primary-800;
+				color: $hs-blue-grey-900;
+			}
+
+			// Text
+			p {
+				color: $hs-blue-grey-900;
 			}
 
 			@media #{$gt-xs} {

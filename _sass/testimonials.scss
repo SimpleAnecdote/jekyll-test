@@ -4,7 +4,11 @@
 
 	background-color: $hs-primary-800;
 	text-align: center;
-	padding: 48px 24px;
+	padding: 48px 16px;
+
+	@media #{$gt-xs} {
+		padding: 96px 24px;
+	}
 
 	// Avatar
 	> p > img {

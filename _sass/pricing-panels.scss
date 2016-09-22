@@ -1,0 +1,117 @@
+.pricing-panels {
+
+	@include flex-center(column);
+	padding: 96px 0;
+
+	background-color: white;
+	@media (min-width: $fixed-column-width) {
+		background-color: $hs-blue-grey-50;
+	}
+
+	> ul	{
+		@include flex-center(column);
+		@media (min-width: $fixed-column-width) {
+			flex-direction: row;
+			align-items: stretch;
+		}
+		list-style-type: none;
+		padding: 0;
+		width: 100%;
+		max-width: $fixed-column-width;
+	}
+
+	> ul > li {
+
+		$padding: 32px;
+		padding: $padding;
+
+		$width: ($fixed-column-width / 3) - ($padding * 2);
+		width: $width;
+		flex-basis: $width;
+
+		@extend .mdl-shadow--2dp;
+		background-color: white;
+		border-radius: 4px;
+		margin: 4px;
+
+		&:nth-child(2) {
+			@extend .mdl-shadow--16dp;
+			z-index: 1;
+		}
+
+		@media (max-width: $fixed-column-width) {
+			border: 1px solid $hs-blue-grey-50;
+			box-shadow: none;
+			&:nth-child(2) {
+				box-shadow: none;
+			}
+		}
+
+		// Title
+		h2 {
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $hs-primary-500;
+			margin-bottom: 8px;
+		}
+
+		// Price
+		h2 + ul {
+
+			list-style-type: none;
+			padding-left: 0;
+
+			@include flex-center(row);
+			justify-content: flex-start;
+
+			li {
+				color: $hs-blue-grey-800;
+				font-size: 48px;
+				line-height: 48px;
+				font-weight: 600;
+			}
+
+			li:first-child, li:last-child {
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: 400;
+				padding: 6px 0px;
+			}
+
+			li:first-child { align-self: flex-start; }
+			li:last-child { align-self: flex-end; }
+		}
+
+		// List
+		h2 + ul + ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 16px 0;
+			li {
+				&:before {
+					@extend .material-icons;
+					content: 'done';
+					vertical-align: middle;
+					color: $hs-primary-500;
+					margin-right: 8px;
+				}
+				font-size: 14px;
+				color: $hs-blue-grey-500;
+			}
+		}
+
+		// Link
+		> p > a {
+		    margin: 24px 0 -8px 0;
+			@extend .mdl-button;
+			@extend .mdl-button--primary;
+			display: block;
+			&:first-child {
+				@extend .mdl-button--raised;
+			}
+		}
+
+	}
+
+}

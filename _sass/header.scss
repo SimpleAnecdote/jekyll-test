@@ -1,6 +1,9 @@
 header {
 
 	$header-type-breakpoint: 1024px;
+	
+	// Hack of MDL header to be fixed
+	position: fixed;
 
 	.mdl-layout__drawer-button {
 		@media (min-width: $header-type-breakpoint) {

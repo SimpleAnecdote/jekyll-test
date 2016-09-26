@@ -2,7 +2,25 @@ html, body, .mdl-layout {
 	font-family: 'Roboto', sans-serif;
 }
 
+/* Hacking MDL header to be position fixed, but properly scrollable while scrollable */
+.mdl-layout--fixed-header {
+	overflow-y: inherit;
+	overflow-x: inherit;
+}
 
+main.mdl-layout__content {
+	overflow-y: inherit;
+	overflow-x: inherit;
+}
+
+.mdl-layout__drawer {
+	position: fixed;
+}
+
+.mdl-layout__obfuscator {
+	position: fixed;
+}
+/* End of hack */
 
 @mixin flex-center($direction: column) {
 	display: -ms-flexbox;

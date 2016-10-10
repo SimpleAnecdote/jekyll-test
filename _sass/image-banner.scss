@@ -1,12 +1,67 @@
 .image-banner {
-	background-image: url(https://files.slack.com/files-pri/T02FP1X92-F2FP72WQL/example.jpg);
+	background-image: url(https://dl.dropboxusercontent.com/u/7053608/Header-background.jpg);
 	background-size: cover;
-	background-position: 66% 50%;
-    max-height: 85vh;
-    height: 815px;
+	background-position: 85% 60%;
+	max-height: 85vh;
+	height: 815px;
+	box-sizing: border-box;
+	position: relative;
+
+	$header-change: "(min-width: 640px) and (orientation: landscape) and (min-height: 400px)";
+
+	@include flex-center(column);
+	@media #{$header-change} {
+		padding: 7.5%;
+		align-items: flex-start;    	
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background-color: $hs-blue-grey-900;
+		opacity: 0.75;
+		@media #{$header-change} {
+			opacity: 0;
+		}
+	}
+
 
 	h1 {
 		margin: 0;
+		color: white;
+		font-size: 24px;
+		font-weight: 200;
+		text-align: center;
+		max-width: 320px;
+		z-index: 1;
+		@media #{$header-change} {
+			max-width: 50%;
+			text-align: left;
+			font-size: 3.33vw;
+		}
+	}
+
+	a {
+		@extend .mdl-button;
+		@extend .mdl-button--raised;
+		@extend .mdl-button--primary;
+		color: white;
+		text-transform: none;
+		margin-top: 24px;
+		@media #{$header-change} {
+			margin-top: 48px;
+			height: 80px;
+			line-height: 80px;
+			padding: 0 40px;
+			font-size: 24px;
+			font-weight: 200;
+			border-radius: 8px;
+		}
 	}
 
 }

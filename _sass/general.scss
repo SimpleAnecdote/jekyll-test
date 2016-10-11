@@ -17,6 +17,10 @@ main.mdl-layout__content {
 	position: fixed;
 }
 
+.mdl-layout__drawer.is-visible ~ .mdl-layout__content.mdl-layout__content {
+	overflow: inherit;
+}
+
 .mdl-layout__obfuscator {
 	position: fixed;
 }

@@ -31,10 +31,12 @@
 	}
 
 	function addHeaderTransparency() {
+		transparent = true;
 		addClass(headerElement, transparentClassName);
 	}
 
 	function removeHeaderTransparency() {
+		transparent = false;
 		removeClass(headerElement, transparentClassName);
 	}
 
@@ -42,16 +44,15 @@
 		var distanceFromTop = window.pageYOffset;
 
 		if (distanceFromTop > transparencyCutoff && transparent === true) {
-			transparent = false;
 			removeHeaderTransparency();
 
 		} else if (distanceFromTop <= transparencyCutoff && transparent === false) {
-			transparent = true;
 			addHeaderTransparency();
 		}
 	}
 
 	addHeaderTransparency();
+	setHeaderTransparency();
 	document.onscroll = function() {
 		setHeaderTransparency();
 	};

@@ -1,10 +1,11 @@
 .image-banner {
-	background-image: url(https://dl.dropboxusercontent.com/u/7053608/Header-background.jpg);
+	background-color: #7b6b5c;
+	background-image: url(https://dl.dropboxusercontent.com/u/7053608/Header-background-experimental.jpg);
 	background-size: cover;
-	background-position: 85% 60%;
-	max-height: 85vh;
-	height: 815px;
-	transition: max-height 0.5s cubic-bezier(.64,.04,.42,.98);
+	background-position: 85% 50%;
+	background-attachment: fixed;
+	height: 85vh;
+	transition: height 0.5s cubic-bezier(.64,.04,.42,.98);
 	box-sizing: border-box;
 	position: relative;
 
@@ -31,7 +32,6 @@
 		}
 	}
 
-
 	h1 {
 		margin: 0;
 		color: white;
@@ -54,12 +54,12 @@
 		margin-top: 24px;
 		@media #{$header-change} {
 			margin-top: 48px;
-			height: 80px;
-			line-height: 80px;
-			padding: 0 40px;
+    		height: 72px;
+	    	line-height: 72px;
+		    padding: 0 24px;
 			font-size: 24px;
 			font-weight: 200;
-			border-radius: 8px;
+			border-radius: 4px;
 		}
 	}
 

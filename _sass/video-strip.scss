@@ -1,6 +1,6 @@
 .video-strip {
 
-	background-color: $hs-blue-grey-50;
+	background-color: $hs-blue-grey-900;
 
 	@include flex-center;
 
@@ -21,7 +21,7 @@
 		height: 3em;
 		padding-top: 1em;
 	    padding-bottom: 1em;
-		color: $hs-blue-grey-300;
+		color: $hs-blue-grey-500;
 		i {
 			margin-right: 8px;
 			font-size: 3em;

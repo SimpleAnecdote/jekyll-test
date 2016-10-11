@@ -2,16 +2,12 @@
 
 	background-color: $hs-blue-grey-50;
 
-	height: 300px;
+	@include flex-center;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    
-    	@include flex-center;
+	height: 300px;
+	height: 30vh;
+	transition: height 0.5s cubic-bezier(.64,.04,.42,.98);
+
 	// Removes wistia's script overrides (unrequired),
 	// fixing browser specific bugs
 	.hs-wistia-container > div {

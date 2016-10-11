@@ -4,6 +4,7 @@
 	background-position: 85% 60%;
 	max-height: 85vh;
 	height: 815px;
+	transition: max-height 0.5s cubic-bezier(.64,.04,.42,.98);
 	box-sizing: border-box;
 	position: relative;
 

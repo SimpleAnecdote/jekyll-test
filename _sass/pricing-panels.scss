@@ -108,7 +108,8 @@
 			@extend .mdl-button--primary;
 			display: block;
 			&:first-child {
-				@extend .mdl-button--raised;
+				@extend .hs-button-raised-primary;
+				display: block;
 			}
 		}
 

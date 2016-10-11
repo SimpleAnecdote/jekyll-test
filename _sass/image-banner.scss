@@ -48,9 +48,7 @@
 	}
 
 	a {
-		@extend .mdl-button;
-		@extend .mdl-button--raised;
-		@extend .mdl-button--primary;
+		@extend .hs-button-raised-primary;
 		color: white;
 		text-transform: none;
 		margin-top: 24px;

@@ -46,3 +46,19 @@ main.mdl-layout__content {
 	-ms-flex-align: center;
 	align-items: center;
 }
+
+.hs-button-raised-primary {
+	@extend .mdl-button;
+	@extend .mdl-button--raised;
+	@extend .mdl-button--primary;
+	&:hover {
+		background-color: $hs-primary-400;
+	}
+	&:active {
+		background-color: $hs-primary-300;
+	}
+	&:focus:not(:active) {
+		background-color: $hs-primary-600;
+	}
+
+}

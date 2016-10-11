@@ -10,6 +10,14 @@
     justify-content: center;
     align-content: stretch;
     align-items: center;
+    
+    	@include flex-center;
+	// Removes wistia's script overrides (unrequired),
+	// fixing browser specific bugs
+	.hs-wistia-container > div {
+		height: auto!important;
+		width: auto!important;
+	}
 
 	a.play-video {
 		@extend .mdl-button;

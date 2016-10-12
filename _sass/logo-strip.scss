@@ -1,0 +1,58 @@
+.logo-strip {
+
+	background-color: white;
+	padding: 96px 16px;
+	text-align: center;
+
+	&.dark {
+		background-color: $hs-primary-900;		
+	}
+
+	h4 {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 32px;
+		color: white;
+		margin-bottom: 64px;
+	}
+
+	.logos {
+		margin-top: 36px;
+		max-width: 1200px;
+		margin: auto;
+
+		a.logo-wrapper {
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			
+			padding: 18px;
+			width: 96px;
+			height: 48px;
+
+			transition: background-color 0.25s;
+
+			opacity: 0.75;
+			&:hover { opacity: 0.4; }
+		}
+
+		a.logo-wrapper > div.logo {
+			height: 100%;
+			width: 100%;
+			white-space: nowrap;
+			@include flex-center(column);
+			img {
+				max-height: 100%;
+				max-width: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		@media (min-width: 800px) {
+			a.logo-wrapper { height: auto; width: auto; padding: 36px;}
+			a.logo-wrapper > div.logo img { max-height: 48px; max-width: 136px; }
+		}
+	}
+}
+

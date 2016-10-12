@@ -1,89 +1,14 @@
 <div id="premium-customers" class="dark">
 	<h4>Haystack Premium is trusted by these awesome companies</h4>
 	<div class="customer-logos">
-		<a id="cciq" class="logo-wrapper" target="_blank" href="https://www.cciq.com.au/">
+
+		{% for client in site.data.premium-clients.premium-clients %}
+		<a id="{{ client.label }}" class="logo-wrapper" target="_blank" href="{{ client.url }}">
 			<div class="logo">
-				<img class="white" src="../img/customer-logos/cciq-white.png"></img>
-				<img class="color" src="../img/customer-logos/cciq-color.png"></img>
+				<img class="white" src="{{ client.imageurl }}"></img>
 			</div>
 		</a>
-		<a id="shoes-of-prey" class="logo-wrapper" target="_blank" href="http://shoesofprey.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/shoes-of-prey-white.png"></img>
-				<img class="color" src="../img/customer-logos/shoes-of-prey-color.png"></img>
-			</div>
-		</a>
-		<a id="deloitte-digital" class="logo-wrapper" target="_blank" href="http://deloittedigital.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/deloitte-digital-white.png"></img>
-				<img class="color" src="../img/customer-logos/deloitte-digital-color.png"></img>
-			</div>
-		</a>
-		<a id="qut-cea" class="logo-wrapper" target="_blank" href="http://qutcea.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/qut-cea-white.png"></img>
-				<img class="color" src="../img/customer-logos/qut-cea-color.png"></img>
-			</div>
-		</a>
-		<a id="two-degrees" class="logo-wrapper" target="_blank" href="http://2degreesmobile.co.nz/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/2degrees-white.png"></img>
-				<img class="color" src="../img/customer-logos/2degrees-color.png"></img>
-			</div>
-		</a>
-		<a id="buckham-duffy" class="logo-wrapper" target="_blank" href="http://buckhamduffy.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/buckham-duffy-white.png"></img>
-				<img class="color" src="../img/customer-logos/buckham-duffy-color.png"></img>
-			</div>
-		</a>
-		<a id="bar-staff-co" class="logo-wrapper" target="_blank" href="http://brisbanebarstaffco.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/bar-staff-co-white.png"></img>
-				<img class="color" src="../img/customer-logos/bar-staff-co-color.png"></img>
-			</div>
-		</a>
-		<a id="mahindra" class="logo-wrapper" target="_blank" href="http://www.mahindra.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/mahindra-white.png"></img>
-				<img class="color" src="../img/customer-logos/mahindra-color.png"></img>
-			</div>
-		</a>
-		<a id="guis" class="logo-wrapper" target="_blank" href="http://gentlemenunitedinstyle.com.au/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/guis-white.png"></img>
-				<img class="color" src="../img/customer-logos/guis-color.png"></img>
-			</div>
-		</a>
-		<a id="verizon" class="logo-wrapper" target="_blank" href="http://verizonwireless.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/verizon-white.png"></img>
-				<img class="color" src="../img/customer-logos/verizon-color.png"></img>
-			</div>
-		</a>
-		<!-- <a id="zen-events-group" class="logo-wrapper" target="_blank" href="http://zeneventsgroup.com/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/zen-events-group-white.png"></img>
-				<img class="color" src="../img/customer-logos/zen-events-group-color.png"></img>
-			</div>
-		</a> -->
-		<a id="buzvil" class="logo-wrapper" target="_blank" href="http://buzvil.com">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/buzvil-white.png"></img>
-				<img class="color" src="../img/customer-logos/buzvil-color.png"></img>
-			</div>
-		</a>
-		<!-- <a id="landlab" class="logo-wrapper" target="_blank" href="http://landlab.ca/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/landlab-white.png"></img>
-				<img class="color" src="../img/customer-logos/landlab-color.png"></img>
-			</div>
-		</a> -->				
-		<a id="cognitia" class="logo-wrapper" target="_blank" href="http://www.cognitia.biz/">
-			<div class="logo">
-				<img class="white" src="../img/customer-logos/cognitia-white.png"></img>
-				<img class="color" src="../img/customer-logos/cognitia-color.png"></img>
-			</div>
-		</a>
+		{% endfor %}
+
 	</div>
 </div>

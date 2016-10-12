@@ -34,10 +34,10 @@ media-outlets:
   label: Digital Brisbane
   url: http://digitalbrisbane.com.au/Blog/Going-global-start-local
 
-- name: qutnews
-  label: QUT News
-  url: https://www.qut.edu.au/news/news?news-id=80776
+# - name: qutnews
+#   label: QUT News
+#   url: https://www.qut.edu.au/news/news?news-id=80776
 
-- name: abc612
-  label: ABC 612
-  url: http://blogs.abc.net.au/queensland/2014/10/how-to-get-your-business-cards-into-your-phone.html?site=brisbane&program=612_morning
+# - name: abc612
+#   label: ABC 612
+#   url: http://blogs.abc.net.au/queensland/2014/10/how-to-get-your-business-cards-into-your-phone.html?site=brisbane&program=612_morning

@@ -8,6 +8,16 @@
 		background-color: $hs-primary-900;		
 	}
 
+	// Wrapped denotes a size where logos are
+	// next to each other horizontally on small screens
+	&.wrapped {
+		.logos {
+			a.logo-wrapper {
+				width: 96px;
+			}
+		}
+	}
+
 	h4 {
 		font-size: 24px;
 		font-weight: 300;
@@ -27,12 +37,13 @@
 			vertical-align: middle;
 			
 			padding: 18px;
-			width: 96px;
+			width: 252px;
 			height: 48px;
 
 			transition: background-color 0.25s;
 
 			opacity: 0.75;
+
 			&:hover { opacity: 0.4; }
 		}
 
@@ -49,7 +60,7 @@
 			}
 		}
 
-		@media (min-width: 800px) {
+		@media (min-width: 1200px) {
 			a.logo-wrapper { height: auto; width: auto; padding: 36px;}
 			a.logo-wrapper > div.logo img { max-height: 48px; max-width: 136px; }
 		}

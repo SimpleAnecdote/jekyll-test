@@ -4,56 +4,43 @@ premium-clients:
 
 - label: cciq
   url: https://www.cciq.com.au/
-  imageurl: /img/customer-logos/cciq-white.png
-
+  
 - label: shoes-of-prey
   url: http://shoesofprey.com/
-  imageurl: /img/customer-logos/shoes-of-prey-white.png
-
+  
 - label: deloitte-digital
   url: http://deloittedigital.com/
-  imageurl: /img/customer-logos/deloitte-digital-white.png
-
+  
 - label: qut-cea
   url: http://qutcea.com/
-  imageurl: /img/customer-logos/qut-cea-white.png
-
+  
 - label: two-degrees
   url: http://2degreesmobile.co.nz/
-  imageurl: /img/customer-logos/2degrees-white.png
-
+  
 - label: buckham-duffy
   url: http://buckhamduffy.com/
-  imageurl: /img/customer-logos/buckham-duffy-white.png
-
+  
 - label: bar-staff-co
   url: http://brisbanebarstaffco.com/
-  imageurl: /img/customer-logos/bar-staff-co-white.png
-
+  
 - label: mahindra
   url: http://www.mahindra.com/
-  imageurl: /img/customer-logos/mahindra-white.png
-
+  
 - label: guis
   url: http://gentlemenunitedinstyle.com.au/
-  imageurl: /img/customer-logos/guis-white.png
-
+  
 - label: verizon
   url: http://verizonwireless.com/
-  imageurl: /img/customer-logos/verizon-white.png
-
+  
 # - label: zen-events-group
 #   url: http://zeneventsgroup.com/
-#   imageurl: /img/customer-logos/zen-events-group-white.png
 
 - label: buzvil
   url: http://buzvil.com
-  imageurl: /img/customer-logos/buzvil-white.png
-
+  
 # - label: landlab
 #   url: http://landlab.ca/
-#   imageurl: /img/customer-logos/landlab-white.png
 
 - label: cognitia
   url: http://www.cognitia.biz/
-  imageurl: /img/customer-logos/cognitia-white.png
+  

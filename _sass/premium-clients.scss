@@ -1,0 +1,80 @@
+#premium-customers {
+	background-color: #607D8B;
+	padding: 48px 0px;
+	text-align: center;
+}
+
+#premium-customers h4 {
+	color: white;
+	font-weight: 300;
+	font-size: 18px;
+	padding: 0px 48px;
+	line-height: 1.25em;
+}
+
+#premium-customers .customer-logos {
+	margin-top: 36px;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.customer-logos a.logo-wrapper {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	
+	padding: 16px;
+	width: 96px;
+	height: 48px;
+
+	transition: background-color 0.25s;
+}
+
+.customer-logos a.logo-wrapper > div.logo {
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+}
+
+.customer-logos a.logo-wrapper > div.logo:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	min-height: 48px;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.customer-logos a.logo-wrapper > div.logo img {
+	max-height: 100%;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media (min-width: 800px) {
+	.customer-logos a.logo-wrapper { height: auto; width: auto; padding: 18px;}
+	.customer-logos a.logo-wrapper > div.logo img { max-height: 48px; max-width: 136px; }
+}
+
+.customer-logos a.logo-wrapper       > div.logo img.white { display: inline-block }
+.customer-logos a.logo-wrapper       > div.logo img.color { display: none; }
+.customer-logos a.logo-wrapper:hover > div.logo img.white {	display: none; }
+.customer-logos a.logo-wrapper:hover > div.logo img.color {	display: inline-block }
+
+.customer-logos a#two-degrees:hover      { background-color: #017CFD; }
+.customer-logos a#cognitia:hover         { background-color: #FFFFFF; }
+.customer-logos a#shoes-of-prey:hover    { background-color: #FFFFFF; }
+.customer-logos a#qut-cea:hover          { background-color: #025285; }
+.customer-logos a#peptree:hover          { background-color: #c9da2f; }
+.customer-logos a#buzvil:hover           { background-color: #fec900; }
+.customer-logos a#guis:hover             { background-color: #051635; }
+.customer-logos a#buckham-duffy:hover    { background-color: #0e192d; }
+.customer-logos a#zen-events-group:hover { background-color: #000000; }
+.customer-logos a#landlab:hover          { background-color: #FFFFFF; }
+.customer-logos a#verizon:hover          { background-color: #FFFFFF; }
+.customer-logos a#deloitte:hover         { background-color: #052252; }
+.customer-logos a#deloitte-digital:hover { background-color: #000000; }
+.customer-logos a#bar-staff-co:hover     { background-color: #FFFFFF; }
+.customer-logos a#cciq:hover             { background-color: #FFFFFF; }
+.customer-logos a#mahindra:hover         { background-color: #FFFFFF; }

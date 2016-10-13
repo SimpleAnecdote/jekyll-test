@@ -1,0 +1,24 @@
+.how-it-works {
+
+	padding: 96px 48px;
+	height: 800px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right 96px center;
+	@include flex-center(column);
+
+	&.one { background-image: url(../img/how-it-works/1.png); }
+	&.two { background-image: url(../img/how-it-works/2.png); }
+
+	h2 {
+		font-size: 24px;
+		font-weight: 400;
+		color: $hs-blue-grey-900;
+	}
+
+	p {
+		font-size: 16px;
+		color: $hs-blue-grey-500;
+		font-weight: 400;
+	}
+}

@@ -1,5 +1,13 @@
 .feature-bubbles {
 
+	> img:first-child {
+		width: 60%;
+		display: none;
+		@media #{$gt-xs} {
+			display: block;
+		}
+	}
+
 	text-align: center;
 	padding: 96px $mobile-gutter;
 	display: flex;

@@ -4,6 +4,7 @@ $mobile-gutter: 16px;
 $desktop-gutter: 24px;
 
 $gt-xs: "(min-width: 640px)";
+$gt-sm: "(min-width: 840px)";
 
 $hs-blue-grey-50: unquote("rgb(#{$palette-blue-grey-50})");
 $hs-blue-grey-100: unquote("rgb(#{$palette-blue-grey-100})");
@@ -74,3 +75,10 @@ $hs-accent-600: $hs-orange-600;
 $hs-accent-700: $hs-orange-700;
 $hs-accent-800: $hs-orange-800;
 $hs-accent-900: $hs-orange-900;
+
+$hs-white-one: rgba(255,255,255,1);
+$hs-white-two: rgba(255,255,255,0.76);
+$hs-white-three: rgba(255,255,255,0.54);
+$hs-white-four: rgba(255,255,255,0.38);
+$hs-white-five: rgba(255,255,255,0.26);
+$hs-white-six: rgba(255,255,255,0.12);

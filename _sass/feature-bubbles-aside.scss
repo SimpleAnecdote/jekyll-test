@@ -1,6 +1,19 @@
 .feature-bubbles-aside {
 
 	background-color: $hs-blue-grey-900;
+	background-image: url(../img/coffee-background.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&:before {
+		content: ''	;
+		background-color: $hs-blue-grey-900;
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		opacity: 0.9;
+	}
 
 	@include flex-center;
 	padding: 96px 32px;
@@ -12,14 +25,13 @@
 	}
 
 	.phone {
-		width: 270px;
 		flex-shrink: 0;
-		&:before {			
-			border-radius: 32px;
-			border: 1px solid $hs-blue-grey-300;
-			content: '';
-			display: block;
-			padding-top: 200%;
+		z-index: 1;
+		img { 
+			height: 350px;
+			@media #{$gt-sm} {
+				height: 500px;
+			}
 		}
 	}
 
@@ -53,19 +65,19 @@
 				margin-bottom: 0;
 				i {
 					font-size: 72px;
-					color: $hs-blue-grey-700;
+					color: $hs-white-five;
 				}
 			}
 
 			// Title
 			h3 {
 				@extend .mdl-typography--headline;
-				color: $hs-blue-grey-200;
+				color: $hs-white-one;
 			}
 
 			// Text
 			p:last-child {
-				color: $hs-blue-grey-400;
+				color: $hs-white-three;
 			}
 		}
 	}

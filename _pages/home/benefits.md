@@ -1,6 +1,6 @@
-## Sleek and modern features
+<!-- ## Sleek and modern features -->
 
-Ut enim ad minium veniam, quis nostrud exercilliation ullamco tortor neque egestas augue, eu vulputate magna eros eu erat
+<!-- Ut enim ad minium veniam, quis nostrud exercilliation ullamco tortor neque egestas augue, eu vulputate magna eros eu erat -->
 
 -   <i class="material-icons">email</i>
 

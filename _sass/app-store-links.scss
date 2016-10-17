@@ -1,0 +1,16 @@
+.app-store-links {
+	@include flex-center(row);
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	a {
+		background-color: #263238;
+		display: inline-block;
+		width: 165px;
+		height: 56px;
+		border-radius: 4px;
+		@extend .hs-button-raised-primary;
+		padding: 0;
+		margin: 8px;
+	}
+}

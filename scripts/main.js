@@ -2,8 +2,9 @@
 
 	var transparencyCutoff = 200;
 	var transparent = true;
-	var headerElement = document.getElementsByTagName('header')[0];
+	var headerElement = document.querySelector('.transparent-header header');
 	var transparentClassName = 'transparent';
+	var initialTransparencyClassName = 'start-transparent';
 
 	// function hasClass(el, className) {
 	// 	if (el.classList) {
@@ -40,6 +41,10 @@
 		removeClass(headerElement, transparentClassName);
 	}
 
+	function removeInitialTransparency() {
+		removeClass(headerElement, initialTransparencyClassName);
+	}
+
 	function setHeaderTransparency() {
 		var distanceFromTop = window.pageYOffset;
 
@@ -51,10 +56,13 @@
 		}
 	}
 
-	addHeaderTransparency();
-	setHeaderTransparency();
-	document.onscroll = function() {
+	if (headerElement !== null && headerElement !== undefined) {
+		addHeaderTransparency();
 		setHeaderTransparency();
-	};
+		removeInitialTransparency();
+		document.onscroll = function() {
+			setHeaderTransparency();
+		};
+	}
 
 })();

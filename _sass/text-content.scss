@@ -3,6 +3,9 @@
 	margin: auto;
 	max-width: $fixed-column-width;
 	padding: 24px;
+	@media #{$gt-xs} {
+		padding: 96px 40px;
+	}
 
 	h1 {
 		@include typo-display-1;
@@ -10,7 +13,7 @@
 			font-size: 56px;
 		}
 		color: $hs-blue-grey-200;
-		margin-top: 1.5em;
+		margin-bottom: 1.25em;
 	}
 
 	h2 {
@@ -21,6 +24,9 @@
 
 	p {
 		color: $hs-blue-grey-700;
+		h1 + & {
+
+		}
 	}
 
 }

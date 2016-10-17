@@ -27,7 +27,7 @@ sections:
   links:
 
   - label: About us
-    url: http://example.com
+    url: about
 
   - label: Blog
     url: http://example.com

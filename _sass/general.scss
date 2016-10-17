@@ -47,6 +47,21 @@ main.mdl-layout__content {
 	align-items: center;
 }
 
+@mixin overlay($color: $hs-blue-grey-900) {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background-color: $color;
+		opacity: 0.75;
+	}
+}
+
 .hs-button-raised-primary {
 	@extend .mdl-button;
 	@extend .mdl-button--raised;

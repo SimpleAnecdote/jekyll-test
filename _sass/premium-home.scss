@@ -1,29 +1,19 @@
 .premium-home {
 
-	.rollout-plan {
+	.image-banner {
+		background-color: #7b6b5c;
+		background-position: 85% 50%;
+		background-attachment: fixed;
+		background-image: url(https://dl.dropboxusercontent.com/u/7053608/Header-background-experimental.jpg);
+		height: 85vh;
+		max-height: 85vh;
 
-		h2 {
-			text-align: center
-		}
-
-		ol {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-content: flex-start;
+		@media #{$header-change} {
+			padding: 7.5%;
 			align-items: flex-start;
-
-			li {
-				max-width: 200px;
-				text-align: center;
-				outline: 1px solid black;
-				h3 {
-					border-bottom: 1px solid black;
-					min-height: 50px;
-				}
+			&:before {
+				opacity: 0;
 			}
 		}
 	}
-
 }

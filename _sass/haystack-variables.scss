@@ -5,6 +5,7 @@ $desktop-gutter: 24px;
 
 $gt-xs: "(min-width: 640px)";
 $gt-sm: "(min-width: 840px)";
+$header-change: "(min-width: 640px) and (orientation: landscape) and (min-height: 400px)";
 
 $hs-blue-grey-50: unquote("rgb(#{$palette-blue-grey-50})");
 $hs-blue-grey-100: unquote("rgb(#{$palette-blue-grey-100})");

@@ -33,7 +33,10 @@ sections:
     url: http://example.com
 
   - label: Contact us
-    url: http://example.com
+    url: mailto:Sales+query@thehaystackapp.com?Subject=Web%20query&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
+  
+  - label: Media inquiries
+    url: mailto:ran+media@thehaystackapp.com?Subject=Media%20query
 
 
 

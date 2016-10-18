@@ -2,17 +2,14 @@
 
 links:
 
+- label: Product
+  url: http://example.com
+
 - label: Pricing
-  url: http://example.com
+  url: /pricing
 
-- label: Blog
-  url: http://example.com
-
-- label: FAQ
+- label: FAQs
   url: /faq
 
 - label: About Us
   url: about
-
-- label: Contact Us
-  url: http://example.com

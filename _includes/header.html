@@ -1,14 +1,22 @@
 <header class="mdl-layout__header start-transparent">
 	<div class="mdl-layout__header-row">
 	<!-- Title -->
-	<img class="logo" src="https://14a1ea0c9c309802c875-e02c908939b383b64c2f32e38c48cecd.ssl.cf3.rackcdn.com/webapp/logo/logo-white.svg">
+	<a href="/">
+		<img class="logo" src="https://14a1ea0c9c309802c875-e02c908939b383b64c2f32e38c48cecd.ssl.cf3.rackcdn.com/webapp/logo/logo-white.svg">
+	</a>
 	<!-- Add spacer, to align navigation to the right -->
 	<div class="mdl-layout-spacer"></div>
 	<!-- Navigation. We hide it in small screens. -->
-	<nav class="mdl-navigation mdl-layout--large-screen-only">
+	<nav class="mdl-navigation">
 		{% for link in site.data.header.links %}
 		<a class="mdl-navigation__link" href="{{link.url}}">{{link.label}}</a>
 		{% endfor %}
+		<a class="mdl-navigation__link never-hide" id="demo-menu-lower-right">Log in</a>
+		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+		    for="demo-menu-lower-right">
+		  <a class="mdl-menu__item" href="http://contacts.thehaystackapp.com/signin">Log into your card list</a>
+		  <a class="mdl-menu__item" href="http://premium.thehaystackapp.com">Log into the Premium Dashboard</a>
+		</ul>
 	</nav>
 	</div>
 </header>

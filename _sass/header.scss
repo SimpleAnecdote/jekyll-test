@@ -1,6 +1,7 @@
 header {
 
 	$header-type-breakpoint: 1025px;
+	$nav-padding: 24px;
 	&.mdl-layout__header {
 		transition: box-shadow 0.1s, background-color 0.25s;		
 		.transparent-header & .mdl-layout__drawer-button {
@@ -25,10 +26,11 @@ header {
 
 		.logo {
 			height: 28px;
+			margin-top: -2px;
 		}
 
 		@media (min-width: $header-type-breakpoint) {
-			padding: 0 24px;
+			padding: 0 $nav-padding;
 			height: 72px;
 			align-self: stretch;
 			.logo {
@@ -36,6 +38,31 @@ header {
 			}
 		}
 	}
+
+	.mdl-navigation__link {
+		cursor: pointer;
+	}
+
+	.mdl-menu__container {
+		right: 8px!important;
+		top: 48px!important;
+		@media (min-width: $header-type-breakpoint) {
+			top: 56px!important;
+		}
+	}
+
+	// MENU CHANGE
+	.mdl-navigation {
+		position: absolute;
+		right: $nav-padding;
+	}
+	@media (max-width: $header-type-breakpoint) {
+		.mdl-navigation { right: 8px; }
+		.mdl-layout__header-row .mdl-navigation__link:not(.never-hide) {
+			display: none;
+		}
+	}
+
 }
 
 header.transparent, .transparent-header header.start-transparent {

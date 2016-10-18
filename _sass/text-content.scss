@@ -29,4 +29,9 @@
 		}
 	}
 
+	a {
+		@extend .mdl-button--primary;
+		text-decoration: none;
+	}
+
 }

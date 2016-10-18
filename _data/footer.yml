@@ -19,7 +19,7 @@ sections:
     newtab: false
 
   - label: Pricing
-    url: http://example.com
+    url: pricing
     newtab: false
 
   - label: Affiliate Program

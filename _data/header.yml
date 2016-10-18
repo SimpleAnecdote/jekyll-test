@@ -7,7 +7,7 @@ links:
   newtab: false
 
 - label: Pricing
-  url: http://example.com
+  url: pricing
   newtab: false
 
 - label: FAQs

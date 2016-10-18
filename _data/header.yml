@@ -4,12 +4,16 @@ links:
 
 - label: Product
   url: http://example.com
+  newtab: false
 
 - label: Pricing
   url: /pricing
+  newtab: false
 
 - label: FAQs
   url: /faq
+  newtab: false
 
 - label: About Us
   url: about
+  newtab: false

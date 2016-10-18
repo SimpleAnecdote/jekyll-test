@@ -8,19 +8,23 @@ sections:
 
   - label: Haystack Premium
     url: http://example.com
+    newtab: false
 
   - label: CRM Sync
     url: http://example.com
+    newtab: false
 
   - label: FAQs
     url: http://example.com
+    newtab: false
 
   - label: Pricing
     url: http://example.com
+    newtab: false
 
   - label: Affiliate Program
     url: http://example.com
-
+    newtab: false
 
 
 - label: Company
@@ -28,15 +32,19 @@ sections:
 
   - label: About us
     url: about
+    newtab: false
 
   - label: Blog
     url: http://example.com
+    newtab: false
 
   - label: Contact us
     url: mailto:Sales+query@thehaystackapp.com?Subject=Web%20query&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
+    newtab: true
   
   - label: Media inquiries
     url: mailto:ran+media@thehaystackapp.com?Subject=Media%20query
+    newtab: true
 
 
 
@@ -45,12 +53,15 @@ sections:
 
   - label: Support
     url: http://example.com
+    newtab: false
 
   - label: Terms & Conditions
     url: http://example.com
+    newtab: true
 
   - label: Privacy Policy
     url: http://example.com
+    newtab: true
 
 
 
@@ -59,6 +70,8 @@ sections:
 
   - label: App Store
     url: http://example.com
+    newtab: true
 
   - label: Google Play
     url: http://example.com
+    newtab: true

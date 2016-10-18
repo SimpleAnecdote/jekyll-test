@@ -9,7 +9,7 @@
 	<!-- Navigation. We hide it in small screens. -->
 	<nav class="mdl-navigation">
 		{% for link in site.data.header.links %}
-		<a class="mdl-navigation__link" href="{{link.url}}">{{link.label}}</a>
+		<a class="mdl-navigation__link" href="{{link.url}}" {% if link.newtab == true %}target="_blank"{% endif %}>{{link.label}}</a>
 		{% endfor %}
 		<a class="mdl-navigation__link never-hide" id="demo-menu-lower-right">Log in</a>
 		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"

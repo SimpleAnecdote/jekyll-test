@@ -8,7 +8,7 @@
       <h1 class="mdl-mega-footer__heading">{{ section.label }}</h1>
       <ul class="mdl-mega-footer__link-list">
     		{% for link in section.links %}
-        <li><a href="{{link.url}}">{{link.label}}</a></li>
+        <li><a href="{{link.url}}" {% if link.newtab == true %}target="_blank"{% endif %}>{{link.label}}</a></li>
         {% endfor %}
       </ul>
     </div>

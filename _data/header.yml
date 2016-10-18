@@ -7,11 +7,11 @@ links:
   newtab: false
 
 - label: Pricing
-  url: /pricing
+  url: http://example.com
   newtab: false
 
 - label: FAQs
-  url: /faq
+  url: faq
   newtab: false
 
 - label: About Us

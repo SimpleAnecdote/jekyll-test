@@ -11,6 +11,7 @@
 		@include typo-display-1;
 		@media #{$gt-xs} {
 			font-size: 56px;
+			line-height: 1em;
 		}
 		color: $hs-blue-grey-200;
 		margin-bottom: 1.25em;
@@ -32,6 +33,10 @@
 	a {
 		@extend .mdl-button--primary;
 		text-decoration: none;
+	}
+
+	p > img {
+		max-width: 100%;
 	}
 
 }

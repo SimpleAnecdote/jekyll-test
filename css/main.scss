@@ -11,25 +11,32 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+
+	// Dependencies
 	"mdl/material-design-lite.scss",
+
+	// Global
 	"haystack-variables",
 	"general",
-	"header",
-    "feature-bubbles",
-    "video-banner",
-    "text-content",
-    "footer",
-    "text-cta",
-    "premium-home",
-    "video-strip",
-    "testimonials",
-    "feature-bubbles-aside",
-    "pricing-panels",
-    "image-banner.scss",
-    "logo-strip",
-    "how-it-works",
-    "about",
-    "app-store-links",
-    "faq",
-    "support"
+
+	// Components
+	"components/header",
+	"components/footer",
+	"components/image-banner.scss",
+	"components/video-strip",
+	"components/feature-bubbles",
+	"components/feature-bubbles-aside",
+	"components/text-content",
+	"components/text-cta",
+	"components/testimonials",
+	"components/pricing-panels",
+	"components/logo-strip",
+	"components/how-it-works",
+	"components/app-store-links",
+
+	// Pages
+	"pages/premium-home",
+	"pages/about",
+	"pages/faq",
+	"pages/support"
 ;

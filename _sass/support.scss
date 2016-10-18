@@ -1,0 +1,9 @@
+.support-iframe {
+
+	width: 100%;
+	height: calc(100vh - 56px);
+	@media (min-width: $header-type-breakpoint) {
+		height: calc(100vh - 72px);
+	}
+
+}

@@ -49,7 +49,7 @@ sections:
   links:
 
   - label: Support
-    url: http://example.com
+    url: support
     newtab: false
 
   - label: Terms & Conditions

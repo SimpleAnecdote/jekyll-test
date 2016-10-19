@@ -4,77 +4,108 @@
 	padding: 96px 0;
 
 	background-color: white;
-	@media (min-width: $fixed-column-width) {
-		background-color: $hs-blue-grey-50;
-	}
+	$max-panel-width: 1280px;
+	$layout-switch-size: 960px;
 
 	> ul	{
 		@include flex-center(column);
-		@media (min-width: $fixed-column-width) {
+		align-items: stretch;
+		@media (min-width: $layout-switch-size) {
 			flex-direction: row;
-			align-items: stretch;
 		}
 		list-style-type: none;
 		padding: 0;
 		width: 100%;
-		max-width: $fixed-column-width;
+		max-width: $max-panel-width;
 	}
 
 	> ul > li {
 
-		$padding: 32px;
-		padding: $padding;
+		$padding: 24px;
+		$border-radius: 8px;
 
-		$width: ($fixed-column-width / 3) - ($padding * 2);
-		width: $width;
-		flex-basis: $width;
+		$width: ($max-panel-width / 3) - ($padding * 2);
 
-		@extend .mdl-shadow--2dp;
 		background-color: white;
-		border-radius: 4px;
-		margin: 4px;
+		border-radius: $border-radius;
+		overflow: hidden;
+		border: 1px solid $hs-primary-100;
+		margin: 8px;
+		padding-bottom: $padding;
 
-		&:nth-child(2) {
-			@extend .mdl-shadow--16dp;
-			z-index: 1;
-		}
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-webkit-align-content: flex-start;
+		-ms-flex-line-pack: start;
+		align-content: flex-start;
+		-webkit-align-items: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
 
-		@media (max-width: $fixed-column-width) {
-			border: 1px solid $hs-blue-grey-50;
-			box-shadow: none;
-			&:nth-child(2) {
-				box-shadow: none;
-			}
+		@media (min-width: $layout-switch-size) {
+			width: $width;
+			max-width: $width;
+			flex-basis: $width;
 		}
 
 		// Title
 		h2 {
-			font-size: 20px;
+			margin: 0;
+			padding: $padding;
+			padding-bottom: $padding + $border-radius;
+			font-size: 24px;
+			line-height: 1em;
 			text-transform: uppercase;
 			font-weight: 700;
 			color: $hs-primary-500;
-			margin-bottom: 8px;
+			background-color: $hs-primary-50;
+		}
+
+		// Price qualifier (Always / starting at)
+		h2 + p {
+			padding: 0 $padding;
+			font-size: 16px;
+			font-weight: 500;
+			color: $hs-blue-grey-600;
+			padding-top: 40px;
+			border-top: 1px solid $hs-primary-100;
+			border-radius: $border-radius;
+			margin-top: -$border-radius;
+			margin-bottom: 0;
+			background-color: white;
 		}
 
 		// Price
-		h2 + ul {
+		h2 + p + ul {
 
 			list-style-type: none;
-			padding-left: 0;
+			padding: 0 $padding;
+			margin-bottom: 32px;
 
 			@include flex-center(row);
 			justify-content: flex-start;
 
 			li {
 				color: $hs-blue-grey-800;
-				font-size: 48px;
-				line-height: 48px;
+				font-size: 64px;
+				line-height: 64px;
 				font-weight: 600;
+				font-weight: 300;
 			}
 
 			li:first-child, li:last-child {
-				font-size: 16px;
-				line-height: 16px;
+				font-size: 24px;
+				line-height: 24px;
 				font-weight: 400;
 				padding: 6px 0px;
 			}
@@ -83,21 +114,39 @@
 			li:last-child { align-self: flex-end; }
 		}
 
+		// Description
+		p {
+			padding: 0 $padding;
+			font-size: 20px;
+			font-weight: 300;
+			margin-bottom: 8px;
+			color: $hs-blue-grey-900;
+		}
+
 		// List
-		h2 + ul + ul {
+		p:not(:nth-child(2)) + ul {
 			list-style-type: none;
-			padding: 0;
-			margin: 16px 0;
+			padding: 0 $padding;
+			margin: 24px 0;
+			flex: 1 1 auto;
 			li {
+				$bullet-margin: 16px;
+				$bullet-width: 24px;
 				&:before {
 					@extend .material-icons;
 					content: 'done';
 					vertical-align: middle;
 					color: $hs-primary-500;
-					margin-right: 8px;
+					margin-right: $bullet-margin;
+					left: 0;
+					position: absolute;
 				}
-				font-size: 14px;
-				color: $hs-blue-grey-500;
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 16px;
+				color: $hs-blue-grey-900;
+				position: relative;
+				padding-left: $bullet-margin + $bullet-width;
 			}
 		}
 
@@ -107,9 +156,25 @@
 			@extend .mdl-button;
 			@extend .mdl-button--primary;
 			display: block;
-			&:first-child {
+			height: 56px;
+			line-height: 56px;
+			margin: 0;
+			border: 1px solid $hs-primary-500;
+		    font-size: 16px;
+		}
+
+		&:nth-child(2) {
+			h2 {
+				background-color: $hs-primary-500;
+				color: white;
+				border-bottom: 1px solid $hs-primary-500;
+			}
+			> p > a:first-child {
 				@extend .hs-button-raised-primary;
+				height: 56px;
+				line-height: 56px;
 				display: block;
+			    font-size: 16px;
 			}
 		}
 

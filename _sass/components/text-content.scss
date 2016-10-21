@@ -14,13 +14,17 @@
 			line-height: 1em;
 		}
 		color: $hs-blue-grey-200;
-		margin-bottom: 1.25em;
+		font-weight: 300;
 	}
 
-	h2 {
+	h2, h1 + span {
 		margin-top: 3em;
 		@include typo-headline;
 		color: $hs-blue-grey-900;
+	}
+
+	h1 + span {
+		margin-top: 1em;
 	}
 
 	p {

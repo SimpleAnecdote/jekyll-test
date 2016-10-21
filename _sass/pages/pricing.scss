@@ -1,6 +1,5 @@
 .pricing {
-	.pricing-features {
-		@include flex-center(row);
-		align-items: flex-start;
+	.text-content.page-header {
+		text-align: center;
 	}
 }

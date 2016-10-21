@@ -1,9 +1,11 @@
+.pricing-panels-section {
+	background-color: white;
+	padding: 96px 0;
+}
+
 .pricing-panels {
 
 	@include flex-center(column);
-	padding: 96px 0;
-
-	background-color: white;
 	$max-panel-width: 1280px;
 	$layout-switch-size: 960px;
 
@@ -66,7 +68,7 @@
 			font-size: 24px;
 			line-height: 1em;
 			text-transform: uppercase;
-			font-weight: 700;
+			font-weight: 500;
 			color: $hs-primary-500;
 			background-color: $hs-primary-50;
 		}
@@ -167,7 +169,6 @@
 			h2 {
 				background-color: $hs-primary-500;
 				color: white;
-				border-bottom: 1px solid $hs-primary-500;
 			}
 			> p > a:first-child {
 				@extend .hs-button-raised-primary;
@@ -175,6 +176,13 @@
 				line-height: 56px;
 				display: block;
 			    font-size: 16px;
+			}
+		}
+
+		&:nth-child(3) {
+			h2 {
+				background-color: $hs-blue-grey-700;
+				color: white;
 			}
 		}
 

@@ -1,3 +1,5 @@
+# Pricing FAQ
+
 ## Will you charge my card?
 We don't charge your card until your free trial is over. 
 We will send you a reminder 6 days before your trial ends. 

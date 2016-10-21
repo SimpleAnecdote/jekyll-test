@@ -1,4 +1,4 @@
--   ## Forever Free
+-   ## Forever Free ![Forever Free](img/pricing/free-icon.png)
     
     Always
 
@@ -20,7 +20,7 @@
     [Get your free card](http://google.com)
     <!-- [Learn more](http://google.com) -->
 
--   ## Premium
+-   ## Premium ![Premium](img/pricing/premium-icon.png)
     
     Starting at
     
@@ -46,7 +46,7 @@
     [Start your 30 day free trial](http://google.com)
     <!-- [Learn more](http://google.com) -->
 
--   ## Enterprise
+-   ## Enterprise ![Enterprise](img/pricing/enterprise-icon.png)
     
     Starting at
     

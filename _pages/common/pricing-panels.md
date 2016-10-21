@@ -18,7 +18,7 @@
     - Add social links & images to cards
 
     [Get your free card](http://google.com)
-    <!-- [Learn more](http://google.com) -->
+    [Learn more](http://google.com)
 
 -   ## Premium ![Premium](img/pricing/premium-icon.png)
     
@@ -44,7 +44,7 @@
     - Connect with your CRM*
 
     [Start your 30 day free trial](http://google.com)
-    <!-- [Learn more](http://google.com) -->
+    [Learn more](http://google.com)
 
 -   ## Enterprise ![Enterprise](img/pricing/enterprise-icon.png)
     
@@ -63,7 +63,7 @@
     - Onboarding assistance for large teams
 
     [Contact us](http://google.com)
-    <!-- [Learn more](http://google.com) -->
+    [Learn more](http://google.com)
 
 
 

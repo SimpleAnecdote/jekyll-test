@@ -5,4 +5,9 @@
 	.text-cta {
 		background-color: $hs-blue-grey-50;
 	}
+	.pricing-panels {
+		> p > a:not(:first-child) {
+			display: none;
+		}
+	}
 }

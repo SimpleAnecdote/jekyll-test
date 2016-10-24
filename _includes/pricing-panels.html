@@ -15,6 +15,7 @@
 				{% endfor %}
 				<input type="checkbox" name="checkbox" id="more_details_{{plan.name}}" value="value">
 				<label for="more_details_{{plan.name}}">+ More Details</label>
+				<a class="pricing-page-link" href="pricing">+ More Details</a>
 				<ul class="features-list">
 					{% for feature in plan.features %}
 					<li>{{ feature }}</li>

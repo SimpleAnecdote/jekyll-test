@@ -3,23 +3,25 @@
 		{% for plan in site.data.pricing.plans %}
 		<li class="{{ plan.name }}">
 			<h2>{{ plan.label }}<img src="img/pricing/{{plan.name}}-icon.png"></h2>
-			<p>{{ plan.qualifier }}</p>
-			<ul>
-				<li>{{ plan.currency }}</li>
-				<li>{{ plan.price }}</li>
-				<li>/ {{ plan.term }}</li>
-			</ul>
-			{% for section in plan.description %}
-			<p>{{ section }}</p>
-			{% endfor %}
-			<ul>
-				{% for feature in plan.features %}
-				<li>{{ feature }}</li>
+			<div>
+				<p class="price-qualifier">{{ plan.qualifier }}</p>
+				<ul class="price">
+					<li>{{ plan.currency }}</li>
+					<li>{{ plan.price }}</li>
+					<li>/ {{ plan.term }}</li>
+				</ul>
+				{% for section in plan.description %}
+				<p>{{ section }}</p>
 				{% endfor %}
-			</ul>
-			<p>
-				<a href="">{{ plan.calltoaction }}</a>
-			</p>
+				<input type="checkbox" name="checkbox" id="more_details_{{plan.name}}" value="value">
+				<label for="more_details_{{plan.name}}">+ More Details</label>
+				<ul class="features-list">
+					{% for feature in plan.features %}
+					<li>{{ feature }}</li>
+					{% endfor %}
+				</ul>
+				<a class="call-to-action" href="">{{ plan.calltoaction }}</a>
+			</div>
 		</li>
 		{% endfor %}
 	</ul>

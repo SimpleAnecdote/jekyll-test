@@ -34,26 +34,10 @@
 		overflow: hidden;
 		border: 1px solid $hs-primary-100;
 		margin: $panel-spacing / 2 $panel-spacing;
-		padding-bottom: $padding;
+		box-sizing: border-box;
+		position: relative;
 
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-flex-wrap: nowrap;
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		-webkit-justify-content: flex-start;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
-		-webkit-align-content: flex-start;
-		-ms-flex-line-pack: start;
-		align-content: flex-start;
-		-webkit-align-items: stretch;
-		-ms-flex-align: stretch;
-		align-items: stretch;
+		@include flex-left();
 
 		@media (min-width: $layout-switch-size) {
 			width: $width;
@@ -62,6 +46,9 @@
 			margin: $panel-spacing / 2;
 			&:first-child { margin-left: $panel-spacing; }
 			&:last-child { margin-right: $panel-spacing; }
+			label {
+				display: none;
+			}
 		}
 
 		// Title
@@ -85,12 +72,8 @@
 			}
 		}
 
-		// Price qualifier (Always / starting at)
-		h2 + p {
-			padding: 0 $padding;
-			font-size: 16px;
-			font-weight: 500;
-			color: $hs-blue-grey-600;
+		> div {			
+			padding: $padding;
 			padding-top: 40px;
 			border-top: 1px solid $hs-primary-100;
 			border-radius: $border-radius;
@@ -98,14 +81,23 @@
 			margin-bottom: 0;
 			background-color: white;
 			z-index: 1;
+			@include flex-left();
+			flex: 1 1 auto;
+		}
+
+		// Price qualifier (Always / starting at)
+		.price-qualifier {
+			font-size: 16px;
+			font-weight: 500;
+			color: $hs-blue-grey-600;
 		}
 
 		// Price
-		h2 + p + ul {
+		.price {
 
 			list-style-type: none;
-			padding: 0 $padding;
 			margin-bottom: 32px;
+			padding-left: 0;
 
 			@include flex-center(row);
 			justify-content: flex-start;
@@ -130,20 +122,36 @@
 		}
 
 		// Description
-		p {
-			padding: 0 $padding;
+		p, label {
 			font-size: 20px;
 			font-weight: 300;
 			margin-bottom: 8px;
 			color: $hs-blue-grey-900;
 		}
 
+		input {
+			display: none;
+		}
+
+		label {
+			color: $hs-primary-500;
+			margin-top: 1em;
+		}
+
+		input[type=checkbox]:checked ~ label {
+			display: none;
+		}
+		input[type=checkbox]:checked ~ .features-list li,
+		input[type=checkbox]:checked ~ a  {
+			display: block;
+		}
+
 		// List
-		p:not(:nth-child(2)) + ul {
+		.features-list {
 			list-style-type: none;
-			padding: 0 $padding;
 			margin: 24px 0;
 			flex: 1 1 auto;
+			padding-left: 0;
 			li {
 				$bullet-margin: 16px;
 				$bullet-width: 24px;
@@ -166,42 +174,44 @@
 		}
 
 		// Link
-		> p > a {
-		    margin: 24px 0 -8px 0;
+		.call-to-action {
+		    // margin: 24px 0 -8px 0;
 			@extend .mdl-button;
 			@extend .mdl-button--primary;
-			margin: 0;
 		    font-size: 16px;
 			display: block;
-		    &:first-child {
-				height: 56px;
-				line-height: 56px;
-				border: 1px solid $hs-primary-500;
-		    }
-		    &:not(:first-child) {
-		    	display: none;
-			    margin-top: 24px;
-		    }
+			height: 56px;
+			line-height: 56px;
+			border: 1px solid $hs-primary-500;
 		}
 
-		&:nth-child(2) {
+		&.premium {
 			h2 {
 				background-color: $hs-primary-500;
 				color: white;
 			}
-			> p > a:first-child {
+			.call-to-action {
 				@extend .hs-button-raised-primary;
 				height: 56px;
 				line-height: 56px;
-				display: block;
 			    font-size: 16px;
 			}
 		}
 
-		&:nth-child(3) {
+		&.enterprise {
 			h2 {
 				background-color: $hs-blue-grey-700;
 				color: white;
+			}
+		}
+
+		@media (max-width: $layout-switch-size) {
+			input[type=checkbox]:not(:checked) ~ .features-list {
+				margin: 0;
+			}
+			.features-list li,
+			.call-to-action, &.premium .call-to-action {
+				display: none;
 			}
 		}
 

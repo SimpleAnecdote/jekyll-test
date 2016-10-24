@@ -1,0 +1,62 @@
+---
+
+plans:
+
+- name: free
+  label: Forever Free
+  qualifier: Always
+  currency: $
+  price: 0
+  term: month
+  description:
+    - "Your Haystack starter kit."
+    - "Get the basic digital business card experience."
+  features:
+    - Unlimited cards
+    - Unlimited shares
+    - Unlimited contacts
+    - "iOS & Android apps"
+    - Business card scanner (unlimited use)
+    - "Add social links & images to cards"
+  calltoaction: Get your free card
+  calltoactionurl: http://example.com/
+
+- name: premium
+  label: Premium
+  qualifier: Starting at
+  currency: $
+  price: 5
+  term: month
+  description:
+    - "Haystack on steroids."
+    - "Enhance your digital cards experience with extra features & smart tools."
+  features:
+    - "Everything in Free, plus"
+    - Additional social features
+    - Fine tune your card's design
+    - Premium support
+    - Create cards for your whole company
+    - Card templates
+    - Set employee permissions
+    - Export your contacts
+    - Analytics
+    - Connect with your CRM*
+  calltoaction: Start your 30 day free trial
+  calltoactionurl: http://example.com/
+
+- name: enterprise
+  label: Enterprise
+  qualifier: Starting at
+  currency: $
+  price: 500
+  term: month
+  description:
+    - "Get additional business features for organizations with more than 500 business cards."
+  features:
+    - "Everything in Premium, plus"
+    - Tailored features to suit your needs
+    - Customize your plan
+    - Enterprise support
+    - Onboarding assistance for large teams
+  calltoaction: Contact us
+  calltoactionurl: http://example.com/

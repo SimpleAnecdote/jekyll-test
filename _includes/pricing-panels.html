@@ -1,3 +1,26 @@
 <div class="pricing-panels">
-	{% markdown common/pricing-panels.md %}
+	<ul>
+		{% for plan in site.data.pricing.plans %}
+		<li class="{{ plan.name }}">
+			<h2>{{ plan.label }}<img src="img/pricing/{{plan.name}}-icon.png"></h2>
+			<p>{{ plan.qualifier }}</p>
+			<ul>
+				<li>{{ plan.currency }}</li>
+				<li>{{ plan.price }}</li>
+				<li>/ {{ plan.term }}</li>
+			</ul>
+			{% for section in plan.description %}
+			<p>{{ section }}</p>
+			{% endfor %}
+			<ul>
+				{% for feature in plan.features %}
+				<li>{{ feature }}</li>
+				{% endfor %}
+			</ul>
+			<p>
+				<a href="">{{ plan.calltoaction }}</a>
+			</p>
+		</li>
+		{% endfor %}
+	</ul>
 </div>

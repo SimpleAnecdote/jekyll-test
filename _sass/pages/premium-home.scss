@@ -16,4 +16,17 @@
 			}
 		}
 	}
+
+	.pricing-panels ul {
+		p:not(:nth-child(2)) + ul {
+		    margin: 16px 0;
+			> li {
+				display: none;
+			}
+		}
+
+		p > a:not(:first-child) {
+			display: block;
+		}
+	}
 }

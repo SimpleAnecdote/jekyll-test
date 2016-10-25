@@ -13,16 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Haystack test
+title: Haystack
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://thehaystackapp.com/" # the base hostname & protocol for your site
+
+twitter_name: "@theHaystackApp"
+app_name: Haystack
+google_play_id: com.theHaystackApp.haystack
+app_store_id: 920294144
+
+og_image: http://thehaystackapp.com/images/product2.jpg
 
 # Build settings
 markdown: kramdown

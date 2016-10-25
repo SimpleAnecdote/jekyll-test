@@ -13,7 +13,7 @@
 				{% for section in plan.description %}
 				<p>{{ section }}</p>
 				{% endfor %}
-				<input type="checkbox" name="checkbox" id="more_details_{{plan.name}}" value="value">
+				<input type="radio" name="expand_details" id="more_details_{{plan.name}}" value="{{plan.name}}">
 				<label for="more_details_{{plan.name}}">+ More Details</label>
 				<a class="pricing-page-link" href="pricing">+ More Details</a>
 				<ul class="features-list">

@@ -148,11 +148,15 @@
 			text-decoration: none;
 		}
 
-		input[type=checkbox]:checked ~ label {
+		input[type=radio]:checked ~ label {
 			display: none;
 		}
-		input[type=checkbox]:checked ~ .features-list li,
-		input[type=checkbox]:checked ~ .call-to-action  {
+		input[type=radio]:checked ~ .features-list li {
+			height: 24px;
+			margin-bottom:16px;
+			opacity: 1;
+		}
+		input[type=radio]:checked ~ .call-to-action  {
 			display: block;
 		}
 
@@ -180,6 +184,7 @@
 				color: $hs-blue-grey-900;
 				position: relative;
 				padding-left: $bullet-margin + $bullet-width;
+				transition: height 1s, opacity 1s, margin-bottom 1s;
 			}
 		}
 
@@ -216,10 +221,14 @@
 		}
 
 		@media (max-width: $layout-switch-size) {
-			input[type=checkbox]:not(:checked) ~ .features-list {
+			input[type=radio]:not(:checked) ~ .features-list {
 				margin: 0;
 			}
-			.features-list li,
+			.features-list li {
+				height: 0px;
+				margin-bottom: 0px;
+				opacity: 0;
+			}
 			.call-to-action, &.premium .call-to-action {
 				display: none;
 			}
@@ -233,8 +242,10 @@
 				margin: 8px 0;
 			}
 			.features-list li,
-			> ul > li input[type=checkbox]:checked ~ .features-list li {
-				display: none;
+			> ul > li input[type=radio]:checked ~ .features-list li {
+				height: 0px;
+				margin-bottom: 0px;
+				opacity: 0;
 			}
 			.pricing-page-link {
 				display: block;

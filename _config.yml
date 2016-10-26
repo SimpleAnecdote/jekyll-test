@@ -20,31 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://thehaystackapp.com/" # the base hostname & protocol for your site
-
-twitter_name: "@theHaystackApp"
-app_name: Haystack
-google_play_id: com.theHaystackApp.haystack
-app_store_id: 920294144
-
-og_image: http://thehaystackapp.com/images/product2.jpg
-
-contact_us: mailto:query@thehaystackapp.com?Subject=Web%20query&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
-contact_us_sales: mailto:sales+query@thehaystackapp.com?Subject=Web%20query&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
-contact_us_enterprise: mailto:sales+query@thehaystackapp.com?Subject=Enterprise%20plans%20query&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20Enterprise%20plans.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
-
-start_trial: http://example.com/start_trial
-
-app_download_android: https://play.google.com/store/apps/details?id=com.theHaystackApp.haystack
-app_download_ios: https://itunes.apple.com/app/haystack-business-card-reader/id920294144
-
-premium_dashboard_url: http://premium.thehaystackapp.com
-webapp_url: http://contacts.thehaystackapp.com/signin
-
-unsub_url: mailto:support@thehaystackapp.com?subject=I've unsubscribed from Haystack
-
-privacy_policy: http://files.thehaystackapp.com/legal/privacypolicy.html
-terms_and_conditions: http://files.thehaystackapp.com/legal/termsandconditions.html
+url: "http://thehaystackapp.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

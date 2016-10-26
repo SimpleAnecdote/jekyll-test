@@ -32,7 +32,7 @@ During the first month of your Enterprise subscription, our team will work to en
 ## Privacy
 
 Haystack takes our user's privacy seriously. Your Haystack card can only be seen by you and the people you have shared your card with.
-You can view our [Privacy Policy]({{site.privacy_policy}}) or our [Terms & Conditions]({{site.terms_and_conditions}}) for more information. Haystack will never sell or share your data - your details are only shared when you explicitly share them.
+You can view our [Privacy Policy]({{site.data.links.privacy_policy}}) or our [Terms & Conditions]({{site.data.links.terms_and_conditions}}) for more information. Haystack will never sell or share your data - your details are only shared when you explicitly share them.
 
 
 

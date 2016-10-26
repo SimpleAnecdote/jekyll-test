@@ -3,13 +3,13 @@
 links:
 
 - label: Pricing
-  url: pricing
+  url: /pricing
   newtab: false
 
 - label: FAQs
-  url: faq
+  url: /faq
   newtab: false
 
 - label: About Us
-  url: about
+  url: /about
   newtab: false

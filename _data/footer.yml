@@ -7,11 +7,11 @@ sections:
   links:
 
   - label: FAQs
-    url: faq
+    url: /faq
     newtab: false
 
   - label: Pricing
-    url: pricing
+    url: /pricing
     newtab: false
 
 
@@ -20,7 +20,7 @@ sections:
   links:
 
   - label: About us
-    url: about
+    url: /about
     newtab: false
 
   - label: Contact us
@@ -37,7 +37,7 @@ sections:
   links:
 
   - label: Support
-    url: support
+    url: /support
     newtab: false
 
   - label: Terms & Conditions

@@ -20,7 +20,7 @@ It's totally up to you. Our goal is to eliminate paper cards and create a smarte
 
 Most of our users report back that after sharing their card three times, they can't even think about using paper cards again. However we get that everyone is different and you can always carry few with you "just in case you meet someone who doesn't own a phone"... 
 
-Give it a go and see if you could also let go of paper - [start your free trial here.]({{site.start_trial}})
+Give it a go and see if you could also let go of paper - [start your free trial here.]({{site.data.links.start_trial}})
 
 
 
@@ -49,7 +49,7 @@ When it's time to share it - just choose the one you need to share and use it.
 
 ## Is it safe? Will you spam me?
 
-We take security very seriously. That's why we are using top notch servers, protocols and industry best practices. [Click here](technicalspecifications) for more technical details or feel free to [contact us]({{site.contact_us}}) directly if you have a specific concern.
+We take security very seriously. That's why we are using top notch servers, protocols and industry best practices. [Click here](/technicalspecifications) for more technical details or feel free to [contact us]({{site.data.links.contact_us}}) directly if you have a specific concern.
 
 
 
@@ -64,13 +64,13 @@ While other platforms use advertising to generate revenue, Haystack does not. In
 ## What's the difference between Premium and Free accounts?
 
 With our Premium account you have an access to an admin dashboard where you have more options to edit the card templates for your brand/business. 
-You also have access to card analytics, email signature, CRM exports, onboarding help and premium support. Visit our [pricing page](pricing) to learn more about the different plans.
+You also have access to card analytics, email signature, CRM exports, onboarding help and premium support. Visit our [pricing page](/pricing) to learn more about the different plans.
 
 
 
 ## Do I get a digital Email Signature as well?
 
-Digital Email Signatures are part of our premium package. [Click here](pricing) to learn more about the different packages.
+Digital Email Signatures are part of our premium package. [Click here](/pricing) to learn more about the different packages.
 
 
 
@@ -82,7 +82,7 @@ While CRM Sync via CSV export is available on the premium package, the CRM Auto 
 
 ## Are there any hidden fees?
 
-Not at all. If you choose the free plan - it's free forever. And if you choose the Premium one you can cancel anytime. [Click here](pricing) to learn more about our pricing plans.
+Not at all. If you choose the free plan - it's free forever. And if you choose the Premium one you can cancel anytime. [Click here](/pricing) to learn more about our pricing plans.
 
 
 

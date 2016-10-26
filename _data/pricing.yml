@@ -19,7 +19,7 @@ plans:
     - Business card scanner (unlimited use)
     - "Add social links & images to cards"
   calltoaction: Get your free card
-  calltoactionurl: http://example.com/
+  calltoactionurl: http://example.com/freecard
 
 - name: premium
   label: Premium
@@ -42,7 +42,7 @@ plans:
     - Analytics
     - Connect with your CRM*
   calltoaction: Start your 30 day free trial
-  calltoactionurl: http://example.com/
+  calltoactionurl: http://example.com/starttrial
 
 - name: enterprise
   label: Enterprise
@@ -59,4 +59,4 @@ plans:
     - Enterprise support
     - Onboarding assistance for large teams
   calltoaction: Contact us
-  calltoactionurl: http://example.com/
+  calltoactionurl: http://example.com/enterprisecontact

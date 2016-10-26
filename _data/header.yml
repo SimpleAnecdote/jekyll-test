@@ -2,10 +2,6 @@
 
 links:
 
-- label: Product
-  url: http://example.com
-  newtab: false
-
 - label: Pricing
   url: pricing
   newtab: false

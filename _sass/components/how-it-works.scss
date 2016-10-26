@@ -3,7 +3,7 @@
 	border-top: 1px solid $hs-blue-grey-50;
 
 	$estimated-content-height: 200px;
-	$section-height: 400px;
+	$section-height: 80vh;
 	$content-width: 1200px;
 	$layout-change-point: 1200px;
 	$background-image-padding: 32px;
@@ -26,6 +26,16 @@
 			width: 300px;
 			max-width: 100%;
 			margin-bottom: 24px;
+		}
+
+		h1 {
+			@include typo-display-1;
+			@media #{$gt-xs} {
+				font-size: 56px;
+				line-height: 1em;
+			}
+			color: $hs-blue-grey-200;
+			font-weight: 300;
 		}
 
 		h2 {
@@ -55,8 +65,16 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: right ($section-side-padding-big - $background-image-padding) center;
+		background-size: 512px;
+		&.zero  { background-color: #F2F2F2; }
+		&.one   { background-color: #F2F2F2; padding-top: 0; }
+		&.two   { }
+		&.three { background-color: #F2F2F2; }
 		@media (min-width: $content-width + ($section-side-padding-big * 2)) {
 			background-position: right calc((100vw - #{$content-width}) / 2 - #{$background-image-padding}) center;			
+		}
+		@media (min-width: 1336px) {
+			background-size: auto;
 		}
 	}
 
@@ -77,8 +95,9 @@
 			img { display: none; }
 			h2 span { display: inline; }
 			p { max-width: 540px; }
+			&.zero  { background-image: url(../img/how-it-works/0.png); height: 400px; }
 			&.one   { background-image: url(../img/how-it-works/1.png); }
-			&.two   { background-image: url(../img/how-it-works/2.png); background-color: #F2F2F2; }
+			&.two   { background-image: url(../img/how-it-works/2.png); }
 			&.three { background-image: url(../img/how-it-works/3.png); }
 		}
 	}

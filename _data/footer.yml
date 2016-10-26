@@ -19,7 +19,7 @@ sections:
 - label: Company
   links:
 
-  - label: About us
+  - label: About
     url: /about
     newtab: false
 

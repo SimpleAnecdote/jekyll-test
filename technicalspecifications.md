@@ -1,6 +1,7 @@
 ---
 layout: text-content
-title: Technical Specifications
+title: Technical Specifications | Haystack - Your new business card.
+description: Haystack is your new business card. Haystack stores and updates the business cards you receive, and lets you share your own business card directly from your phone.
 ---
 
 

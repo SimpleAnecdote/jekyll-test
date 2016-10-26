@@ -1,6 +1,6 @@
 ---
 layout: text-content
-title: Haystack - Unsubscribed.
+title: Unsubscribed | Haystack - Your new business card.
 description: Unsubscribed from Haystack.
 ---
 

@@ -16,30 +16,71 @@
 		margin: 0;
 		color: white;
 		font-size: 24px;
-		font-weight: 200;
+		font-weight: 300;
 		text-align: center;
 		max-width: 320px;
 		z-index: 1;
 		@media #{$header-change} {
+			font-weight: 200;
 			max-width: 50%;
 			text-align: left;
 			font-size: 3.33vw;
 		}
 	}
 
-	a {
-		@extend .hs-button-raised-primary;
-		color: white;
-		text-transform: none;
+	> div.image-banner-content {
+		@include flex-center(column);
 		margin-top: 24px;
 		@media #{$header-change} {
 			margin-top: 48px;
+			@include flex-center(row);
+			a {
+				margin-right: 40px;
+			}
+		}
+	}
+
+	> a, > div > a {
+		@extend .hs-button-raised-primary;
+		color: white;
+		text-transform: none;
+		@media #{$header-change} {
     		height: 72px;
 	    	line-height: 72px;
 		    padding: 0 24px;
 			font-size: 24px;
-			font-weight: 200;
+			font-weight: 400;
 			border-radius: 4px;
+		}
+	}
+
+	.video-link {
+		// Removes wistia's script overrides (unrequired),
+		// fixing browser specific bugs
+		.hs-wistia-container > div {
+			height: auto!important;
+			width: auto!important;
+		}
+		a.play-video {
+			@include flex-center(row);
+			text-decoration: none;
+			text-transform: uppercase;
+			height: 3em;
+			font-size: 14px;
+			margin-top: 1em;
+			padding: 0;
+			color: white;
+			i {
+				margin-right: 8px;
+				font-size: 2em;
+			}
+			@media #{$header-change} {				
+				font-size: 20px;
+				margin-top: 0;
+			}
+		}
+		&:hover {
+			opacity: 0.75;
 		}
 	}
 

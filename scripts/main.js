@@ -1,3 +1,4 @@
+// Header transparency
 (function () {
 
 	var transparencyCutoff = 200;
@@ -64,5 +65,35 @@
 			setHeaderTransparency();
 		};
 	}
+
+})();
+
+
+// Dialogs
+(function () {
+
+	// Get the dialog object,
+	// and use use the polyfill to ensure it's ready to function.
+	var dialog = document.querySelector('dialog#app-download');
+	if (! dialog.showModal) {
+		dialogPolyfill.registerDialog(dialog);
+	}
+
+	// Get the buttons that open this dialog
+	var showDialogButtons = document.querySelectorAll('[href="#app-download-open"]');
+
+	// Open dialog
+	var openDialog = function() {
+		dialog.showModal();
+	};
+
+	// Set dialog to open when open dialog buttons are clicked.
+	for (var i = 0; i < showDialogButtons.length; i++) {
+		showDialogButtons[i].addEventListener('click', openDialog, false);
+	}
+
+	dialog.querySelector('dialog#app-download .close').addEventListener('click', function() {
+		dialog.close();
+	});
 
 })();

@@ -36,7 +36,7 @@ Ps. the recipients would not be required to sign up to anything, or download an 
 
 ## How Can I share my card?
 
-[Download the app](http://example.com/), create your card in seconds, and share it via email, SMS, Whatsapp and even Slack, Trello, Airdrop etc. - Cool ha?
+[Download the app](#app-download-open), create your card in seconds, and share it via email, SMS, Whatsapp and even Slack, Trello, Airdrop etc. - Cool ha?
 
 
 

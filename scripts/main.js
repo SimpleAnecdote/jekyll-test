@@ -72,34 +72,46 @@
 // Dialogs
 (function () {
 
-	// Get the dialog object,
-	// and use use the polyfill to ensure it's ready to function.
-	var dialog = document.querySelector('dialog#app-download');
+	function registerDialog(dialogId) {
 
-	dialogPolyfill.forceRegisterDialog(dialog);
+		// Close dialog
+		var closeDialog = function(event) {
+			dialog.close();
+			event.preventDefault();
+		};
+
+		// Open dialog
+		var openDialog = function(event) {
+			dialog.showModal();
+			document.querySelector('.backdrop').addEventListener('click', closeDialog, false);
+			event.preventDefault();
+		};
+
+		// Get the dialog object,
+		// and use use the polyfill to ensure it's ready to function
+		// (Note: forcing the polyfill so we can support close on click outside).
+		var dialog = document.querySelector('dialog#' + dialogId);
+		dialogPolyfill.forceRegisterDialog(dialog);
+
+		// Get the buttons that open & close this dialog
+		var showDialogButtons = document.querySelectorAll('[href="#' + dialogId + '-open"]');
+		var closeDialogButtons = dialog.querySelectorAll('.close');
 
 
-	// Get the buttons that open this dialog
-	var showDialogButtons = document.querySelectorAll('[href="#app-download-open"]');
+		var i = 0;
 
-	// Close dialog
-	var closeDialog = function(event) {
-		dialog.close();
-		event.preventDefault();
-	};
+		// Set dialog to open when open dialog buttons are clicked.
+		for (i = 0; i < showDialogButtons.length; i++) {
+			showDialogButtons[i].addEventListener('click', openDialog, false);
+		}
 
-	// Open dialog
-	var openDialog = function(event) {
-		dialog.showModal();
-		document.querySelector('.backdrop').addEventListener('click', closeDialog, false);
-		event.preventDefault();
-	};
+		// Set dialog to close when close dialog buttons are clicked.
+		for (i = 0; i < closeDialogButtons.length; i++) {
+			closeDialogButtons[i].addEventListener('click', closeDialog, false);
+		}
 
-	// Set dialog to open when open dialog buttons are clicked.
-	for (var i = 0; i < showDialogButtons.length; i++) {
-		showDialogButtons[i].addEventListener('click', openDialog, false);
 	}
 
-	dialog.querySelector('.close').addEventListener('click', closeDialog, false);
+	registerDialog('app-download');
 
 })();

@@ -1,11 +1,27 @@
 .pricing {
-	.text-content.page-header {
-		text-align: center;
+	.image-banner {
+		background-color: #7b6b5c;
+		background-image: url(../img/headers/pricing.jpg);
+		height: 66vw;
+		max-height: 50vh;
+		h1 {
+			font-size: 28px;
+			@media #{$header-change} {
+				font-size: 3.33vw;
+			}
+		}
+		&:before {
+			background-color: transparent;
+		}
 	}
 	.text-cta {
 		background-color: $hs-blue-grey-50;
 	}
 	.pricing-panels {
+		padding-top: 48px;
+		@media #{$gt-sm} {
+			padding-top: 96px;			
+		}
 		> p > a:not(:first-child) {
 			display: none;
 		}

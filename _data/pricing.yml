@@ -60,3 +60,26 @@ plans:
     - Onboarding assistance for large teams
   calltoaction: Contact us
   calltoactionurl: mailto:sales+enterprise@thehaystackapp.com?Subject=Enterprise%20plans%20inquiry&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20Enterprise%20plans.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
+
+
+tiers:
+
+- numofusers: 1
+  price: 4
+  url: "https://premium.thehaystackapp.com/plan/Individual_5_2016"
+  multipleusers: false
+
+- numofusers: 10
+  price: 14
+  url: "https://premium.thehaystackapp.com/plan/10_cards_5_2016"
+  multipleusers: true
+
+- numofusers: 50
+  price: 49
+  url: "https://premium.thehaystackapp.com/plan/50_cards_5_2016"
+  multipleusers: true
+
+- numofusers: 100
+  price: 95
+  url: "https://premium.thehaystackapp.com/plan/100_cards_5_2016"
+  multipleusers: true

@@ -10,7 +10,7 @@ Haystack is meant to replace your need for paper so you would never forget your 
 
 Going digital also means getting smarter about the way you manage your contacts, updating your personal details and tracking your results. 
 
-And...Haystack cards are made to stand out, so if you want to impress the people you meet and put a face to your details - you came to the right place! [Click here](http://example.com/) and check it out for yourself.
+And...Haystack cards are made to stand out, so if you want to impress the people you meet and put a face to your details - you came to the right place! [Click here](/) and check it out for yourself.
 
 
 
@@ -20,7 +20,7 @@ It's totally up to you. Our goal is to eliminate paper cards and create a smarte
 
 Most of our users report back that after sharing their card three times, they can't even think about using paper cards again. However we get that everyone is different and you can always carry few with you "just in case you meet someone who doesn't own a phone"... 
 
-Give it a go and see if you could also let go of paper - [start your free trial here.]({{site.data.links.start_trial}})
+Give it a go and see if you could also let go of paper - [start your free trial here.](/pricing)
 
 
 
@@ -76,7 +76,7 @@ Digital Email Signatures are part of our premium package. [Click here](/pricing)
 
 ## Is CRM Auto-Sync part of the Premium package?
 
-While CRM Sync via CSV export is available on the premium package, the CRM Auto Sync is an add-on that can be added to your Premium account. [Click here](http://example.com/) to learn more about the CRM Auto Sync.
+While CRM Sync via CSV export is available on the premium package, the CRM Auto Sync is an add-on that can be added to your Premium account. [Click here](mailto:sales+crm@thehaystackapp.com?Subject=CRM%20inquiry&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A) to learn more about the CRM Auto Sync.
 
 
 

@@ -25,7 +25,7 @@ plans:
   label: Premium
   qualifier: Starting at
   currency: $
-  price: 5
+  price: 4
   term: month
   description:
     - "Haystack on steroids."
@@ -59,4 +59,4 @@ plans:
     - Enterprise support
     - Onboarding assistance for large teams
   calltoaction: Contact us
-  calltoactionurl: http://example.com/enterprisecontact
+  calltoactionurl: mailto:sales+enterprise@thehaystackapp.com?Subject=Enterprise%20plans%20inquiry&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20Enterprise%20plans.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A

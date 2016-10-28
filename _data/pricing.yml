@@ -42,7 +42,7 @@ plans:
     - Analytics
     - Connect with your CRM*
   calltoaction: Start your 30 day free trial
-  calltoactionurl: http://example.com/starttrial
+  calltoactionurl: "#select-num-users-open"
 
 - name: enterprise
   label: Enterprise

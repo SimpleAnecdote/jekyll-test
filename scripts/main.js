@@ -113,5 +113,6 @@
 	}
 
 	registerDialog('app-download');
+	registerDialog('select-num-users');
 
 })();

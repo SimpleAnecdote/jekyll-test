@@ -1,12 +1,20 @@
 <dialog id="app-download" class="mdl-dialog">
-	<h4 class="mdl-dialog__title">Allow data collection?</h4>
+	<h4 class="mdl-dialog__title">Create your free digital business card now</h4>
 	<div class="mdl-dialog__content">
-		<p>
-			Allowing us to collect data will let us get you the information you want faster.
-		</p>
+		<p>Download our free app</p>
+		<div class="app-store-links">
+			<a href="{{site.data.links.app_download_ios}}"><img src="img/apple.svg"></a>
+			<a href="{{site.data.links.app_download_android}}&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dabout"><img src="img/google-play.svg"></a>
+		</div>
 	</div>
-	<div class="mdl-dialog__actions">
-		<button type="button" class="mdl-button">Agree</button>
-		<button type="button" class="mdl-button close">Disagree</button>
+</dialog>
+
+<dialog id="select-num-users" class="mdl-dialog">
+	<h4 class="mdl-dialog__title">How many Haystack cards would you like?</h4>
+	<div class="mdl-dialog__content">
+		<a class="mdl-button">for 1 user ($4)</a>
+		<a class="mdl-button">for up to 10 users ($14)</a>
+		<a class="mdl-button">for up to 50 users ($49)</a>
+		<a class="mdl-button">for up to 100 users ($95)</a>
 	</div>
 </dialog>

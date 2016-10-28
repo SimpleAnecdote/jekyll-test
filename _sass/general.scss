@@ -40,6 +40,13 @@ main.mdl-layout__content {
 
 /* End of hack */
 
+
+dialog[open] {
+	position: fixed;
+	top: 50%!important;
+	transform: translateY(-50%)!important;
+}
+
 @mixin flex-center($direction: column) {
 	display: -ms-flexbox;
 	display: -webkit-flex;

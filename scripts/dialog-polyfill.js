@@ -220,11 +220,11 @@
 
       // Optionally center vertically, relative to the current viewport.
       if (dialogPolyfill.needsCentering(this.dialog_)) {
-        console.info('repositioning what');
+        // console.info('repositioning what');
         dialogPolyfill.reposition(this.dialog_);
         this.replacedStyleTop_ = true;
       } else {
-        console.info('NOT repositioning');
+        // console.info('NOT repositioning');
         this.replacedStyleTop_ = false;
       }
 
@@ -323,8 +323,8 @@
    */
   dialogPolyfill.forceRegisterDialog = function(element) {
     if (element.showModal) {
-      console.warn('This browser already supports <dialog>, the polyfill ' +
-          'may not work correctly', element);
+      // console.warn('This browser already supports <dialog>, the polyfill ' +
+          // 'may not work correctly', element);
     }
     if (element.nodeName.toUpperCase() != 'DIALOG') {
       throw new Error('Failed to register dialog: The element is not a dialog.');

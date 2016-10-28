@@ -75,16 +75,24 @@
 	// Get the dialog object,
 	// and use use the polyfill to ensure it's ready to function.
 	var dialog = document.querySelector('dialog#app-download');
-	if (! dialog.showModal) {
-		dialogPolyfill.registerDialog(dialog);
-	}
+
+	dialogPolyfill.forceRegisterDialog(dialog);
+
 
 	// Get the buttons that open this dialog
 	var showDialogButtons = document.querySelectorAll('[href="#app-download-open"]');
 
+	// Close dialog
+	var closeDialog = function(event) {
+		dialog.close();
+		event.preventDefault();
+	};
+
 	// Open dialog
-	var openDialog = function() {
+	var openDialog = function(event) {
 		dialog.showModal();
+		document.querySelector('.backdrop').addEventListener('click', closeDialog, false);
+		event.preventDefault();
 	};
 
 	// Set dialog to open when open dialog buttons are clicked.
@@ -92,8 +100,6 @@
 		showDialogButtons[i].addEventListener('click', openDialog, false);
 	}
 
-	dialog.querySelector('dialog#app-download .close').addEventListener('click', function() {
-		dialog.close();
-	});
+	dialog.querySelector('.close').addEventListener('click', closeDialog, false);
 
 })();

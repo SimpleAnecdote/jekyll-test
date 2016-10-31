@@ -2,7 +2,7 @@
 	<ul>
 		{% for plan in site.data.pricing.plans %}
 		<li class="{{ plan.name }}">
-			<h2>{{ plan.label }}<img src="img/pricing/{{plan.name}}-icon.png"></h2>
+			<h2>{{ plan.label }}<img src="{{site.cdnurl}}/img/pricing/{{plan.name}}-icon.png"></h2>
 			<div>
 				<p class="price-qualifier">{{ plan.qualifier }}</p>
 				<ul class="price">

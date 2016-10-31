@@ -95,10 +95,10 @@
 			img { display: none; }
 			h2 span { display: inline; }
 			p { max-width: 540px; }
-			&.zero  { background-image: url(../img/how-it-works/0.png); height: 400px; }
-			&.one   { background-image: url(../img/how-it-works/1.png); }
-			&.two   { background-image: url(../img/how-it-works/2.png); }
-			&.three { background-image: url(../img/how-it-works/3.png); }
+			&.zero  { background-image: url(#{$cdnurl}/img/how-it-works/0.png); height: 400px; }
+			&.one   { background-image: url(#{$cdnurl}/img/how-it-works/1.png); }
+			&.two   { background-image: url(#{$cdnurl}/img/how-it-works/2.png); }
+			&.three { background-image: url(#{$cdnurl}/img/how-it-works/3.png); }
 		}
 	}
 

@@ -20,14 +20,14 @@ description: Haystack is your new business card. Haystack stores and updates the
 	</div>
 
 	<div class="feature-bubbles">
-		<img src="img/screens.png">
+		<img src="{{site.cdnurl}}/img/screens.png">
 		{% markdown home/difference.md %}
 	</div>
 
 	<div class="feature-bubbles-aside">
 		<div>
 			<div class="phone">
-				<img src="img/aside.png">
+				<img src="{{site.cdnurl}}/img/aside.png">
 			</div>
 			<div class="features">
 				{% markdown home/benefits.md %}
@@ -53,7 +53,7 @@ description: Haystack is your new business card. Haystack stores and updates the
 
 	<div class="testimonials">
 		{% for testimonial in site.data.homepage-testimonials.testimonials %}
-			<p><img src="{{testimonial.avatarUrl}}"></p>
+			<p><img src="{{site.cdnurl}}/img/testimonials/{{testimonial.avatarUrl}}"></p>
 			<blockquote>
 				<p>{{testimonial.quote}}</p>
 			</blockquote>

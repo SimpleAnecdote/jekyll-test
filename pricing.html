@@ -27,7 +27,7 @@ description: Haystack is your new business card. Haystack stores and updates the
 
 	<div class="testimonials">
 		{% for testimonial in site.data.homepage-testimonials.testimonials %}
-			<p><img src="{{testimonial.avatarUrl}}"></p>
+			<p><img src="{{site.cdnurl}}/img/testimonials/{{testimonial.avatarUrl}}"></p>
 			<blockquote>
 				<p>{{testimonial.quote}}</p>
 			</blockquote>

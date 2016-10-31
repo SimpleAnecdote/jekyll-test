@@ -7,6 +7,9 @@
 			<a href="{{site.data.links.app_download_android}}&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dabout"><img src="img/google-play.svg"></a>
 		</div>
 	</div>
+	<button class="mdl-button mdl-js-button mdl-button--icon close">
+		<i class="material-icons">close</i>
+	</button>
 </dialog>
 
 <dialog id="select-num-users" class="mdl-dialog">
@@ -16,4 +19,7 @@
 		<a class="mdl-button" href="{{ tier.url }}">for {% if tier.multipleusers == true %}up to {% endif %}{{tier.numofusers}} user{% if tier.multipleusers == true %}s{% endif %} (${{tier.price}})</a>
 		{% endfor %}
 	</div>
+	<button class="mdl-button mdl-js-button mdl-button--icon close">
+		<i class="material-icons">close</i>
+	</button>
 </dialog>

@@ -47,6 +47,18 @@ dialog[open] {
 	transform: translateY(-50%)!important;
 }
 
+dialog + .backdrop {
+	background-color: rgba(0, 0, 0, 0.26);
+}
+
+dialog .close {
+	top: 0;
+	right: 0;
+	position: absolute;
+	margin: 8px;
+	i { opacity: 0.26; }
+}
+
 @mixin flex-center($direction: column) {
 	display: -ms-flexbox;
 	display: -webkit-flex;

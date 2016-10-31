@@ -45,6 +45,9 @@ dialog[open] {
 	position: fixed;
 	top: 50%!important;
 	transform: translateY(-50%)!important;
+	overflow-y: auto;
+	max-height: 85%;
+	max-width: 85%;
 }
 
 dialog + .backdrop {

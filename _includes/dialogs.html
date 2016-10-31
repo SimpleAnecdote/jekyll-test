@@ -3,8 +3,8 @@
 	<div class="mdl-dialog__content">
 		<p>Download our free app</p>
 		<div class="app-store-links">
-			<a href="{{site.data.links.app_download_ios}}"><img src="img/apple.svg"></a>
-			<a href="{{site.data.links.app_download_android}}&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dabout"><img src="img/google-play.svg"></a>
+			<a href="{{site.data.links.app_download_ios}}" target="_blank"><img src="img/apple.svg"></a>
+			<a href="{{site.data.links.app_download_android}}&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dabout" target="_blank"><img src="img/google-play.svg"></a>
 		</div>
 	</div>
 	<button class="mdl-button mdl-js-button mdl-button--icon close">
@@ -16,7 +16,14 @@
 	<h4 class="mdl-dialog__title">How many Haystack cards would you like?</h4>
 	<div class="mdl-dialog__content">
 		{% for tier in site.data.pricing.tiers %}
-		<a class="mdl-button" href="{{ tier.url }}">for {% if tier.multipleusers == true %}up to {% endif %}{{tier.numofusers}} user{% if tier.multipleusers == true %}s{% endif %} (${{tier.price}})</a>
+		<a class="mdl-button" href="{{ tier.url }}">
+			<div>
+				<span class="price-qualifier">For {% if tier.multipleusers == true %}up to {% endif %}</span>
+				<span class="num-users">{{tier.numofusers}} user{% if tier.multipleusers == true %}s{% endif %}</span>
+			</div>
+			<span class="price">${{tier.price}}<span>/month</span></span>
+			<i class="material-icons">chevron_right</i>
+		 </a>
 		{% endfor %}
 	</div>
 	<button class="mdl-button mdl-js-button mdl-button--icon close">

@@ -116,3 +116,87 @@
 	registerDialog('select-num-users');
 
 })();
+
+// Accordion
+// Converts the HTML structure:
+// "h2 + p + p + h2 + p + p",
+// as created by kramdown, into
+// "label(>h2) + input[radio] + div(>p)",
+// so that it can be styled to act as an accordion while
+// maintaining kramdown compatibility for editing.
+(function () {
+
+	var titleTag = 'h2';
+	var contentTag = 'P';
+
+	function getSiblings(el) {
+
+		// If there is a next element, and it is a P tag...
+		if (el.nextElementSibling !== null && el.nextElementSibling.tagName === contentTag) {
+
+			// Create a list
+			var thisElementSibling = [];
+
+			// Add the first sibling to the list
+			thisElementSibling.push(el.nextElementSibling);
+
+			// Get the first sibling's siblings
+			var followingElementSiblings = getSiblings(el.nextElementSibling);
+
+			// Add the two lists of siblings together
+			var elementSiblings = thisElementSibling.concat(followingElementSiblings);
+
+			// Return the list of siblings
+			return elementSiblings;
+
+
+		} else {
+			return [];
+		}
+	}
+
+	var targetArea = document.querySelector('.text-content.accordion');
+
+	if (targetArea !== null) {
+
+		var titleElements = targetArea.querySelectorAll(titleTag);
+
+		for (var i = 0; i < titleElements.length; i++) {
+
+			var titleElement = titleElements[i];
+
+			// Get a list of the content elements
+			var contentElements = getSiblings(titleElements[i]);
+
+			// Create a div after the title
+			var contentWrapper = document.createElement('div');
+			titleElement.parentNode.insertBefore(contentWrapper, titleElement.nextSibling);
+
+			// Create a radio element
+			var radio = document.createElement('input');
+			radio.setAttribute('type' , 'radio');
+			radio.setAttribute('name' , 'accordion');
+			radio.setAttribute('id'   , 'accordion' + i);
+			radio.setAttribute('value', i);
+			titleElement.parentNode.insertBefore(radio, titleElement.nextSibling);
+
+			// Move the content into the contentWrapper
+			for (var j = 0; j < contentElements.length; j++) {
+				contentWrapper.appendChild(contentElements[j]);
+			}
+
+			// Make the title into a label for the radio
+			var labelTitle = document.createElement('label');
+			labelTitle.setAttribute('for', 'accordion' + i);
+			titleElement.parentNode.insertBefore(labelTitle, titleElement.nextSibling);
+			labelTitle.appendChild(titleElement);
+
+
+			// console.log(titleElement);
+			// console.log(contentElements);
+			// console.log(contentWrapper);
+
+		}
+	}
+
+})();

@@ -43,4 +43,23 @@
 		max-width: 100%;
 	}
 
+	// 
+	// ACCORDIAN
+	// 
+
+	// Hide radio
+	input[type=radio] {
+		display: none;
+	}
+
+	// Hide unchecked items
+	input[type=radio] + div {
+		display: none;
+	}
+
+	// Show the checked item
+	input[type=radio]:checked + div {
+		display: block;
+	}
+
 }

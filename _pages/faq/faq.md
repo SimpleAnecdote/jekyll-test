@@ -1,8 +1,20 @@
+
+<!-- Special settings to make accordian work -->
+{::options parse_block_html="true" /}
+<!-- End of settings -->
+
+
 # Frequently Asked Questions
 
 
 
-## Who is it for?
+## <label for="accordian-item-1">Who is it for?</label>
+
+{::nomarkdown}
+<input type="radio" name="accordian" id="accordian-item-1" value="1">
+{:/}
+
+<div>
 
 If you need a business card then Haystack is for you - no matter how small or big your business is.
 
@@ -11,6 +23,9 @@ Haystack is meant to replace your need for paper so you would never forget your 
 Going digital also means getting smarter about the way you manage your contacts, updating your personal details and tracking your results. 
 
 And...Haystack cards are made to stand out, so if you want to impress the people you meet and put a face to your details - you came to the right place! [Click here](/) and check it out for yourself.
+
+</div>
+
 
 
 

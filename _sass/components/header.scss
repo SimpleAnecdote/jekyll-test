@@ -55,9 +55,10 @@ header {
 	.mdl-navigation {
 		position: absolute;
 		right: $nav-padding;
+		top: 4px;
 	}
 	@media (max-width: $header-type-breakpoint) {
-		.mdl-navigation { right: 8px; }
+		.mdl-navigation { right: 8px; top: 0px; }
 		.mdl-layout__header-row .mdl-navigation__link:not(.never-hide) {
 			display: none;
 		}

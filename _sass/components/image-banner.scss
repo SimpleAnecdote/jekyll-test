@@ -48,11 +48,15 @@
 	> div.image-banner-content {
 		@include flex-center(column);
 		margin-top: 24px;
+		> a {
+			margin-bottom: 8px;
+		}
 		@media #{$header-change} {
 			margin-top: 48px;
 			@include flex-center(row);
-			a {
-				margin-right: 40px;
+			> a {
+				margin-bottom: 0;
+				margin-right: 24px;
 			}
 		}
 	}
@@ -78,27 +82,27 @@
 			height: auto!important;
 			width: auto!important;
 		}
-		a.play-video {
-			@include flex-center(row);
+		@extend .mdl-button;
+		@extend .mdl-button--primary;
+		border: 1px solid white;
+		padding-left: 8px;
+		a {
+			text-transform: none;
 			text-decoration: none;
-			text-transform: uppercase;
-			height: 3em;
-			font-size: 14px;
-			margin-top: 1em;
-			padding: 0;
 			color: white;
-			i {
-				margin-right: 8px;
-				font-size: 2em;
-			}
-			@media #{$header-change} {				
-				font-size: 20px;
-				margin-top: 0;
+			i { font-size: 2em; }
+		}
+		@media #{$header-change} {
+			height: 72px;
+			padding: 0 24px 0 16px;
+			border-radius: 4px;
+			a {
+				line-height: 72px;
+				font-size: 24px;
+				font-weight: 400;
 			}
 		}
-		&:hover {
-			opacity: 0.75;
-		}
+
 	}
 
 }

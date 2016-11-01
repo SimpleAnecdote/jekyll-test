@@ -121,7 +121,7 @@
 // Converts the HTML structure:
 // "h2 + p + p + h2 + p + p",
 // as created by kramdown, into
-// "label(>h2) + input[radio] + div(>p)",
+// "label(>h2) + input[checkbox] + div(>p)",
 // so that it can be styled to act as an accordion while
 // maintaining kramdown compatibility for editing.
 (function () {
@@ -172,20 +172,20 @@
 			var contentWrapper = document.createElement('div');
 			titleElement.parentNode.insertBefore(contentWrapper, titleElement.nextSibling);
 
-			// Create a radio element
-			var radio = document.createElement('input');
-			radio.setAttribute('type' , 'radio');
-			radio.setAttribute('name' , 'accordion');
-			radio.setAttribute('id'   , 'accordion' + i);
-			radio.setAttribute('value', i);
-			titleElement.parentNode.insertBefore(radio, titleElement.nextSibling);
+			// Create a checkbox element
+			var checkbox = document.createElement('input');
+			checkbox.setAttribute('type' , 'checkbox');
+			checkbox.setAttribute('name' , 'accordion');
+			checkbox.setAttribute('id'   , 'accordion' + i);
+			checkbox.setAttribute('value', i);
+			titleElement.parentNode.insertBefore(checkbox, titleElement);
 
 			// Move the content into the contentWrapper
 			for (var j = 0; j < contentElements.length; j++) {
 				contentWrapper.appendChild(contentElements[j]);
 			}
 
-			// Make the title into a label for the radio
+			// Make the title into a label for the checkbox
 			var labelTitle = document.createElement('label');
 			labelTitle.setAttribute('for', 'accordion' + i);
 			titleElement.parentNode.insertBefore(labelTitle, titleElement.nextSibling);

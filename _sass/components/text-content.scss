@@ -42,24 +42,88 @@
 	p > img {
 		max-width: 100%;
 	}
+}
 
-	// 
-	// ACCORDIAN
-	// 
+// 
+// ACCORDIAN
+//
 
-	// Hide radio
-	input[type=radio] {
-		display: none;
-	}
+.text-content.accordion {
 
-	// Hide unchecked items
-	input[type=radio] + div {
+	$border-radius: 4px;
+	$padding: 24px;
+
+	// Hide checkbox
+	input[type=checkbox] {
 		display: none;
 	}
 
 	// Show the checked item
-	input[type=radio]:checked + div {
-		display: block;
+	input[type=checkbox] + label + div {
+		padding: $padding;
+		border-radius: $border-radius;
+		margin-top: -4px;
+		transition: padding 0.25s;
+		transition-timing-function: ease-in-out;
+		overflow-y: hidden;
+		border: 1px solid $hs-primary-500;
+		p {
+			transition: opacity 0.25s, line-height 0.25s, margin-bottom 0.25s;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	// Hide unchecked items
+	input[type=checkbox]:not(:checked) + label + div {
+		padding-top: 0;
+		padding-bottom: 0;
+		p {
+			margin-bottom: 0px;
+			line-height: 0px;
+			opacity: 0;
+		}
+	}
+
+	h1 {
+		margin-bottom: 40px;
+		@media #{$gt-xs} {
+			margin-bottom: 96px;
+		}
+	}
+
+	h2 {
+		padding: $padding;
+		padding-right: $padding * 2.5;
+		background-color: $hs-primary-500;
+		color: white;
+		margin-bottom: 0;
+		margin-top: 16px;
+		border-radius: $border-radius;
+		font-size: 18px;
+		line-height: 1.25em;
+		cursor: pointer;
+		position: relative;
+		&:after {
+			@extend .material-icons;
+			color: white;
+			position: absolute;
+			top: $padding;
+			right: $padding;
+		}
+	}
+
+	input[type=checkbox]:not(:checked) + label h2:after {
+		content: 'expand_more';
+	}
+
+	input[type=checkbox] + label h2:after {
+		content: 'expand_less';
+	}
+
+	label + div {
+
 	}
 
 }

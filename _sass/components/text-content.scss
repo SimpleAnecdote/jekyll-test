@@ -52,6 +52,7 @@
 
 	$border-radius: 4px;
 	$padding: 24px;
+	$border-color: $hs-primary-100;
 
 	// Hide checkbox
 	input[type=checkbox] {
@@ -66,7 +67,7 @@
 		transition: padding 0.25s;
 		transition-timing-function: ease-in-out;
 		overflow-y: hidden;
-		border: 1px solid $hs-primary-500;
+		border: 1px solid $border-color;
 		p {
 			transition: opacity 0.25s, line-height 0.25s, margin-bottom 0.25s;
 			&:last-child {
@@ -111,6 +112,17 @@
 			position: absolute;
 			top: $padding;
 			right: $padding;
+		}
+	}
+
+	input[type=checkbox]:checked + label h2 {
+		background-color: white;
+		border: 1px solid $border-color;
+		border-bottom: none;
+		padding-bottom: 0;
+		color: $hs-blue-grey-900;
+		&:after {
+			color: $hs-blue-grey-900;
 		}
 	}
 

@@ -6,7 +6,7 @@
 
 If you need a business card then Haystack is for you - no matter how small or big your business is.
 
-Haystack is meant to replace your need for paper so you would never forget your card or lose other people cards again.
+Haystack is meant to replace your need for paper so you will never forget your card or lose other people's cards again.
 
 Going digital also means getting smarter about the way you manage your contacts, updating your personal details and tracking your results. 
 
@@ -30,11 +30,11 @@ You can share it with anyone!
 
 Doesn't matter what phone they have, whether they have the app, or what shoes they are wearing - your Haystack card will just magically work.
 
-Ps. the recipients would not be required to sign up to anything, or download an app. Just your contacts - front and center!
+Ps. the recipients would not be required to sign up to anything, or download an app. Just your contact details - front and center!
 
 
 
-## How Can I share my card?
+## How can I share my card?
 
 [Download the app](#app-download-open), create your card in seconds, and share it via email, SMS, Whatsapp and even Slack, Trello, Airdrop etc. - Cool ha?
 
@@ -63,8 +63,8 @@ While other platforms use advertising to generate revenue, Haystack does not. In
 
 ## What's the difference between Premium and Free accounts?
 
-With our Premium account you have an access to an admin dashboard where you have more options to edit the card templates for your brand/business. 
-You also have access to card analytics, email signature, CRM exports, onboarding help and premium support. Visit our [pricing page](/pricing) to learn more about the different plans.
+With our Premium account you have an access to a premium dashboard where you have more options to edit the card templates for your brand/business. 
+You also have access to card analytics, email signatures, CRM export, onboarding help and premium support. Visit our [pricing page](/pricing) to learn more about the different plans.
 
 
 

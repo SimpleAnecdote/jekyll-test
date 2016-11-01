@@ -1,13 +1,5 @@
 .feature-bubbles {
 
-	> img:first-child {
-		width: 60%;
-		display: none;
-		@media #{$gt-xs} {
-			display: block;
-		}
-	}
-
 	text-align: center;
 	padding: 96px $mobile-gutter;
 	display: flex;
@@ -17,9 +9,30 @@
 	align-content: stretch;
 	align-items: center;
 
+	> img:first-child {
+		width: 60%;
+		display: none;
+		@media #{$gt-xs} {
+			display: block;
+		}
+	}
+
+	> img:first-child +  h1 {
+		@media #{$gt-xs} {
+			margin-top: 1em;
+		}
+	}
+
 	h1 {
 		@include typo-display-1;
 		color: $hs-blue-grey-200;
+		line-height: 1.25em;
+		font-size: 40px;
+		@media #{$gt-xs} {
+			font-size: 56px;
+			margin-bottom: 2em;
+		}
+		font-weight: 300;
 	}
 
 	ul {

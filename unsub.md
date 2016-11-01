@@ -2,6 +2,7 @@
 layout: text-content
 title: Unsubscribed | Haystack
 description: Unsubscribed from Haystack.
+priority: 0.0
 ---
 
 ## You have successfully unsubscribed from Haystack.

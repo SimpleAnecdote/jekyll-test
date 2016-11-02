@@ -8,8 +8,13 @@ priority: 1.0
 
 	<div class="image-banner">
 		<h1>Smart Digital Business Cards Designed to Look Awesome.</h1>
-		<div class="image-banner-content">
-			<a id="start-branding" href="#">See what yours could look like</a>
+		<div class="image-banner-content branding-form-wrapper">
+			<input type="checkbox" name="email-button" id="email-button" value="value">
+			<label for="email-button" id="start-branding" class="primary-cta">See what yours could look like</label>
+			<form action="http://192.168.0.192:8080" id="branding-form">
+				<input type="email" id="card-email" name="email" placeholder="Enter your work email here...">
+				<input type="submit" value="Go">
+			</form>
 			<div class="video-link">
 				<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 				<div class="hs-wistia-container wistia_embed wistia_async_5bbw8l7kl5 popover=true popoverContent=html"

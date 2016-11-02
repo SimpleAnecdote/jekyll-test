@@ -205,34 +205,45 @@
 // Branding tool
 (function () {
 
-	var brandingButtonId = 'start-branding';
-	var brandingInputHtml =
-		'<form action="http://192.168.0.192:8080" class="branding-input">' +
-			'<input type="email" name="email" placeholder="Enter your work email here...">' +
-			'<input type="submit" value="Go">' +
-		'</form>';
-
-	function replace(replaced, replacer) {
-
-		replaced.parentNode.replaceChild(replacer, replaced);
-	}
-
 	function createHtmlFromString(htmlString) {
 		var temp = document.createElement('div');
 		temp.innerHTML = htmlString;
-		return temp.firstElementChild;
+		return temp.firstChild;
 	}
 
-	var brandingButton = document.getElementById(brandingButtonId);
-
-	if (brandingButton !== null) {
-
-		var brandingInput = createHtmlFromString(brandingInputHtml);
-
-		brandingButton.addEventListener('click', function() {
-			replace(brandingButton, brandingInput);
-		}, false);
-
+	/**
+	 * Checks is an email address is valid
+	 * @param  {string} - email address input by the user
+	 * @return {bool} - true if valid, false if invalid
+	 */
+	function emailValid(email) { 
+		var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
 	}
+
+	var brandingForm = document.getElementById('branding-form');
+
+	brandingForm.addEventListener('submit', function(event) {
+
+		event.preventDefault();
+
+		var email = document.getElementById('card-email').value;
+
+		if (emailValid(email)) {
+			console.log('Submitting...');
+			brandingForm.submit();
+			return true;
+		} else {
+			// showInvalidEmailMessage(email);
+			var message = '\'' + email + '\' is not a valid email address.';
+			var messageHtml = '<span>' + message + '</span>';
+			var messageElement = createHtmlFromString(messageHtml);
+			brandingForm.parentNode.insertBefore(messageElement, brandingForm.nextSibling);
+			return false;
+		}
+
+
+	}, false);
+
 
 })();

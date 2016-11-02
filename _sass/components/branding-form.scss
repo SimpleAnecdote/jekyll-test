@@ -1,0 +1,65 @@
+.branding-form-wrapper {
+
+	z-index: 1;
+	position: relative;
+
+	// Hide checkbox
+	input[type=checkbox] {
+		// display: none;
+	}
+
+	#start-branding {
+		opacity: 1;
+		width: 350px;
+		min-width: 0;
+		transition: opacity 1s, padding 1s, width 1s, color 0.2s;
+		left: 0;
+		position: absolute;
+		height: 72px;
+	}
+
+	#branding-form {
+		height: 72px;
+		background-color: white;
+		border: none;
+		width: 350px;
+		border-radius: 8px;
+		overflow: hidden;
+		input[type=email] {
+			box-sizing: border-box;
+			outline: none;
+			padding: 16px;
+			height: 100%;
+			margin: 0;
+			border: 0;
+		}
+		input[type=submit] {
+			width: 96px;
+			height: 100%;
+		}
+	}
+
+	.video-link {
+		opacity: 1;
+		transition: opacity 1s;
+	}
+
+}
+
+.branding-form-wrapper > input[type=checkbox]:checked {
+
+	& ~ #start-branding {
+		opacity: 0;
+		padding: 0;
+		width: 0px;
+		color: $hs-primary-500;
+	}
+
+	& ~ #branding-form {
+
+	}
+
+	& ~ .video-link {
+		opacity: 0;
+	}
+}

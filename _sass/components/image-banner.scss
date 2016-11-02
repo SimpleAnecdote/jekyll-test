@@ -61,7 +61,7 @@
 		}
 	}
 
-	> a, > div > a {
+	> a, .primary-cta {
 		@extend .hs-button-raised-primary;
 		color: white;
 		text-transform: none;

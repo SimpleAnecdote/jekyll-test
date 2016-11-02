@@ -200,3 +200,39 @@
 	}
 
 })();
+
+
+// Branding tool
+(function () {
+
+	var brandingButtonId = 'start-branding';
+	var brandingInputHtml =
+		'<form action="http://192.168.0.192:8080" class="branding-input">' +
+			'<input type="email" name="email" placeholder="Enter your work email here...">' +
+			'<input type="submit" value="Go">' +
+		'</form>';
+
+	function replace(replaced, replacer) {
+
+		replaced.parentNode.replaceChild(replacer, replaced);
+	}
+
+	function createHtmlFromString(htmlString) {
+		var temp = document.createElement('div');
+		temp.innerHTML = htmlString;
+		return temp.firstElementChild;
+	}
+
+	var brandingButton = document.getElementById(brandingButtonId);
+
+	if (brandingButton !== null) {
+
+		var brandingInput = createHtmlFromString(brandingInputHtml);
+
+		brandingButton.addEventListener('click', function() {
+			replace(brandingButton, brandingInput);
+		}, false);
+
+	}
+
+})();

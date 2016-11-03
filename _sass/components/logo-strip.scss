@@ -1,8 +1,16 @@
 .logo-strip {
 
-	background-color: white;
-	padding: 96px 16px;
+	background-color: $hs-blue-grey-50;	
+
 	text-align: center;
+
+	&.thin {
+		padding: 40px 16px;
+	}
+
+	&.thick {
+		padding: 96px 16px;
+	}
 
 	&.dark {
 		background-color: $hs-primary-900;		
@@ -42,9 +50,7 @@
 
 			transition: background-color 0.25s;
 
-			opacity: 0.75;
-
-			&:hover { opacity: 0.4; }
+			&:hover { opacity: 0.54; }
 		}
 
 		a.logo-wrapper > div.logo {

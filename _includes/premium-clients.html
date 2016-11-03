@@ -1,15 +1,12 @@
-<div id="premium-clients" class="logo-strip wrapped">
+<div class="logos">
 
-	<div class="logos">
-
-		{% for client in site.data.premium-clients.premium-clients %}
-		<a id="{{ client.label }}" class="logo-wrapper" target="_blank" href="{{ client.url }}">
-			<div class="logo">
-				<img class="white" src="{{site.cdnurl}}/img/customer-logos/{{ client.label }}-grey.png"></img>
-			</div>
-		</a>
-		{% endfor %}
-
-	</div>
+	{% for client in site.data.premium-clients.premium-clients %}
+	<a id="{{ client.label }}" class="logo-wrapper" target="_blank" href="{{ client.url }}">
+		<div class="logo">
+			<img class="grey" src="{{site.cdnurl}}/img/customer-logos/{{ client.label }}-grey.png"></img>
+			<img class="white" src="{{site.cdnurl}}/img/customer-logos/{{ client.label }}-white.png"></img>
+		</div>
+	</a>
+	{% endfor %}
 
 </div>

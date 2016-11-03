@@ -4,6 +4,11 @@
 
 	text-align: center;
 
+	&.very-thin {
+		padding: 24px 16px;
+		@media #{$gt-sm} { padding: 0; }
+	}
+
 	&.thin {
 		padding: 40px 16px;
 	}
@@ -12,9 +17,15 @@
 		padding: 96px 16px;
 	}
 
+	.logo img.white { display: none; }
+	.logo img.grey { display: inline-block; }
+
 	&.dark {
-		background-color: $hs-primary-900;		
+		background-color: #00727B;
+		.logo img.white { display: inline-block; opacity: 0.54; }
+		.logo img.grey { display: none; }
 	}
+
 
 	// Wrapped denotes a size where logos are
 	// next to each other horizontally on small screens
@@ -61,7 +72,6 @@
 			img {
 				max-height: 100%;
 				max-width: 100%;
-				display: inline-block;
 				vertical-align: middle;
 			}
 		}

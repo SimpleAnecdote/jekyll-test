@@ -24,8 +24,6 @@ priority: 0.9
 		<p>Visit our complete <a href="/faq">FAQ page</a> or <a href="{{site.data.links.contact_us_sales}}">contact us</a></p>
 	</div>
 
-	{% include premium-clients.html %}
-
 	<div class="testimonials">
 		{% for testimonial in site.data.homepage-testimonials.testimonials %}
 			<p><img src="{{site.cdnurl}}/img/testimonials/{{testimonial.avatarUrl}}"></p>
@@ -34,6 +32,10 @@ priority: 0.9
 			</blockquote>
 			<span>{{testimonial.citation}}</span>
 		{% endfor %}
+	</div>
+	
+	<div id="premium-clients" class="logo-strip wrapped dark very-thin">
+		{% include premium-clients.html %}
 	</div>
 
 </div>

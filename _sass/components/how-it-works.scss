@@ -3,7 +3,7 @@
 	border-top: 1px solid $hs-blue-grey-50;
 
 	$estimated-content-height: 200px;
-	$section-height: 80vh;
+	$section-height: 100vh;
 	$content-width: 1200px;
 	$layout-change-point: 1200px;
 	$background-image-padding: 32px;
@@ -51,54 +51,93 @@
 		}
 
 		p {
-			font-size: 16px;
+			font-size: 14px;
 			color: $hs-blue-grey-500;
 			font-weight: 400;
 		}
 
-		&:first-child {	padding-top:    $section-vertical-padding-small * 2; }
-		&:last-child  { padding-bottom: $section-vertical-padding-small * 2; }
 	}
 
 	// Glorious fixed background image
 	section {
-		background-attachment: fixed;
 		background-repeat: no-repeat;
-		background-position: right ($section-side-padding-big - $background-image-padding) center;
-		background-size: 512px;
-		&.zero  { background-color: #F2F2F2; }
-		&.one   { background-color: #F2F2F2; padding-top: 0; }
-		&.two   { }
-		&.three { background-color: #F2F2F2; }
-		@media (min-width: $content-width + ($section-side-padding-big * 2)) {
-			background-position: right calc((100vw - #{$content-width}) / 2 - #{$background-image-padding}) center;			
+		&.zero {
+			padding-bottom: 0;
+			background-color: $hs-blue-grey-900;
+			h1 { color: white; }
 		}
-		@media (min-width: 1336px) {
-			background-size: auto;
+		&.one {
+			background-color: $hs-blue-grey-900;
+			h2 span { color: $hs-primary-500; }
+			h2 { color: white; }
+			p { color: $hs-blue-grey-200; }
+		}
+		&.two {
+			background-color: transparent;
+			background-image: url(#{$cdnurl}/img/how-it-works/background.jpg);
+			background-size: cover;
+			h2 span { color: $hs-primary-500; }
+			h2 { color: white; }
+			p { color: white; opacity: 0.75; }
+		}
+		&.three {
+			background-color: $hs-primary-800;
+			h2 span { color: $hs-blue-grey-900; }
+			h2 { color: white; }
+			p { color: $hs-primary-100; }
 		}
 	}
 
 	@media #{$gt-xs} {
+		background-attachment: fixed;
+		background-size: 512px;
 		section {
 			padding: $section-vertical-padding-big $section-side-padding-big;
 			img {
 				width: 512px;
 				margin-bottom: 48px;
 			}
+			p {
+				font-size: 16px;
+			}
 		}
 	}
 
 	@media (min-width: $layout-change-point) {
+		background-image: url(#{$cdnurl}/img/how-it-works/background.jpg);
+		background-size: cover;
 		section {
+			background-attachment: fixed;			
+			background-position: right ($section-side-padding-big - $background-image-padding) center;
 			height: $section-height;
 			text-align: left;
 			img { display: none; }
 			h2 span { display: inline; }
 			p { max-width: 540px; }
-			&.zero  { background-image: url(#{$cdnurl}/img/how-it-works/0.png); height: 400px; }
-			&.one   { background-image: url(#{$cdnurl}/img/how-it-works/1.png); }
-			&.two   { background-image: url(#{$cdnurl}/img/how-it-works/2.png); }
-			&.three { background-image: url(#{$cdnurl}/img/how-it-works/3.png); }
+			&.zero {
+				background-image: url(#{$cdnurl}/img/how-it-works/0.png);
+				height: 400px;
+				padding-bottom: $section-vertical-padding-big;
+				background-color: $hs-blue-grey-700;
+			}
+			&.one {
+				background-image: url(#{$cdnurl}/img/how-it-works/1.png);
+			}
+			&.two {
+				background-image: url(#{$cdnurl}/img/how-it-works/2.png);
+				background-color: transparent;
+				background-size: auto;
+			}
+			&.three {
+				background-image: url(#{$cdnurl}/img/how-it-works/3.png);
+			}
+		}
+	}
+
+	@media (min-width: $content-width + ($section-side-padding-big * 2)) {
+		section {
+			background-position: right calc((100vw - #{$content-width}) / 2 - #{$background-image-padding}) center;			
+			background-size: auto;				
 		}
 	}
 

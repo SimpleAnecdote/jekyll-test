@@ -2,20 +2,26 @@
 $submit-button-width: 96px;
 $animation-speed: 0.5s;
 
-#branding-form {
-	@include flex-left();
-	flex-direction: row;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	height: 72px;
-	background-color: white;
-	border: none;
-	border-radius: 8px;
-	overflow: hidden;
-	transition: width $animation-speed;
-	transition-timing-function: cubic-bezier(.2,.75,.5,1);		
+.branding-form {
+
 	position: relative;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+	.input-area {
+		@include flex-left();
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		background-color: white;
+		height: 72px;
+		border: none;
+		border-radius: 8px;
+		overflow: hidden;
+		transition: width $animation-speed;
+		transition-timing-function: cubic-bezier(.2,.75,.5,1);		
+		position: relative;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	}
+	
 	input[type=email] {
 		box-sizing: border-box;
 		font-size: 24px;
@@ -44,8 +50,16 @@ $animation-speed: 0.5s;
 		cursor: pointer;
 	}
 
-	#reveal-branding-form {
+	.reveal-branding-form {
 		display: none;
+	}
+
+	.error-message {
+		position: absolute;
+		bottom: -56px;
+		text-align: center;
+		left: 0;
+		right: 0;
 	}
 }
 
@@ -59,11 +73,14 @@ $animation-speed: 0.5s;
 		display: none;
 	}
 
-	#branding-form {
-		width: 370px;
-		margin-right: 16px;
-		
-		#reveal-branding-form {
+	.branding-form {
+
+		.input-area {
+			width: 370px;
+			margin-right: 16px;			
+		}
+
+		.reveal-branding-form {
 			display: block;
 			opacity: 1;
 			width: 100%;
@@ -79,6 +96,12 @@ $animation-speed: 0.5s;
 			position: absolute;
 			height: 72px;
 		}
+
+		.error-message {
+			color: white;
+			right: initial;
+			text-align: left;
+		}
 	}
 
 
@@ -91,14 +114,14 @@ $animation-speed: 0.5s;
 
 .branding-form-wrapper > input[type=checkbox]:checked {
 
-	& ~ #branding-form > #reveal-branding-form {
+	& ~ .branding-form .reveal-branding-form {
 		opacity: 0;
 		padding: 0;
 		width: 0;
 		color: $hs-primary-500;
 	}
 
-	& ~ #branding-form {
+	& ~ .branding-form .input-area {
 		width: 512px;
 	}
 

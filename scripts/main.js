@@ -206,12 +206,6 @@
 // Branding tool
 (function () {
 
-	function createHtmlFromString(htmlString) {
-		var temp = document.createElement('div');
-		temp.innerHTML = htmlString;
-		return temp.firstChild;
-	}
-
 	/**
 	 * Checks is an email address is valid
 	 * @param  {string} - email address input by the user
@@ -222,35 +216,42 @@
 		return re.test(email);
 	}
 
-	var brandingForm = document.getElementById('branding-form');
-	var showBrandingForm = document.getElementById('reveal-branding-form');
-	var emailField = document.getElementById('card-email');
+	// For all branding forms on a page...
+	var brandingForms = document.querySelectorAll('.branding-form');
 
-	showBrandingForm.addEventListener('click', function(event){
-		emailField.focus();
-	});
+	for (var i = 0; i < brandingForms.length; i++) {
 
-	brandingForm.addEventListener('submit', function(event) {
+		// When clicking the 'reveal-branding-form' button,
+		// focus the input field (which, in this case, is the next element).
+		brandingForms[i].querySelector('.reveal-branding-form').addEventListener('click', function(event){
+			this.nextElementSibling.focus();
+		});
 
-		event.preventDefault();
+		// When the user tries to submit...
+		brandingForms[i].addEventListener('submit', function(event) {
 
-		var email = emailField.value;
+			// Prevent the submission
+			event.preventDefault();
 
-		if (emailValid(email)) {
-			console.log('Submitting...');
-			brandingForm.submit();
-			return true;
-		} else {
-			// showInvalidEmailMessage(email);
-			var message = '\'' + email + '\' is not a valid email address.';
-			var messageHtml = '<span>' + message + '</span>';
-			var messageElement = createHtmlFromString(messageHtml);
-			brandingForm.parentNode.insertBefore(messageElement, brandingForm.nextSibling);
-			return false;
-		}
+			// Get the value of the email
+			var email = this.querySelector('.card-email').value;
 
+			// If the email is valid, submit it.
+			if (emailValid(email)) {
+				this.submit();
+				return true;
 
-	}, false);
+			// If email is invalid,
+			// display an error message in the 'error-message' element.
+			} else {
+				var errorMessage = this.querySelector('.error-message');
+				var message = '\'' + email + '\' is not a valid email address.';
+				errorMessage.innerText = message;
+				return false;
+			}
 
+		}, false);
+
+	}
 
 })();

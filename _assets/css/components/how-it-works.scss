@@ -74,7 +74,7 @@
 		}
 		&.two {
 			background-color: transparent;
-			background-image: url(#{$cdnurl}/img/how-it-works/background.jpg);
+			background-image: url(image_path('how-it-works/background.jpg'));
 			background-size: cover;
 			h2 span { color: $hs-primary-500; }
 			h2 { color: white; }
@@ -104,7 +104,7 @@
 	}
 
 	@media (min-width: $layout-change-point) {
-		background-image: url(#{$cdnurl}/img/how-it-works/background.jpg);
+		background-image: url(image_path('how-it-works/background.jpg'));
 		background-size: cover;
 		section {
 			background-attachment: fixed;			
@@ -115,21 +115,21 @@
 			h2 span { display: inline; }
 			p { max-width: 540px; }
 			&.zero {
-				background-image: url(#{$cdnurl}/img/how-it-works/0.png);
+				background-image: url(image_path('how-it-works/0.png'));
 				height: 400px;
 				padding-bottom: $section-vertical-padding-big;
 				background-color: $hs-blue-grey-700;
 			}
 			&.one {
-				background-image: url(#{$cdnurl}/img/how-it-works/1.png);
+				background-image: url(image_path('how-it-works/1.png'));
 			}
 			&.two {
-				background-image: url(#{$cdnurl}/img/how-it-works/2.png);
+				background-image: url(image_path('how-it-works/2.png'));
 				background-color: transparent;
 				background-size: auto;
 			}
 			&.three {
-				background-image: url(#{$cdnurl}/img/how-it-works/3.png);
+				background-image: url(image_path('how-it-works/3.png'));
 			}
 		}
 	}

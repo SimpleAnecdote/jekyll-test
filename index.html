@@ -21,14 +21,14 @@ priority: 1.0
 	</div>
 
 	<div class="feature-bubbles">
-		<img src="{{site.cdnurl}}/img/screens.png">
+		{% img 'screens.png' %}
 		{% markdown home/difference.md %}
 	</div>
 
 	<div class="feature-bubbles-aside">
 		<div>
 			<div class="phone">
-				<img src="{{site.cdnurl}}/img/aside.png">
+				{% img 'aside.png' %}
 			</div>
 			<div class="features">
 				{% markdown home/benefits.md %}
@@ -54,7 +54,7 @@ priority: 1.0
 
 	<div class="testimonials">
 		{% for testimonial in site.data.homepage-testimonials.testimonials %}
-			<p><img src="{{site.cdnurl}}/img/testimonials/{{testimonial.avatarUrl}}"></p>
+			<p>{% img 'testimonials/{{testimonial.avatarUrl}}' %}</p>
 			<blockquote>
 				<p>{{testimonial.quote}}</p>
 			</blockquote>

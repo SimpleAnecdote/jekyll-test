@@ -3,7 +3,7 @@
 	{% for outlet in site.data.media-outlets.media-outlets %}
 	<a id="{{ outlet.name }}" class="logo-wrapper" target="_blank" href="{{ outlet.url }}">
 		<div class="logo">
-			<img class="grey" src="{{site.cdnurl}}/img/media-outlets/{{ outlet.name }}.png" alt="{{ outlet.label }}"></img>
+			{% img 'media-outlets/{{ outlet.name }}.png' alt:'{{ outlet.label }}' class:'grey' %}
 		</div>
 	</a>
 	{% endfor %}

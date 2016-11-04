@@ -114,6 +114,7 @@
 
 	registerDialog('app-download');
 	registerDialog('select-num-users');
+	registerDialog('branding-tool');
 
 })();
 
@@ -222,12 +223,18 @@
 	}
 
 	var brandingForm = document.getElementById('branding-form');
+	var showBrandingForm = document.getElementById('reveal-branding-form');
+	var emailField = document.getElementById('card-email');
+
+	showBrandingForm.addEventListener('click', function(event){
+		emailField.focus();
+	});
 
 	brandingForm.addEventListener('submit', function(event) {
 
 		event.preventDefault();
 
-		var email = document.getElementById('card-email').value;
+		var email = emailField.value;
 
 		if (emailValid(email)) {
 			console.log('Submitting...');

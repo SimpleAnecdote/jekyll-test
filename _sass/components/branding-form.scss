@@ -1,3 +1,7 @@
+
+$submit-button-width: 96px;
+$animation-speed: 0.5s;
+
 .branding-form-wrapper {
 
 	z-index: 1;
@@ -5,58 +9,88 @@
 
 	// Hide checkbox
 	input[type=checkbox] {
-		// display: none;
+		display: none;
 	}
 
-	#start-branding {
+	#reveal-branding-form {
 		opacity: 1;
-		width: 350px;
+		width: 100%;
+		box-sizing: border-box;
 		min-width: 0;
-		transition: opacity 1s, padding 1s, width 1s, color 0.2s;
-		left: 0;
+		transition:
+				opacity $animation-speed,
+				padding $animation-speed,
+				width $animation-speed,
+				color 0.1s;
+		transition-timing-function: cubic-bezier(.2,.75,.5,1);
+		right: 0;
 		position: absolute;
 		height: 72px;
 	}
 
 	#branding-form {
+		@include flex-left();
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
 		height: 72px;
 		background-color: white;
 		border: none;
-		width: 350px;
+		width: 370px;
 		border-radius: 8px;
 		overflow: hidden;
+		transition: width $animation-speed;
+		transition-timing-function: cubic-bezier(.2,.75,.5,1);		
+		position: relative;
+		margin-right: 16px;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 		input[type=email] {
 			box-sizing: border-box;
+			font-size: 24px;
+			font-family: inherit;
+			color: $hs-blue-grey-900;
 			outline: none;
-			padding: 16px;
+			padding: 16px 24px;
 			height: 100%;
 			margin: 0;
 			border: 0;
+			width: 0;
+			flex: 1 1 auto;
 		}
 		input[type=submit] {
-			width: 96px;
+			width: $submit-button-width;
 			height: 100%;
+			flex: 0 0 auto;
+			background-color: $hs-primary-500;
+			color: white;
+			outline: none;
+			border: none;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 24px;
+			font-family: inherit;
+			cursor: pointer;
 		}
 	}
 
 	.video-link {
 		opacity: 1;
-		transition: opacity 1s;
+		transition: opacity $animation-speed;
 	}
 
 }
 
 .branding-form-wrapper > input[type=checkbox]:checked {
 
-	& ~ #start-branding {
+	& ~ #branding-form > #reveal-branding-form {
 		opacity: 0;
 		padding: 0;
-		width: 0px;
+		width: 0;
 		color: $hs-primary-500;
 	}
 
 	& ~ #branding-form {
-
+		width: 512px;
 	}
 
 	& ~ .video-link {

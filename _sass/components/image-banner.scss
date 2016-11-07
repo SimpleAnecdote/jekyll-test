@@ -80,6 +80,13 @@
 		}
 	}
 
+	.branding-form {
+		margin-bottom: 8px;
+		@media #{$header-change} {
+			margin-bottom: 0;
+		}
+	}
+
 	.video-link {
 		// Removes wistia's script overrides (unrequired),
 		// fixing browser specific bugs
@@ -92,11 +99,13 @@
 		border: 1px solid white;
 		padding-left: 8px;
 		width: 100%;
+		height: 48px;
 		box-sizing: border-box;
 		a {
 			text-transform: none;
 			text-decoration: none;
 			color: white;
+			line-height: 48px;
 			i { font-size: 2em; }
 		}
 		@media #{$header-change} {

@@ -5,7 +5,7 @@ $animation-speed: 0.5s;
 .branding-form {
 
 	position: relative;
-	height: 36px;
+	height: 48px;
 	width: 100%;
 
 	.input-area {
@@ -17,7 +17,7 @@ $animation-speed: 0.5s;
 		height: 100%;
 		max-width: 100%;
 		border: none;
-		border-radius: 8px;
+		border-radius: 4px;
 		overflow: hidden;
 		transition: width $animation-speed;
 		transition-timing-function: cubic-bezier(.2,.75,.5,1);		
@@ -27,11 +27,11 @@ $animation-speed: 0.5s;
 	
 	input[type=email] {
 		box-sizing: border-box;
-		font-size: 24px;
+		font-size: 16px;
 		font-family: inherit;
 		color: $hs-blue-grey-900;
 		outline: none;
-		padding: 16px 24px;
+		padding: 16px 16px;
 		height: 100%;
 		margin: 0;
 		border: 0;
@@ -39,7 +39,7 @@ $animation-speed: 0.5s;
 		flex: 1 1 auto;
 	}
 	input[type=submit] {
-		width: $submit-button-width;
+		width: 56px;
 		height: 100%;
 		flex: 0 0 auto;
 		background-color: $hs-primary-500;
@@ -48,7 +48,7 @@ $animation-speed: 0.5s;
 		border: none;
 		text-transform: uppercase;
 		font-weight: 400;
-		font-size: 24px;
+		font-size: 16px;
 		font-family: inherit;
 		cursor: pointer;
 	}
@@ -68,6 +68,17 @@ $animation-speed: 0.5s;
 	@media #{$header-change} {
 		height: 72px;
 		width: initial;
+		.input-area {
+			border-radius: 8px;
+		}
+		input[type=email] {
+			font-size: 24px;
+			padding: 16px 24px;
+		}
+		input[type=submit] {
+			width: $submit-button-width;
+			font-size: 24px;
+		}
 	}
 }
 
@@ -90,6 +101,7 @@ $animation-speed: 0.5s;
 			width: 100%;
 			box-sizing: border-box;
 			min-width: 0;
+			line-height: 48px;
 			transition:
 					opacity $animation-speed,
 					padding $animation-speed,
@@ -119,6 +131,10 @@ $animation-speed: 0.5s;
 		.input-area {
 			width: 370px;
 			margin-right: 16px;
+		}
+		.branding-form .reveal-branding-form {
+			height: 72px;
+			line-height: 72px;
 		}
 	}
 

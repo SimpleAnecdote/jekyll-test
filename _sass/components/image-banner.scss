@@ -48,11 +48,16 @@
 	> div.image-banner-content {
 		@include flex-center(column);
 		margin-top: 24px;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 16px;
 		> a {
 			margin-bottom: 8px;
 		}
 		@media #{$header-change} {
 			margin-top: 48px;
+			width: initial;
+			padding: 0;
 			@include flex-center(row);
 			> a {
 				margin-bottom: 0;
@@ -86,6 +91,8 @@
 		@extend .mdl-button--primary;
 		border: 1px solid white;
 		padding-left: 8px;
+		width: 100%;
+		box-sizing: border-box;
 		a {
 			text-transform: none;
 			text-decoration: none;
@@ -93,6 +100,7 @@
 			i { font-size: 2em; }
 		}
 		@media #{$header-change} {
+		    width: initial;
 			height: 72px;
 			padding: 0 24px 0 16px;
 			border-radius: 4px;

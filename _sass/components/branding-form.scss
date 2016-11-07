@@ -5,6 +5,8 @@ $animation-speed: 0.5s;
 .branding-form {
 
 	position: relative;
+	height: 36px;
+	width: 100%;
 
 	.input-area {
 		@include flex-left();
@@ -12,7 +14,8 @@ $animation-speed: 0.5s;
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		background-color: white;
-		height: 72px;
+		height: 100%;
+		max-width: 100%;
 		border: none;
 		border-radius: 8px;
 		overflow: hidden;
@@ -61,6 +64,11 @@ $animation-speed: 0.5s;
 		left: 0;
 		right: 0;
 	}
+
+	@media #{$header-change} {
+		height: 72px;
+		width: initial;
+	}
 }
 
 .branding-form-wrapper {
@@ -75,10 +83,6 @@ $animation-speed: 0.5s;
 
 	.branding-form {
 
-		.input-area {
-			width: 370px;
-			margin-right: 16px;			
-		}
 
 		.reveal-branding-form {
 			display: block;
@@ -94,7 +98,7 @@ $animation-speed: 0.5s;
 			transition-timing-function: cubic-bezier(.2,.75,.5,1);
 			right: 0;
 			position: absolute;
-			height: 72px;
+			height: 100%;
 		}
 
 		.error-message {
@@ -110,6 +114,14 @@ $animation-speed: 0.5s;
 		transition: opacity $animation-speed;
 	}
 
+	@media #{$header-change} {
+
+		.input-area {
+			width: 370px;
+			margin-right: 16px;
+		}
+	}
+
 }
 
 .branding-form-wrapper > input[type=checkbox]:checked {
@@ -122,7 +134,9 @@ $animation-speed: 0.5s;
 	}
 
 	& ~ .branding-form .input-area {
-		width: 512px;
+		@media #{$header-change} {
+			width: 512px;
+		}
 	}
 
 	& ~ .video-link {

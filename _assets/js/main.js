@@ -238,6 +238,7 @@
 
 			// If the email is valid, submit it.
 			if (emailValid(email)) {
+				mixpanel.track('Branding Tool submitted', {email: email});
 				this.submit();
 				return true;
 

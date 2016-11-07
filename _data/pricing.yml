@@ -19,7 +19,7 @@ plans:
     - Business card scanner (unlimited use)
     - "Add social links & images to cards"
   calltoaction: Get your free card
-  calltoactionurl: "#app-download-open"
+  calltoactionurl: "#branding-tool-open"
 
 - name: premium
   label: Premium

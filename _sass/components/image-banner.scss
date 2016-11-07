@@ -85,6 +85,9 @@
 		.error-message {
 			color: white;
 		}
+		input[type=email] {
+			background-color: white;
+		}
 		@media #{$header-change} {
 			margin-bottom: 0;
 			.error-message {

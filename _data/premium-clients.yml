@@ -2,8 +2,8 @@
 
 premium-clients:
 
-- label: cciq
-  url: https://www.cciq.com.au/
+- label: verizon
+  url: http://verizonwireless.com/
   
 - label: shoes-of-prey
   url: http://shoesofprey.com/
@@ -11,36 +11,36 @@ premium-clients:
 - label: deloitte-digital
   url: http://deloittedigital.com/
   
+- label: cciq
+  url: https://www.cciq.com.au/
+  
 - label: qut-cea
   url: http://qutcea.com/
   
-- label: two-degrees
-  url: http://2degreesmobile.co.nz/
+# - label: two-degrees
+#   url: http://2degreesmobile.co.nz/
   
-- label: buckham-duffy
-  url: http://buckhamduffy.com/
+# - label: buckham-duffy
+#   url: http://buckhamduffy.com/
   
-- label: bar-staff-co
-  url: http://brisbanebarstaffco.com/
+# - label: bar-staff-co
+#   url: http://brisbanebarstaffco.com/
   
 - label: mahindra
   url: http://www.mahindra.com/
   
-- label: guis
-  url: http://gentlemenunitedinstyle.com.au/
-  
-- label: verizon
-  url: http://verizonwireless.com/
+# - label: guis
+#   url: http://gentlemenunitedinstyle.com.au/
   
 # - label: zen-events-group
 #   url: http://zeneventsgroup.com/
 
-- label: buzvil
-  url: http://buzvil.com
+# - label: buzvil
+#   url: http://buzvil.com
   
 # - label: landlab
 #   url: http://landlab.ca/
 
-- label: cognitia
-  url: http://www.cognitia.biz/
+# - label: cognitia
+#   url: http://www.cognitia.biz/
   

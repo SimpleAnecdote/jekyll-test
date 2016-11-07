@@ -8,6 +8,25 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+  - jekyll-assets
+
+assets:
+  # CDN url will only be appended to filepaths when Jekyll is built using
+  # the 'production' environment. Default is 'development'. To build in production:
+  # --- 
+  # $ JEKYLL_ENV=production jekyll build
+  # -- 
+  # or
+  # -- 
+  # set JEKYLL_ENV=production
+  # jekyll build
+  # -- 
+  cdn: https://d122bb704a7f74b3ce48-f3776fd3c3d273ea53169fe9b65b096b.ssl.cf3.rackcdn.com
+  features:
+    automatic_img_size: false 
+    automatic_img_alt : false
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -21,7 +40,6 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://thehaystackapp.com" # the base hostname & protocol for your site
-cdnurl: ""
 
 # Build settings
 markdown: kramdown

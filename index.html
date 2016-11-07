@@ -15,21 +15,21 @@ priority: 1.0
 				<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 				<div class="hs-wistia-container wistia_embed wistia_async_5bbw8l7kl5 popover=true popoverContent=html"
 				style="display:inline-block; white-space:nowrap;">
-					<a href="#" class="play-video"><i class="material-icons">play_arrow</i>Watch our video</a>
-				</div>
+				<a href="#" class="play-video"><i class="material-icons">play_arrow</i>Watch the video</a>
 			</div>
+		</div>	
 		</div>
 	</div>
 
 	<div class="feature-bubbles">
-		<img src="{{site.cdnurl}}/img/screens.png">
+		{% img 'screens.png' %}
 		{% markdown home/difference.md %}
 	</div>
 
 	<div class="feature-bubbles-aside">
 		<div>
 			<div class="phone">
-				<img src="{{site.cdnurl}}/img/aside.png">
+				{% img 'aside.png' %}
 			</div>
 			<div class="features">
 				{% markdown home/benefits.md %}
@@ -39,15 +39,15 @@ priority: 1.0
 	</div>
 
 	<div class="text-cta">
+		<div id="premium-clients" class="logo-strip wrapped">
+			{% include premium-clients.html %}
+		</div>
 		<h1>Let Your Business Benefit Too</h1>
-		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/pricing">Start a 30 day free trial</a>
+		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/pricing">Try for free now</a>
 	</div>
 
 	{% include how-it-works.html %}
 
-	{% include premium-clients.html %}
-
-	{% include media-outlets.html %}
 
 	<div class="pricing-panels-section less-content">
 		{% include pricing-panels.html %}
@@ -55,7 +55,7 @@ priority: 1.0
 
 	<div class="testimonials">
 		{% for testimonial in site.data.homepage-testimonials.testimonials %}
-			<p><img src="{{site.cdnurl}}/img/testimonials/{{testimonial.avatarUrl}}"></p>
+			<p>{% img 'testimonials/{{testimonial.avatarUrl}}' %}</p>
 			<blockquote>
 				<p>{{testimonial.quote}}</p>
 			</blockquote>
@@ -67,6 +67,10 @@ priority: 1.0
 		<h1>It's time for your business to stand out.</h1>
 		<p>Try Haystack Premium for 30 days free</p>
 		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/pricing">Start Now</a>
+	</div>
+
+	<div id="media-outlets" class="logo-strip thin">
+		{% include media-outlets.html %}
 	</div>
 
 </div>

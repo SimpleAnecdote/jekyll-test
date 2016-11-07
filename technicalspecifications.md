@@ -64,8 +64,8 @@ End User support is provided via email 5 days a week, 9-5 AEST. Support can be c
 
 ## Card Design
 
-![Card preview]({{site.cdnurl}}/img/technicalspecifications/card-blank.png)
-![Card diagram]({{site.cdnurl}}/img/technicalspecifications/card-diagram.png)
+![Card preview]({% asset_path 'technicalspecifications/card-blank.png' %})
+![Card diagram]({% asset_path 'technicalspecifications/card-diagram.png' %})
 
 
 

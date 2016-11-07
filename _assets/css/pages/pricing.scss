@@ -1,7 +1,7 @@
 .pricing {
 	.image-banner {
 		background-color: #7b6b5c;
-		background-image: url(#{$cdnurl}/img/headers/pricing.jpg);
+		background-image: url(image_path('headers/pricing.jpg'));
 		height: 66vw;
 		max-height: 50vh;
 		h1 {

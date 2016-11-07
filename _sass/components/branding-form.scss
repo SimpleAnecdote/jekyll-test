@@ -1,11 +1,13 @@
 
 $submit-button-width: 96px;
+$branding-form-height: 48px;
+$branding-form-height-large: 72px;
 $animation-speed: 0.5s;
 
 .branding-form {
 
 	position: relative;
-	height: 48px;
+	height: $branding-form-height;
 	width: 100%;
 
 	.input-area {
@@ -58,15 +60,13 @@ $animation-speed: 0.5s;
 	}
 
 	.error-message {
-		position: absolute;
-		bottom: -56px;
+		display: block;
 		text-align: center;
-		left: 0;
-		right: 0;
+		margin-top: 16px;
 	}
 
 	@media #{$header-change} {
-		height: 72px;
+		height: $branding-form-height-large;
 		width: initial;
 		.input-area {
 			border-radius: 8px;
@@ -94,14 +94,13 @@ $animation-speed: 0.5s;
 
 	.branding-form {
 
-
 		.reveal-branding-form {
 			display: block;
 			opacity: 1;
 			width: 100%;
 			box-sizing: border-box;
 			min-width: 0;
-			line-height: 48px;
+			line-height: $branding-form-height;
 			transition:
 					opacity $animation-speed,
 					padding $animation-speed,
@@ -111,12 +110,6 @@ $animation-speed: 0.5s;
 			right: 0;
 			position: absolute;
 			height: 100%;
-		}
-
-		.error-message {
-			color: white;
-			right: initial;
-			text-align: left;
 		}
 	}
 
@@ -133,8 +126,8 @@ $animation-speed: 0.5s;
 			margin-right: 16px;
 		}
 		.branding-form .reveal-branding-form {
-			height: 72px;
-			line-height: 72px;
+			height: $branding-form-height-large;
+			line-height: $branding-form-height-large;
 		}
 	}
 

@@ -40,7 +40,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://thehaystackapp.com" # the base hostname & protocol for your site
-brandingUrl: "http://create.thehaystackapp.com"
+brandingUrl: "/create"
 mixpanelKeyDevelopment: "7fcf73249f40c519ff71bb9f0ccee46b"
 mixpanelKeyProduction: "758867de6eb116d7bfb74f615b5d2534"
 

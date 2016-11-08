@@ -64,7 +64,7 @@ While other platforms use advertising to generate revenue, Haystack does not. In
 ## What's the difference between Premium and Free accounts?
 
 With our Premium account you have an access to a premium dashboard where you have more options to edit the card templates for your brand/business. 
-You also have access to card analytics, email signatures, CRM export, onboarding help and premium support. Visit our [pricing page](/pricing) to learn more about the different plans.
+You also have access to card analytics, email signatures, Export to CRM, onboarding help and premium support. Visit our [pricing page](/pricing) to learn more about the different plans.
 
 
 

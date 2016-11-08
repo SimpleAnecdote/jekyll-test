@@ -82,20 +82,11 @@
 
 	.branding-form {
 		margin-bottom: 8px;
-		.error-message {
-			color: white;
-		}
 		input[type=email] {
 			background-color: white;
 		}
 		@media #{$header-change} {
 			margin-bottom: 0;
-			.error-message {
-				position: absolute;
-				bottom: -36px;
-				left: 0;
-				text-align: left;
-			}
 		}
 	}
 

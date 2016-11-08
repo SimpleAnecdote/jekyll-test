@@ -60,12 +60,6 @@ $animation-speed: 0.5s;
 		display: none;
 	}
 
-	.error-message {
-		display: block;
-		text-align: center;
-		margin-top: 16px;
-	}
-
 	@media #{$header-change} {
 		height: $branding-form-height-large;
 		width: initial;

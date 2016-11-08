@@ -8,6 +8,14 @@
 	<div class="mdl-layout-spacer"></div>
 	<!-- Navigation. We hide it in small screens. -->
 	<nav class="mdl-navigation">
+		{% for section in site.data.header.sections %}
+		<a class="mdl-navigation__link" id="section-menu-{{forloop.index}}">{{section.label}}</a>
+		<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="section-menu-{{forloop.index}}">
+			{% for link in section.links %}
+			<a class="mdl-menu__item" href="{{link.url}}" {% if link.newtab == true %}target="_blank"{% endif %}>{{link.label}}</a>
+			{% endfor %}
+		</ul>
+		{% endfor %}
 		{% for link in site.data.header.links %}
 		<a class="mdl-navigation__link" href="{{link.url}}" {% if link.newtab == true %}target="_blank"{% endif %}>{{link.label}}</a>
 		{% endfor %}
@@ -24,6 +32,14 @@
 <div class="mdl-layout__drawer">
 	<span class="mdl-layout-title">Haystack</span>
 	<nav class="mdl-navigation">
+		{% for section in site.data.header.sections %}
+		<div class="nav-section">
+			<span class="nav-section-title">{{section.label}}</span>
+			{% for link in section.links %}
+			<a class="mdl-navigation__link" href="{{link.url}}" {% if link.newtab == true %}target="_blank"{% endif %}>{{link.label}}</a>
+			{% endfor %}
+		</div>
+		{% endfor %}
 		{% for link in site.data.header.links %}
 		<a class="mdl-navigation__link" href="{{link.url}}">{{link.label}}</a>
 		{% endfor %}

@@ -245,9 +245,15 @@
 			// If email is invalid,
 			// display an error message in the 'error-message' element.
 			} else {
-				var errorMessage = this.querySelector('.error-message');
+
 				var message = '\'' + email + '\' is not a valid email address.';
-				errorMessage.innerText = message;
+
+				var snackbarContainer = this.querySelector('.mdl-snackbar');
+				snackbarContainer.MaterialSnackbar.showSnackbar({
+					message: message,
+					timeout: 7500,
+				});
+
 				return false;
 			}
 

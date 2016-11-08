@@ -8,11 +8,18 @@
 		height: 85vh;
 		max-height: 85vh;
 
+		.image-banner-content {
+			max-width: 360px;
+		}
+
 		@media #{$header-change} {
 			padding: 7.5%;
 			align-items: flex-start;
 			&:before {
 				opacity: 0;
+			}
+			.image-banner-content {
+				max-width: initial;
 			}
 		}
 	}

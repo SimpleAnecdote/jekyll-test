@@ -51,6 +51,9 @@
 		box-sizing: border-box;
 		width: 100%;
 		padding: 0 16px;
+		-webkit-align-items: flex-start;
+		-ms-flex-align: flex-start;
+		align-items: flex-start;
 		> a {
 			margin-bottom: 8px;
 		}
@@ -58,11 +61,13 @@
 			margin-top: 48px;
 			width: initial;
 			padding: 0;
-			@include flex-center(row);
 			> a {
 				margin-bottom: 0;
 				margin-right: 24px;
 			}
+		}
+		@media (min-width: 1200px) {			
+			@include flex-center(row);
 		}
 	}
 
@@ -82,20 +87,14 @@
 
 	.branding-form {
 		margin-bottom: 8px;
-		.error-message {
-			color: white;
-		}
 		input[type=email] {
 			background-color: white;
 		}
 		@media #{$header-change} {
+			margin-bottom: 16px;
+		}
+		@media (min-width: 1200px) {
 			margin-bottom: 0;
-			.error-message {
-				position: absolute;
-				bottom: -36px;
-				left: 0;
-				text-align: left;
-			}
 		}
 	}
 

@@ -1,5 +1,14 @@
 ---
 
+sections:
+
+- label: Products
+  links:
+
+  - label: App
+    url: /app
+    newtab: false
+
 links:
 
 - label: Pricing

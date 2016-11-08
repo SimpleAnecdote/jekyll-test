@@ -6,6 +6,10 @@ sections:
 - label: Product
   links:
 
+  - label: App
+    url: /app
+    newtab: false
+
   - label: FAQs
     url: /faq
     newtab: false

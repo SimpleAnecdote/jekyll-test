@@ -1,0 +1,41 @@
+---
+layout: image-header
+title: App | Haystack
+description: Haystack is your new business card. Haystack stores and updates the business cards you receive, and lets you share your own business card directly from your phone.
+priority: 0.6
+---
+<div class="faq">
+	<div class="image-banner">
+		<h1>Page title</h1>
+	</div>
+
+	<div class="app-store-links">
+		<a href="{{site.data.links.app_download_ios}}">{% img 'apple.svg' %}</a>
+		<a href="{{site.data.links.app_download_android}}&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dapp">{% img 'google-play.svg' %}</a>
+	</div>
+
+	<div class="feature-bubbles">
+		{% markdown app/app-benefits.md %}
+	</div>
+
+	<div class="testimonials">
+		{% for testimonial in site.data.homepage-testimonials.testimonials %}
+			<p>{% img 'testimonials/{{testimonial.avatarUrl}}' %}</p>
+			<blockquote>
+				<p>{{testimonial.quote}}</p>
+			</blockquote>
+			<span>{{testimonial.citation}}</span>
+		{% endfor %}
+	</div>
+
+
+	<div class="text-cta">
+		<div id="premium-clients" class="logo-strip wrapped">
+			{% include premium-clients.html %}
+		</div>
+		<h1>Want More Out Of Your Haystack Cards?</h1>
+		<p>Try Haystack Premium For Free</p>
+		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/pricing">Learn more</a>
+	</div>
+
+</div>

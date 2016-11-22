@@ -10,9 +10,9 @@
 	align-items: center;
 
 	> img:first-child {
-		width: 60%;
-		display: none;
+		width: 95%;
 		@media #{$gt-xs} {
+			width: 60%;
 			display: block;
 		}
 	}
@@ -25,7 +25,7 @@
 
 	h1 {
 		@include typo-display-1;
-		color: $hs-blue-grey-200;
+		color: $hs-blue-grey-900;
 		line-height: 1.25em;
 		font-size: 40px;
 		@media #{$gt-xs} {

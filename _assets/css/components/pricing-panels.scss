@@ -245,6 +245,14 @@
 
 	}
 
+	.fineprint {
+		padding: 0 24px;
+		color: $hs-blue-grey-200;
+		@media (min-width: $layout-switch-size) {
+			margin-top: 48px;			
+		}
+	}
+
 	.less-content & {
 		@media (min-width: $layout-switch-size) {
 			.features-list {

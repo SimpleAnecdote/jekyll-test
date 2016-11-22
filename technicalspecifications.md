@@ -1,7 +1,7 @@
 ---
 layout: text-content
 title: Technical Specifications | Haystack
-description: Haystack is your new business card. Haystack stores and updates the business cards you receive, and lets you share your own business card directly from your phone.
+description: Create a beautiful digital business card that you can share instantly with anyone.
 priority: 0.4
 ---
 

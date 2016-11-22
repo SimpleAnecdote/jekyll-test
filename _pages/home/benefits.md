@@ -13,7 +13,7 @@
     
     ### Connecting With Your CRM
 
-    Use the app to simply snap a photo of the business cards you receive and sync them directly into the corporate CRM as a new contact or lead.
+    Use the app to simply snap a photo of the business cards you receive and sync them directly into the corporate CRM as a new contact or a lead.
 
 
 -   <i class="material-icons">nature_people</i>

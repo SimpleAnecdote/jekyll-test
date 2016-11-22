@@ -34,9 +34,8 @@ assets:
 # in the templates via {{ site.myvariable }}.
 title: Haystack
 description: > # this means to ignore newlines until "baseurl:"
-  Haystack is your new business card. Haystack stores and updates the business 
-  cards you receive, and lets you share your own business card directly from 
-  your phone.
+  Haystack is a modern business card solution for  professionals and 
+  organizations who want to stand out and make a lasting first  impression.
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "http://thehaystackapp.com" # the base hostname & protocol for your site

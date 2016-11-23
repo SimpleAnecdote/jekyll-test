@@ -1,0 +1,12 @@
+<div class="logos">
+
+	{% for client in site.data.premium-clients.premium-clients %}
+	<a id="{{ client.label }}" class="logo-wrapper" target="_blank" href="{{ client.url }}">
+		<div class="logo">
+			{% img 'customer-logos/{{ client.label }}-grey.png'  class:'grey'  %}
+			{% img 'customer-logos/{{ client.label }}-white.png' class:'white' %}
+		</div>
+	</a>
+	{% endfor %}
+
+</div>

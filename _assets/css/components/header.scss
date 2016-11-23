@@ -1,0 +1,82 @@
+header {
+
+	$nav-padding: 24px;
+	&.mdl-layout__header {
+		background-color: $hs-primary-600;
+		transition: box-shadow 0.1s, background-color 0.25s;		
+		.transparent-header & .mdl-layout__drawer-button {
+			background-color: transparent;
+		}
+	}
+
+	
+	// Hack of MDL header to be fixed
+	position: fixed;
+
+	.mdl-layout__drawer-button {
+		@media (min-width: $header-type-breakpoint) {
+			display: none;
+		}
+	}
+
+	.mdl-layout__header-row {
+
+		align-self: center;
+		padding: 0;
+
+		.logo {
+			height: 28px;
+			margin-top: -2px;
+		}
+
+		@media (min-width: $header-type-breakpoint) {
+			padding: 0 $nav-padding;
+			height: 72px;
+			align-self: stretch;
+			.logo {
+				height: 28px;
+			}
+		}
+	}
+
+	.mdl-navigation__link {
+		cursor: pointer;
+	}
+
+
+	// MENU CHANGE
+	.mdl-navigation {
+		position: absolute;
+		right: $nav-padding;
+		top: 4px;
+	}
+	@media (max-width: $header-type-breakpoint) {
+		.mdl-navigation { right: 8px; top: 0px; }
+		.mdl-layout__header-row .mdl-navigation__link:not(.never-hide) {
+			display: none;
+		}
+	}
+
+}
+
+header.transparent, .transparent-header header.start-transparent {
+	background-color: rgba(0,188,212,0);
+	box-shadow: none;
+}
+
+.mdl-layout__drawer {
+	.nav-section {
+		border-bottom: 1px solid rgba(0,0,0,0.12);
+	}
+	.nav-section-title {
+		padding: 0px 16px;
+		font-size: 14px;
+		opacity: 0.25;
+		line-height: 24px;
+		font-weight: 700;
+		display: block;
+	}
+	.nav-section a {
+		padding-left: 32px !important;		
+	}
+}

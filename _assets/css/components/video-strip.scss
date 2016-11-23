@@ -1,0 +1,30 @@
+.video-strip {
+
+	background-color: $hs-blue-grey-900;
+
+	@include flex-center;
+
+	height: 300px;
+	height: 30vh;
+	transition: height 0.5s cubic-bezier(.64,.04,.42,.98);
+
+	// Removes wistia's script overrides (unrequired),
+	// fixing browser specific bugs
+	.hs-wistia-container > div {
+		height: auto!important;
+		width: auto!important;
+	}
+
+	a.play-video {
+		@extend .mdl-button;
+		font-size: 20px;
+		height: 3em;
+		padding-top: 1em;
+	    padding-bottom: 1em;
+		color: $hs-blue-grey-500;
+		i {
+			margin-right: 8px;
+			font-size: 3em;
+		}
+	}
+}

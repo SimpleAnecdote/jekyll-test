@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+	{% include head.html %}
+</head>
+<body>
 
-  {% include head.html %}
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-  <body>
+		{% include header.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				{{ content }}
+				{% include footer.html %}
+			</div>
+		</main>
+		
+	</div>
+	
+	{% include dialogs.html %}
+	
+</body>
 </html>

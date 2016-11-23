@@ -1,21 +1,47 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+  - jekyll-assets
+
+assets:
+  # CDN url will only be appended to filepaths when Jekyll is built using
+  # the 'production' environment. Default is 'development'. To build in production:
+  # --- 
+  # $ JEKYLL_ENV=production jekyll build
+  # -- 
+  # or
+  # -- 
+  # set JEKYLL_ENV=production
+  # jekyll build
+  # -- 
+  cdn: https://d122bb704a7f74b3ce48-f3776fd3c3d273ea53169fe9b65b096b.ssl.cf3.rackcdn.com
+  features:
+    automatic_img_size: false 
+    automatic_img_alt : false
+
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Haystack
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Haystack is a modern business card solution for  professionals and 
+  organizations who want to stand out and make a lasting first  impression.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+url: "https://thehaystackapp.com" # the base hostname & protocol for your site
+brandingUrl: "/create"
+mixpanelKeyDevelopment: "7fcf73249f40c519ff71bb9f0ccee46b"
+mixpanelKeyProduction: "758867de6eb116d7bfb74f615b5d2534"
 
 # Build settings
 markdown: kramdown

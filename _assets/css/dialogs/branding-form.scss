@@ -1,0 +1,31 @@
+#branding-tool {
+
+	text-align: center;
+	width: 720px;
+	padding: 24px 0;
+	border-radius: 4px;
+
+	h4 {
+		@include typo-headline;
+		color: $hs-blue-grey-900;
+		font-size: 20px;
+		line-height: 1.25em;
+		max-width: 256px;
+		margin: auto;
+	}
+
+	@media (max-width: 400px) {
+		input[type=email] {
+			font-size: 14px;
+		}
+	}
+
+	p {
+		color: $hs-blue-grey-500;
+	}
+
+	@media #{$gt-sm} {
+		padding: 64px 24px;
+		h4 { font-size: 24px; }
+	}
+}

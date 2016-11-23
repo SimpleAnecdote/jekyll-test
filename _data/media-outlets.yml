@@ -1,0 +1,43 @@
+---
+
+media-outlets:
+
+- name: techcrunch
+  label: TechCrunch
+  url: http://techcrunch.com/2015/03/17/haystacks-new-app-wants-to-be-your-digital-business-card/
+
+- name: producthunt
+  label: Product Hunt
+  url: http://www.producthunt.com/posts/haystack
+
+# - name: couriermail
+#   label: The Courier Mail
+#   url: http://www.couriermail.com.au/business/new-mobile-app-to-get-brisbane-on-path-to-becoming-a-city-without-business-cards/story-fnihsps3-1227096685940
+
+- name: smh
+  label: The Sydney Morning Herald
+  url: http://www.smh.com.au/digital-life/smartphone-apps/brisbanes-haystack-app-may-give-business-cards-the-flick-20141021-1199fp.html
+
+- name: theage
+  label: The Age
+  url: http://www.theage.com.au/digital-life/smartphone-apps/brisbanes-haystack-app-may-give-business-cards-the-flick-20141021-1199fp.html
+
+# - name: brisbanetimes
+#   label: Brisbane Times
+#   url: http://www.brisbanetimes.com.au/digital-life/smartphone-apps/brisbanes-haystack-app-may-give-business-cards-the-flick-20141021-1199fp.html
+
+- name: psfk
+  label: PSFK
+  url: http://www.psfk.com/2015/03/haystack-app-paperless-business-cards-networking.html
+
+- name: digitalbrisbane
+  label: Digital Brisbane
+  url: http://digitalbrisbane.com.au/Blog/Going-global-start-local
+
+# - name: qutnews
+#   label: QUT News
+#   url: https://www.qut.edu.au/news/news?news-id=80776
+
+# - name: abc612
+#   label: ABC 612
+#   url: http://blogs.abc.net.au/queensland/2014/10/how-to-get-your-business-cards-into-your-phone.html?site=brisbane&program=612_morning

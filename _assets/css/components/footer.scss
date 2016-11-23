@@ -1,0 +1,19 @@
+footer.mdl-mega-footer {
+
+	background-color: $hs-blue-grey-900;
+
+	h1.mdl-mega-footer__heading {
+		@media (min-width: 760px) {
+			color: $hs-primary-500;
+		}
+	}
+
+	.mdl-mega-footer__link-list a {
+		color: $hs-primary-50;
+		font-weight: 400;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

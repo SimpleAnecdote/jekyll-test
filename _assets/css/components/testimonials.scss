@@ -1,0 +1,51 @@
+.testimonials {
+
+	@include flex-center;
+
+	background-color: $hs-primary-800;
+	text-align: center;
+	padding: 48px 16px;
+
+	@media #{$gt-xs} {
+		padding: 96px 24px;
+	}
+
+	// Avatar
+	> p > img {
+		border-radius: 50%;
+		width: 96px;
+		@media #{$gt-xs} {
+			width: 128px;
+		}
+	}
+
+	blockquote {
+		&:before { content: ''; display: none; }
+		&:after  { content: ''; display: none; }
+		max-width: $fixed-column-width;
+	    margin: 24px 0;
+		p {
+			@extend .mdl-typography--body-1;
+			font-style: normal;
+		    color: white;
+		}
+	}
+
+	// Citation
+	> span {
+		color: white;
+		opacity: 0.5;
+		&:before {
+			content: '- ';
+		}
+	}
+
+	> span + p {
+		margin-top: 48px;
+	}
+
+
+
+
+
+}

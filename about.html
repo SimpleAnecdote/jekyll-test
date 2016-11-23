@@ -1,0 +1,24 @@
+---
+layout: image-header
+title: About | Haystack
+description: We wanted to create  a seamless experience that is better than paper. That meant removing all  existing barriers, and making the process as simple as possible.
+priority: 0.5
+---
+<div class="about">
+	<div class="image-banner">
+		<!-- <h1>Meet the Haystackers:</h1> -->
+	</div>
+	<div class="text-content">
+		{% markdown about/about.md %}	
+	</div>
+	
+	<div class="app-store-links">
+		<a href="{{site.data.links.app_download_ios}}">{% img 'apple.svg' %}</a>
+		<a href="{{site.data.links.app_download_android}}&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dabout">{% img 'google-play.svg' %}</a>
+	</div>
+
+	<div id="premium-clients" class="logo-strip wrapped">
+		{% include media-outlets.html %}
+	</div>
+
+</div>

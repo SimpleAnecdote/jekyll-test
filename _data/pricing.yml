@@ -1,0 +1,85 @@
+---
+
+plans:
+
+- name: free
+  label: Forever Free
+  qualifier: Always
+  currency: $
+  price: 0
+  term: month
+  description:
+    - "Your Haystack starter kit."
+    - "Get the basic digital business card experience."
+  features:
+    - Unlimited cards
+    - Unlimited shares
+    - Unlimited contacts
+    - "iOS & Android apps"
+    - Business card scanner (unlimited use)
+    - "Add social links & images to cards"
+  calltoaction: Get your free card
+  calltoactionurl: "#branding-tool-open"
+
+- name: premium
+  label: Premium
+  qualifier: Starting at
+  currency: $
+  price: 4
+  term: month
+  description:
+    - "Haystack on steroids."
+    - "Enhance your digital cards experience with extra features & smart tools."
+  features:
+    - "Everything in Free, plus"
+    - Additional social features
+    - Fine tune your card's design
+    - Premium support
+    - Create cards for your whole company
+    - Card templates
+    - Set employee permissions
+    - Export your contacts
+    - Analytics
+    - Connect with your CRM*
+  calltoaction: Start your 30 day free trial
+  calltoactionurl: "#select-num-users-open"
+
+- name: enterprise
+  label: Enterprise
+  qualifier: Starting at
+  currency: $
+  price: 500
+  term: month
+  description:
+    - "Get additional business features for organizations with more than 500 business cards."
+  features:
+    - "Everything in Premium, plus"
+    - Tailored features to suit your needs
+    - Customize your plan
+    - Enterprise support
+    - Onboarding assistance for large teams
+  calltoaction: Contact us
+  calltoactionurl: mailto:sales+enterprise@thehaystackapp.com?Subject=Enterprise%20plans%20inquiry&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20Enterprise%20plans.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
+
+
+tiers:
+
+- numofusers: 1
+  price: 4
+  url: "https://premium.thehaystackapp.com/plan/Individual_5_2016"
+  multipleusers: false
+
+- numofusers: 10
+  price: 14
+  url: "https://premium.thehaystackapp.com/plan/10_cards_5_2016"
+  multipleusers: true
+
+- numofusers: 50
+  price: 49
+  url: "https://premium.thehaystackapp.com/plan/50_cards_5_2016"
+  multipleusers: true
+
+- numofusers: 100
+  price: 95
+  url: "https://premium.thehaystackapp.com/plan/100_cards_5_2016"
+  multipleusers: true

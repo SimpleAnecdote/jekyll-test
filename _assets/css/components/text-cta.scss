@@ -1,0 +1,52 @@
+.text-cta {
+	text-align: center;
+	padding: 96px 16px;
+
+	h1 {
+		@extend .mdl-typography--display-1;
+		color: $hs-blue-grey-500;
+		margin: 0;
+		font-weight: 400;
+	}
+
+	p {
+		@extend .mdl-typography--headline;
+		color: $hs-blue-grey-400;
+		margin-top: 0.5em;
+		margin-bottom: 0;
+	}
+
+	> a {
+
+		margin-top: 1.5em;
+
+		&.mdl-button--raised.mdl-button--colored {
+			background-color: #4CAF50;			
+		}
+
+		@media #{$gt-xs} {
+			text-transform: none;
+			height: 50px;
+			padding: 0 24px;
+			vertical-align: center;
+			padding-top: 14px;
+			font-size: 24px;
+			font-weight: 300;
+			margin-bottom: 24px;			
+		}
+	}
+
+	p a {
+		text-decoration: none;
+		color: $hs-primary-500;
+		&:hover {
+			color: $hs-primary-600;
+		}
+	}
+
+	.logo-strip {
+		background-color: transparent;
+		margin-bottom: 48px;
+	}
+
+}

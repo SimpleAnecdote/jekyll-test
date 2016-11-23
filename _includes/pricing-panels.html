@@ -1,0 +1,30 @@
+<div class="pricing-panels">
+	<ul>
+		{% for plan in site.data.pricing.plans %}
+		<li class="{{ plan.name }}">
+			<h2>{{ plan.label }}{% img 'pricing/{{plan.name}}-icon.png' %}</h2>
+			<div>
+				<p class="price-qualifier">{{ plan.qualifier }}</p>
+				<ul class="price">
+					<li>{{ plan.currency }}</li>
+					<li>{{ plan.price }}</li>
+					<li>/ {{ plan.term }}</li>
+				</ul>
+				{% for section in plan.description %}
+				<p>{{ section }}</p>
+				{% endfor %}
+				<input type="radio" name="expand_details" id="more_details_{{plan.name}}" value="{{plan.name}}">
+				<label for="more_details_{{plan.name}}">+ More Details</label>
+				<a class="pricing-page-link" href="/pricing#plans">+ More Details</a>
+				<ul class="features-list">
+					{% for feature in plan.features %}
+					<li>{{ feature }}</li>
+					{% endfor %}
+				</ul>
+				<a class="call-to-action" href="{{plan.calltoactionurl}}">{{ plan.calltoaction }}</a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+	<p class="fineprint">* Automatic CRM Sync is available for selected CRM platforms. May incur additional fees.</p>
+</div>

@@ -1,0 +1,24 @@
+dialog#app-download {
+	text-align: center;
+	width: 720px;
+	padding: 24px 0;
+	border-radius: 4px;
+
+	h4 {
+		@include typo-headline;
+		color: $hs-blue-grey-900;
+		font-size: 20px;
+		line-height: 1.25em;
+		max-width: 256px;
+		margin: auto;
+	}
+
+	p {
+		color: $hs-blue-grey-500;
+	}
+
+	@media #{$gt-sm} {
+		padding: 48px 0;
+		h4 { font-size: 24px; }
+	}
+}

@@ -1,0 +1,62 @@
+---
+sections:
+
+
+
+- label: Product
+  links:
+
+  - label: FAQs
+    url: /faq
+    newtab: false
+
+  - label: Pricing
+    url: /pricing
+    newtab: false
+
+
+
+- label: Company
+  links:
+
+  - label: About
+    url: /about
+    newtab: false
+
+  - label: Contact us
+    url: mailto:Sales+query@thehaystackapp.com?Subject=Web%20query&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
+    newtab: false
+  
+  - label: Media inquiries
+    url: mailto:ran+media@thehaystackapp.com?Subject=Media%20query
+    newtab: false
+
+
+
+- label: Help
+  links:
+
+  - label: Support
+    url: /support
+    newtab: false
+
+  - label: Terms & Conditions
+    url: http://files.thehaystackapp.com/legal/termsandconditions.html
+    newtab: true
+
+  - label: Privacy Policy
+    url: http://files.thehaystackapp.com/legal/privacypolicy.html
+    newtab: true
+
+
+
+- label: Download
+  links:
+
+  - label: App Store
+    url: https://itunes.apple.com/app/haystack-business-card-reader/id920294144
+    newtab: true
+
+  - label: Google Play
+    url: https://play.google.com/store/apps/details?id=com.theHaystackApp.haystack&referrer=utm_source%3DhaystackWebsite%26utm_medium%3Dfooter
+    newtab: true

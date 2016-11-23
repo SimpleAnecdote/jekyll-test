@@ -1,0 +1,136 @@
+html, body, .mdl-layout {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Hacking MDL header to be position fixed, but properly scrollable while scrollable */
+.mdl-layout--fixed-header {
+	overflow-y: inherit;
+	overflow-x: inherit;
+}
+
+main.mdl-layout__content {
+	overflow-y: inherit;
+	overflow-x: inherit;
+}
+
+.mdl-layout__drawer {
+	position: fixed;
+}
+
+.mdl-layout__drawer.is-visible ~ .mdl-layout__content.mdl-layout__content {
+	overflow: inherit;
+}
+
+.mdl-layout__obfuscator {
+	position: fixed;
+}
+
+.page-content {
+	padding-top: 72px;
+	@media screen and (max-width: 1024px) {
+		padding-top: 56px;
+	}
+}
+
+.transparent-header {
+	.page-content {
+		padding-top: 0;
+	}
+}
+
+/* End of hack */
+
+
+dialog[open] {
+	position: fixed;
+	top: 50%!important;
+	transform: translateY(-50%)!important;
+	overflow-y: auto;
+	max-height: 85%;
+	max-width: 85%;
+}
+
+dialog + .backdrop {
+	background-color: rgba(0, 0, 0, 0.26);
+}
+
+dialog .close {
+	top: 0;
+	right: 0;
+	position: absolute;
+	margin: 8px;
+	i { opacity: 0.26; }
+}
+
+@mixin flex-center($direction: column) {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	flex-direction: $direction;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+@mixin flex-left() {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+@mixin overlay($color: $hs-blue-grey-900) {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background-color: $color;
+		opacity: 0.75;
+	}
+}
+
+.hs-button-raised-primary {
+	@extend .mdl-button;
+	@extend .mdl-button--raised;
+	@extend .mdl-button--primary;
+	&:hover {
+		background-color: $hs-primary-400;
+	}
+	&:active {
+		background-color: $hs-primary-300;
+	}
+	&:focus:not(:active) {
+		background-color: $hs-primary-600;
+	}
+
+}

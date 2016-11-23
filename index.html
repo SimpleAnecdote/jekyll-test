@@ -1,23 +1,76 @@
 ---
-layout: default
+layout: image-header
+title: Haystack - Stylish &amp; Smart Digital Business Cards.
+description: Haystack is a modern business card solution for professionals and organizations who want to stand out and make a lasting first  impression.
+priority: 1.0
 ---
+<div class="premium-home">		
 
-<div class="home">
+	<div class="image-banner">
+		<h1>Stylish &amp; Smart <br> Digital Business Cards</h1>
+		<div class="image-banner-content branding-form-wrapper">
+			<input type="checkbox" name="reveal-branding-form-checkbox" id="reveal-branding-form-checkbox" value="value">
+			{% include branding-form.html %}
+			<!-- <div class="video-link">
+				<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+				<div class="hs-wistia-container wistia_embed wistia_async_5bbw8l7kl5 popover=true popoverContent=html"
+				style="display:inline-block; white-space:nowrap;">
+				<a href="#" class="play-video"><i class="material-icons">play_arrow</i>Watch the video</a>
+			</div> -->
+		</div>	
+		</div>
+	</div>
 
-  <h1 class="page-heading">Posts</h1>
+	<div class="feature-bubbles">
+		{% img 'screens.png' %}
+		{% markdown home/difference.md %}
+	</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<div class="feature-bubbles-aside">
+		<div>
+			<div class="phone">
+				{% img 'aside.png' %}
+			</div>
+			<div class="features">
+				{% markdown home/benefits.md %}
+			</div>
+		</div>
+		<a href="/technicalspecifications">Learn even more...</a>
+	</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	<div class="text-cta">
+		<div id="premium-clients" class="logo-strip wrapped">
+			{% include premium-clients.html %}
+		</div>
+		<h1>Let Your Business Benefit Too</h1>
+		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/pricing">Try for free now</a>
+	</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	{% include how-it-works.html %}
+
+
+	<div class="pricing-panels-section less-content">
+		{% include pricing-panels.html %}
+	</div>
+
+	<!-- <div class="testimonials">
+		{% for testimonial in site.data.homepage-testimonials.testimonials %}
+			<p>{% img 'testimonials/{{testimonial.avatarUrl}}' %}</p>
+			<blockquote>
+				<p>{{testimonial.quote}}</p>
+			</blockquote>
+			<span>{{testimonial.citation}}</span>
+		{% endfor %}
+	</div> -->
+
+	<div class="text-cta">
+		<h1>It's time for your business to stand out.</h1>
+		<p>Try Haystack Premium for 30 days free</p>
+		<a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="/pricing">Start Now</a>
+	</div>
+
+	<div id="media-outlets" class="logo-strip thin">
+		{% include media-outlets.html %}
+	</div>
 
 </div>

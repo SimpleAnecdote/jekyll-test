@@ -1,0 +1,41 @@
+---
+layout: image-header
+title: Pricing | Haystack
+description: 'Haystack is 80% cheaper, and 100% smarter than a  printed business card. Available plans: Free, Premium and Enterprise. Choose a  plan and try for yourself.'
+priority: 0.9
+---
+<div class="pricing">
+
+	<div class="image-banner">
+		<h1>Choose your plan</h1>
+		<h2>80% Cheaper, 100% Smarter</h2>
+	</div>
+	
+	<div id="plans">
+		{% include pricing-panels.html %}		
+	</div>
+	
+	<div class="text-content accordion">
+		{% markdown pricing/pricing-faq.md %}
+	</div>
+
+	<div class="text-cta">
+		<h1>Still have some questions?</h1>
+		<p>Visit our complete <a href="/faq">FAQ page</a> or <a href="{{site.data.links.contact_us_sales}}">contact us</a></p>
+	</div>
+
+	<!-- <div class="testimonials">
+		{% for testimonial in site.data.homepage-testimonials.testimonials %}
+			<p>{% img 'testimonials/{{testimonial.avatarUrl}}' %}</p>
+			<blockquote>
+				<p>{{testimonial.quote}}</p>
+			</blockquote>
+			<span>{{testimonial.citation}}</span>
+		{% endfor %}
+	</div> -->
+	
+	<div id="premium-clients" class="logo-strip wrapped very-thin">
+		{% include premium-clients.html %}
+	</div>
+
+</div>

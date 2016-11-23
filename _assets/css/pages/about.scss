@@ -1,0 +1,14 @@
+.about {
+	.image-banner {
+		background-color: #7b6b5c;
+	    background-position: 50% 20%;
+		background-image: url(image_path('headers/about.jpg'));
+		&:before {
+			opacity: 0.5;
+		}
+	}
+
+	.app-store-links {
+		margin-bottom: 96px;
+	}
+}

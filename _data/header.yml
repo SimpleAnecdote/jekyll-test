@@ -1,0 +1,15 @@
+---
+
+links:
+
+- label: Pricing
+  url: /pricing
+  newtab: false
+
+- label: FAQs
+  url: /faq
+  newtab: false
+
+- label: About
+  url: /about
+  newtab: false

@@ -48,10 +48,10 @@ plans:
   label: Enterprise
   qualifier: Starting at
   currency: $
-  price: 500
+  price: 199
   term: month
   description:
-    - "Get additional business features for organizations with more than 500 business cards."
+    - "Get additional business features for organizations with more than 100 business cards."
   features:
     - "Everything in Premium, plus"
     - Tailored features to suit your needs

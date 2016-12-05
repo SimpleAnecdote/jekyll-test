@@ -66,7 +66,7 @@ tiers:
 
 - numofusers: 1
   price: 4
-  url: "https://premium.thehaystackapp.com/plan/Individual_5_2016"
+  url: "https://premium.thehaystackapp.com/plan/Individual_11_2016"
   multipleusers: false
 
 - numofusers: 10

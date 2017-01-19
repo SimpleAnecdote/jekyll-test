@@ -86,7 +86,7 @@ Not at all. If you choose the free plan - it's free forever. And if you choose t
 
 
 
-## What Language you support?
+## What languages do you support?
 
 The app can scan cards in more than 25 languages, and send messages in English, Spanish, Portuguese, Italian, and French. The app is an English native app, and we are working on bringing deeper language support in the upcoming updates. 
 

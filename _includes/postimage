@@ -1,0 +1,2 @@
+{% capture postImagePath %}{{ page.path | remove_first: "_posts/" | remove_first: ".md"}}{% endcapture %}
+{% img 'posts/{{postImagePath}}/{{include.url}}' %}

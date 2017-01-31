@@ -7,10 +7,21 @@
 <!-- OPEN GRAPH TAGS -->
 <meta property="fb:app_id" content="{{site.data.metadata.fb_app_id}}" />
 <meta property="og:title" content="{{page.title}}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 {% capture ogImagePath %}{{ page.path | remove_first: "_posts/" | remove_first: ".md"}}{% endcapture %}
 <meta property="og:image" content="{% asset_path 'posts/{{ogImagePath}}/main.jpg' %}">
 <meta property="og:description" content="{{ post.excerpt | truncatewords:55}}">
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta property="article:section" content="{{ category }}">
+  {% endfor %}
+{% endif %}
+{% if page.tags %}
+  {% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag }}">
+  {% endfor %}
+{% endif %}
 <meta property="og:url" content="{{site.url}}">
 <meta property="og:site_name" content="{{site.title}}">
 

@@ -1,0 +1,17 @@
+---
+layout: text-content
+title: Blog | Haystack
+description: 'This is our blog!'
+priority: 0.9
+---
+<div class="text-content">
+
+	<h1>Blog</h1>
+
+	{% for post in site.posts %}
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong>. {{ post.category }}.</a></small></p>
+		<p>{{ post.excerpt }}</p>
+	{% endfor %}
+
+</div>

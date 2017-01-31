@@ -1,6 +1,5 @@
 ---
 title: Finding Start-Up Venture Capital In Australia
-layout: blog-post
 date: '2014-09-09 00:00:00 +1000'
 permalink: "/blog/:title/"
 category: Our Startup Journey

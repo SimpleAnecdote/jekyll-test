@@ -1,6 +1,5 @@
 ---
 title: Getting A Start-Up Off The Ground In Australia
-layout: blog-post
 date: '2014-08-18 00:00:00 +1000'
 permalink: "/blog/:title/"
 category: Our Startup Journey

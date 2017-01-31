@@ -1,6 +1,5 @@
 ---
 title: Standing On The Shoulders Of Giants 
-layout: blog-post
 date: '2014-09-23 00:00:00 +1000'
 permalink: "/blog/:title/"
 category: Our Startup Journey

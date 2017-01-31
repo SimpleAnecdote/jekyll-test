@@ -12,6 +12,9 @@ gems:
   - jekyll-paginate
   - jekyll-assets
 
+# Build settings
+markdown: kramdown
+
 assets:
   # CDN url will only be appended to filepaths when Jekyll is built using
   # the 'production' environment. Default is 'development'. To build in production:
@@ -49,5 +52,11 @@ permalink: /blog/:year/:month/:day/:title/
 paginate: 12
 paginate_path: '/blog/page/:num/'
 
-# Build settings
-markdown: kramdown
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      is_post: true
+      layout: blog-post

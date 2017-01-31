@@ -1,0 +1,24 @@
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}">
+<meta name="theme-color" content="{{site.data.metadata.highlight_color}}">
+
+{% include favicons.html %}
+
+<!-- OPEN GRAPH TAGS -->
+<meta property="fb:app_id" content="{{site.data.metadata.fb_app_id}}" />
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% asset_path metadata/ogimage.jpg %}">
+<meta property="og:description" content="{{page.description}}">
+<meta property="og:url" content="{{site.url}}">
+<meta property="og:site_name" content="{{site.title}}">
+
+<!-- TWITTER CARD TAGS -->
+<meta name="twitter:card" content="app">
+<meta name="twitter:site" content="{{site.data.metadata.twitter_name}}">
+<meta name="twitter:description" content="{{page.description}}">
+<meta name="twitter:app:country" content="AU">
+<meta name="twitter:app:name:iphone" content="{{site.data.metadata.app_name}}">
+<meta name="twitter:app:id:iphone" content="{{site.data.metadata.app_store_id}}">
+<meta name="twitter:app:name:googleplay" content="{{site.data.metadata.app_name}}">
+<meta name="twitter:app:id:googleplay" content="{{site.data.metadata.google_play_id}}">

@@ -1,6 +1,5 @@
 ---
 title: How To Design A Global App?
-layout: blog-post
 date: '2014-09-16 00:00:00 +1000'
 permalink: "/blog/:title/"
 category: Our Startup Journey

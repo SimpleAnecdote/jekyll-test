@@ -1,0 +1,47 @@
+---
+layout: text-content
+title: Blog | Haystack
+description: 'This is our blog!'
+priority: 0.9
+---
+<div class="blog">
+
+	<h1>Blog</h1>
+
+	{% for post in paginator.posts %}
+		<div class="blog-post-mini">
+			<a href="{{ post.url }}">
+				<h2>{{ post.title }}</h2>
+				<p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong></small></p>
+				{% capture thumbnailPath %}{{ post.path | remove_first: "_posts/" | remove_first: ".md"}}{% endcapture %}
+				{% img 'posts/{{thumbnailPath}}/main' %}
+			</a>
+			<p>{{ post.excerpt | strip_html | truncatewords:55}} <a href="{{ post.url }}">Read more.</a></p>
+
+		</div>
+	{% endfor %}
+
+	<!-- Pagination links -->
+	<div class="pagination">
+	{% if paginator.previous_page %}
+		<a class="mdl-button mdl-button--primary" href="{{ paginator.previous_page_path }}">
+			Previous
+		</a>
+	{% else %}
+		<button class="mdl-button mdl-button--primary" disabled>
+			Previous
+		</button>
+	{% endif %}
+	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+		<a class="mdl-button mdl-button--primary" href="{{ paginator.next_page_path }}">
+			Next
+		</a>
+	{% else %}
+		<button class="mdl-button mdl-button--primary" disabled>
+			Next
+		</button>
+	{% endif %}
+	</div>
+
+</div>

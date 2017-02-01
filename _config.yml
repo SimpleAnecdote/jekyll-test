@@ -9,7 +9,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 gems:
+  - jekyll-paginate
   - jekyll-assets
+
+# Build settings
+markdown: kramdown
 
 assets:
   # CDN url will only be appended to filepaths when Jekyll is built using
@@ -22,7 +26,7 @@ assets:
   # set JEKYLL_ENV=production
   # jekyll build
   # -- 
-  cdn: https://d122bb704a7f74b3ce48-f3776fd3c3d273ea53169fe9b65b096b.ssl.cf3.rackcdn.com
+  # cdn: https://d122bb704a7f74b3ce48-f3776fd3c3d273ea53169fe9b65b096b.ssl.cf3.rackcdn.com
   features:
     automatic_img_size: false 
     automatic_img_alt : false
@@ -43,5 +47,17 @@ brandingUrl: "/create"
 mixpanelKeyDevelopment: "7fcf73249f40c519ff71bb9f0ccee46b"
 mixpanelKeyProduction: "758867de6eb116d7bfb74f615b5d2534"
 
-# Build settings
-markdown: kramdown
+permalink: /blog/:title/
+
+paginate: 12
+paginate_path: '/blog/page/:num/'
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      is_post: true
+      layout: blog-post
+      author: Ran Heimann

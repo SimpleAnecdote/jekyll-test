@@ -13,3 +13,7 @@ links:
 - label: About
   url: /about
   newtab: false
+
+- label: Blog
+  url: /blog
+  newtab: false

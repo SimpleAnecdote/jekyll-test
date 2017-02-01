@@ -14,6 +14,10 @@ gems:
 
 # Build settings
 markdown: kramdown
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - README.md
 
 assets:
   # CDN url will only be appended to filepaths when Jekyll is built using

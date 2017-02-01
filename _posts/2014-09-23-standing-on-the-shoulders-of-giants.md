@@ -3,10 +3,13 @@ title: Standing On The Shoulders Of Giants
 date: '2014-09-23 00:00:00 +1000'
 category: Our Startup Journey
 tags:
+- App
 - Australia
+- Brisbane
 - Featured
+- Haystack
+- Journey
 - Startup
-- VC
 ---
 
 Credit where credit is due – I stole the ‘standing on the shoulders of giants’ concept from one of my former consulting colleagues and she got it a few years ago from Bob, the same VC guy from New York that [threw me out of his office](https://thehaystackapp.com/blog/standing-on-the-shoulders-of-giants/). Standing on the shoulders of giants was Bob’s way of describing corporate social climbing; where you manage to attach your business brand to a larger more established brand. Imagine if Haystack got signed up as a pre-load App on Telstra or Vodafone for example. The preloads would be great of course but the brand association would be awesome. Finding a giant or two for Haystack has therefore been in my thoughts for while, and being thrown out of Bob’s office in Trump Tower hadn’t dented my determination to do this.

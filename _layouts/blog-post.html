@@ -14,7 +14,7 @@
 			<div class="page-content">
 				<div class="blog-post-main-image">
 					{% capture imagePath %}{{ page.path | remove_first: "_posts/" | remove_first: ".md"}}{% endcapture %}
-					{% img 'posts/{{imagePath}}/main.jpg' %}					
+					{% img 'posts/{{imagePath}}/main' %}
 				</div>
 				<div class="text-content">
 					<h1>{{page.title}}</h1>

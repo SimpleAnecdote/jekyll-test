@@ -73,13 +73,16 @@
 			color: $hs-blue-grey-900;
 		}
 
-		span.date {
+		span.author-date {
 			display: block;
 			font-size: 16px;
 			font-weight: 400;
 			color: $hs-blue-grey-200;
 			margin-top: 16px;
 			margin-bottom: 40px;
+			.author {
+				color: $hs-blue-grey-500;
+			}
 		}
 
 		.blog-post-footer {

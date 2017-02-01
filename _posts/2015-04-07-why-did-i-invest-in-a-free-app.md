@@ -2,6 +2,7 @@
 title: Why Did I Invest In A Free App?
 date: '2015-04-07 00:00:00 +1000'
 category: Investor Perspective
+author: Jeff Pollock
 tags:
 - Android
 - Australia

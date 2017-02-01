@@ -2,6 +2,7 @@
 title: How I Became An Angel Investor
 date: '2015-04-21 00:00:00 +1000'
 category: Investor Perspective
+author: Jason Economidis
 tags:
 - Android
 - App

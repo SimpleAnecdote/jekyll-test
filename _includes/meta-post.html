@@ -22,6 +22,9 @@
   <meta property="article:tag" content="{{ tag }}">
   {% endfor %}
 {% endif %}
+{% if page.author %}
+  <meta property="article:author" content="{{ page.author }}">
+{% endif %}
 <meta property="og:url" content="{{site.url}}">
 <meta property="og:site_name" content="{{site.title}}">
 

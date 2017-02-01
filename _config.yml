@@ -60,3 +60,4 @@ defaults:
     values:
       is_post: true
       layout: blog-post
+      author: Ran Heimann

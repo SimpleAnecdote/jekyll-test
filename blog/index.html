@@ -16,7 +16,7 @@ priority: 0.9
 				{% capture thumbnailPath %}{{ post.path | remove_first: "_posts/" | remove_first: ".md"}}{% endcapture %}
 				{% img 'posts/{{thumbnailPath}}/main' %}
 			</a>
-			<p>{{ post.excerpt | truncatewords:55}} <a href="{{ post.url }}">read more.</a></p>
+			<p>{{ post.excerpt | strip_html | truncatewords:55}} <a href="{{ post.url }}">Read more.</a></p>
 
 		</div>
 	{% endfor %}

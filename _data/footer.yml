@@ -23,6 +23,10 @@ sections:
     url: /about
     newtab: false
 
+  - label: Blog
+    url: /blog
+    newtab: false
+
   - label: Contact us
     url: mailto:Sales+query@thehaystackapp.com?Subject=Web%20query&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
     newtab: false

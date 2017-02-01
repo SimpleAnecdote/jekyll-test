@@ -47,7 +47,7 @@ brandingUrl: "/create"
 mixpanelKeyDevelopment: "7fcf73249f40c519ff71bb9f0ccee46b"
 mixpanelKeyProduction: "758867de6eb116d7bfb74f615b5d2534"
 
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
 
 paginate: 12
 paginate_path: '/blog/page/:num/'

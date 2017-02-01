@@ -1,7 +1,6 @@
 ---
 title: Finding Start-Up Venture Capital In Australia
 date: '2014-09-09 00:00:00 +1000'
-permalink: "/blog/:title/"
 category: Our Startup Journey
 tags:
 - App

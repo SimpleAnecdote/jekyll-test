@@ -1,5 +1,5 @@
 ---
-layout: nofooter
+layout: text-content-nofooter
 title: Unsubscribed | Haystack
 description: Unsubscribed from Haystack.
 priority: 0.0

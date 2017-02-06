@@ -1,0 +1,62 @@
+body {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	background-color: #eeeeee;
+	font-size: 100%;
+}
+
+p {
+	color: #5c6670;
+	line-height: 14pt;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+header {
+	background-color: #00acc1;
+	height: 60px;
+	text-transform: uppercase;
+	color: #5c6670;
+	font-weight: 300;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 90;
+	outline: 2px solid rgba(0,0,0,0.15);
+}
+
+nav a img {
+	padding: 12px;
+	float: left;
+	transition: opacity 0.2s ease;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav a img:hover {
+	opacity: 0.75;	
+}
+
+.downloadWrapper a {
+	display: inline-block;
+	width: 9em;
+	max-width: 45%;
+}
+
+.downloadWrapper a img {
+	width: 100%;
+}
+
+.downloadWrapper {
+	padding: 1em;
+	max-width: 100%;
+}
+
+@media (min-width: 800px) {
+	nav a img {
+		position: inherit;
+	}
+}

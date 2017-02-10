@@ -18,6 +18,8 @@ exclude:
  - Gemfile
  - Gemfile.lock
  - README.md
+ - firebase.json
+ - database.rules.json
 
 assets:
   # CDN url will only be appended to filepaths when Jekyll is built using

@@ -1,0 +1,513 @@
+body {
+	margin-top: 60px;
+}
+
+#invalidEmail {
+	color: #ff9e1b;
+	margin: 0 0 -1.3em 0;
+	padding: 0 1em;
+}
+
+#brandMaker {
+	z-index: 80;
+	background-color: #f4f3f3;
+	width: 100%;
+	box-sizing: border-box;
+	min-height: calc(100vh - 60px); /*Window height, minus header*/
+	padding: 2em;
+	padding-top: 3em;
+	text-align: center;
+	display: none;
+}
+
+.overHeaderButton {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 60px;
+	height: 60px;
+	border: none;
+	cursor: pointer;
+	background-color: #00acc1;
+}
+
+.overHeaderButton:hover {
+	background-color: #00BCD4;
+}
+
+.overHeaderButton#closeBrandMaker {
+	background-image: url(../images/icons/close-white.png);
+	right: 0;
+}
+
+.overHeaderButton#reselectLogoHeader {
+	background-image: url(../images/icons/back-white.png);
+	left: 0;
+}
+
+#brandMaker.postClaim {
+	background-image: url(../images/postClaimBackground.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 2em;
+}
+
+#brandMaker h2 {
+	color: #5b6770;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+button.fat {
+	font-size: 75%;
+	margin: 2.5em 0.5em 0em 0.5em;
+	padding: 1.5em;
+	padding-left: 3.5em;
+	border: 1px solid #5b6770;
+	
+	font-family: "Roboto";
+	font-weight: 500;
+	color: #5b6770;
+	text-transform: uppercase;
+
+	border-radius: 0.25em;
+	cursor: pointer;
+	background-position: 0 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+	-webkit-transition: background-color 0.25s, color 0.25s, background-image 0.25s;
+	        transition: background-color 0.25s, color 0.25s, background-image 0.25s;
+}
+button.fat:hover {
+	background-color: #5b6770;
+	color: white;
+}
+
+button.fat:active {
+	background-color: #333f48;
+}
+
+button.fat:active,
+button.fat:focus {
+	outline: none;
+}
+
+button.fat + button.fat {
+  margin-top: 1em;
+}
+
+button.fat.cta {
+	background-color: #00BCD4;
+	border-color: #00BCD4;
+	color: white;
+}
+button.fat.cta:hover {
+	background-color: #00ACC1;
+}
+button.fat.cta:active {
+	background-color: #0097A7;
+}
+
+button.fat.cta.loading {
+	padding-left: 1.5em;
+	background-position: center;
+	color: #00BCD4;
+	background-image: url(../images/icons/loadingSpinnerBlue.gif);
+	width: 14.5em;
+	height: 4.3em;
+	background-size: inherit;
+	cursor: auto;
+}
+
+button.fat.cta.loading:hover,
+button.fat.cta.loading:active {
+	background-color: #00BCD4;
+}
+
+#resultCardPage .downloadWrapper,
+#postClaimPage .downloadWrapper {
+	padding: none;
+}
+
+#resultCardPage .downloadWrapper a,
+#postClaimPage .downloadWrapper a {
+	width: 12em;
+}
+
+#resultMessage,
+#postClaimPage p {
+	display: block;
+	font-weight: 300;
+	max-width: 20em;
+	line-height: 1.25em;
+}
+
+#resultMessage {
+	margin: 1.5em auto 1em auto;
+	font-size: 120%;
+}
+
+#postClaimPage h2 {
+	color: white;
+	margin-bottom: 0.5em;
+	font-size: 180%;
+	font-weight: 300;
+}
+
+#postClaimPage p {
+	margin: 0.5em auto 0em auto;
+	color: white;
+}
+
+#postClaimPage .downloadWrapper {
+	padding: 1em 0em;
+	width: 85%;
+	max-width: 21em;
+	margin: auto;
+}
+
+#postClaimPage .downloadWrapper a {
+	max-width: 49%;
+}
+
+#postClaimPage .downloadWrapper a:first-child {
+	float: left;
+}
+#postClaimPage .downloadWrapper a:last-child {
+	float: right;
+}
+
+#resultMessage + button {
+	margin-top: 0;
+}
+
+#resultCardPage p.subtext {
+	margin-top: 2em;
+}
+
+
+#logoPreviewContent > button {
+	background-image: url(../images/icons/bad-logo-blue.png);
+}
+#logoPreviewContent > button:hover {
+	background-image: url(../images/icons/bad-logo-white.png);
+}
+
+button.fat.retry {
+	background-image: url(../images/icons/redo-blue.png);
+}
+button.fat.retry:hover {
+	background-image: url(../images/icons/redo-white.png);
+}
+
+button.fat.back {
+	background-image: url(../images/icons/back-blue.png);
+}
+button.fat.back:hover {
+	background-image: url(../images/icons/back-white.png);
+}
+
+#resultPageContent > button#claimCard {
+	background-image: url(../images/icons/done-white.png);
+}
+/*.brandMakerPage#resultCardPage button:hover {
+	background-image: url(../images/icons/edit-card-yellow.png);
+}*/
+
+.brandMakerPage {
+	display: none;
+}
+
+.pageContent {
+	-webkit-animation: fadein 0.25s;
+    animation: fadein 0.25s;
+}
+
+.logoPreview,
+.logoPlaceholder {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0.2em;
+	max-width: 100%;
+    overflow: hidden;
+    padding-top: 66.67%;
+
+	border-radius: 0.2em;
+}
+
+.logoPreview {
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+	background-color: white;
+	-webkit-transition: background-color 0.25s, -webkit-transform 0.25s, opacity 0.25s;
+	        transition: background-color 0.25s, transform 0.25s, opacity 0.25s;
+	cursor: pointer;
+
+    opacity: 1;
+    z-index: 1;
+	-webkit-animation: scalefade 0.25s;
+    animation: scalefade 0.25s;
+}
+
+/* -fail- */
+@-webkit-keyframes scalefade {
+    from {-webkit-transform: scale(1.2);transform: scale(1.2)}
+    to {-webkit-transform: scale(1);transform: scale(1)}
+}@keyframes scalefade {
+    from {-webkit-transform: scale(1.2);transform: scale(1.2);}
+    to {-webkit-transform: scale(1);transform: scale(1)}
+}
+
+.logoPlaceholder {
+	background-color: #f4f3f3;
+	background-image: url(../images/icons/loadingSpinner.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 0;
+}
+
+.logoPlaceholder:before {
+	border: 1px solid #a2aaad;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    border-radius: 0.2em;
+}
+
+.loadingIndicator p,
+.failDialog p {
+	margin-top: 1em;
+	font-size: 125%;
+}
+
+
+.haystack-card {
+	font-size: 80%;
+}
+
+#cardPreviews .haystack-card {
+	cursor: pointer;
+	margin: 0.2em;
+}
+
+.logoPreview:hover,
+#cardPreviews .haystack-card:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	position: relative;
+	z-index: 2;
+}
+
+.logoPreview img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#resultCard {
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+#resultCard .haystack-card {
+	-webkit-animation: cardrise 5s;
+    -webkit-animation-timing-function: cubic-bezier(0,1,0,1);
+    -webkit-animation: cardrise 5s;
+            animation: cardrise 5s;
+    -webkit-animation-timing-function: cubic-bezier(0,1,0,1);
+            animation-timing-function: cubic-bezier(0,1,0,1);
+}
+
+/*slides & rotates up*/
+@-webkit-keyframes cardrise {
+    from {
+    	-webkit-transform: rotateX(30deg) translateY(30px);
+    	        transform: rotateX(30deg) translateY(30px);
+    	opacity: 1;
+    }
+    to {
+    	-webkit-transform: rotateX(0deg) translateY(0px);
+    	        transform: rotateX(0deg) translateY(0px);
+    	opacity: 1;
+    }
+}
+@keyframes cardrise {
+    from {
+    	-webkit-transform: rotateX(30deg) translateY(30px);
+    	        transform: rotateX(30deg) translateY(30px);
+    	opacity: 1;
+    }
+    to {
+    	-webkit-transform: rotateX(0deg) translateY(0px);
+    	        transform: rotateX(0deg) translateY(0px);
+    	opacity: 1;
+    }
+}
+
+/* Standard fade-in */
+@-webkit-keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+#demoPhone {
+	display: inline-block;
+	position: relative;
+	background-image: url(../images/phone.png);
+	background-size: cover;
+	margin-top: 3em;
+	width: 85%;
+	max-width: 35vh;
+}
+
+#demoPhone:after {
+	padding-top: 205%;
+	display: block;
+	content: '';
+}
+
+#demoPhone #screen {
+	position: absolute;
+	top: 21.5%;
+	bottom: 13.24%;
+	right: 7.25%;
+	left: 7.75%;
+	color: white;
+	overflow: hidden;
+}
+
+#demoPhone #screen .haystack-card {
+	font-size: 65%;
+	width: 97%;
+	margin: 0;
+	margin-top: 1.5%;
+	-webkit-animation: cardrise 5s;
+    -webkit-animation-timing-function: cubic-bezier(0,1,0,1);
+    -webkit-animation: cardrise 5s;
+            animation: cardrise 5s;
+    -webkit-animation-timing-function: cubic-bezier(0,1,0,1);
+            animation-timing-function: cubic-bezier(0,1,0,1);
+}
+
+
+
+
+@media (min-width: 360px) { 
+	.haystack-card {
+		font-size: 93%;
+	}
+	#demoPhone #screen .haystack-card {
+		font-size: 75%;
+	}
+}
+@media (min-width: 400px) { 
+	.haystack-card {
+		font-size: 85%;
+	}
+	#demoPhone #screen .haystack-card {
+		font-size: 125%;
+	}
+}
+@media (min-width: 550px) {
+	button.fat {
+		font-size: 100%;
+	}
+	#brandMaker {
+		padding: 6em;
+	}
+	#resultCard .haystack-card {
+		font-size: 125%;
+	}
+	.logoPreview,
+	.logoPlaceholder {
+		width: 15em;
+		height: 10em;
+		padding-top: 0;
+	}
+	#brandMaker h2 {
+		font-size: 3em;
+		font-weight: 300;
+	}
+	#resultMessage {
+		font-size: 150%;
+		margin: 2.5em auto 1.5em auto;
+	}
+}
+@media (min-width: 700px) {
+	#resultCard .haystack-card {
+		font-size: 150%;
+	}
+}
+@media (min-width: 875px) {
+	#brandMaker {
+		position: relative;
+	}
+	.overHeaderButton#closeBrandMaker {
+		position: absolute;
+		z-index: 0;
+		background-color: transparent;
+		background-image: url(../images/icons/close-dark.png);
+	}
+	.overHeaderButton#reselectLogoHeader {
+		display: none;
+	}
+
+	#brandMaker.postClaim .overHeaderButton#closeBrandMaker {
+		background-image: url(../images/icons/close-white.png);
+	}
+
+	#brandMaker.postClaim .overHeaderButton#closeBrandMaker:hover {
+		background-color: rgba(255,255,255,0.25);
+	}
+}
+
+@media (min-width: 875px) and (min-height: 960px) {
+	#resultCard .haystack-card {
+		font-size: 200%;
+	}
+}
+
+@media (min-height: 700px) {
+	#brandMaker.postClaim {
+		padding-top: 6em;
+	}
+	#resultCardPage p.subtext {
+		margin-top: 4em;
+	}
+	button.fat {
+		margin: 4.5em 0.5em 0em 0.5em;
+	}
+}
+
+@media (min-height: 875px) {
+	#brandMaker.postClaim {
+		padding-top: 9em;
+	}
+	#demoPhone {
+		margin-top: 5em;
+	}
+}
+
+@media (min-width: 700px) and (min-height: 700px) {
+	#postClaimPage p {
+		font-size: 165%;
+		margin: 1.5em auto 2em auto;
+	}
+	#postClaimPage h2 {
+		font-size: 335%;
+		margin-bottom: 1em;
+	}
+}

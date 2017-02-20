@@ -8,7 +8,7 @@
     "trailingSlash": false,
     "redirects": [{
       "source" : "/thehaystackapp/*",
-      "destination" : "https://thehaystackapp.net",
+      "destination" : "https://thehaystackapp.com",
       "type" : 302
     }],
     "headers": [{

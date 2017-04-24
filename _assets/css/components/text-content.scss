@@ -17,6 +17,14 @@
 		font-weight: 300;
 	}
 
+	h3 {
+		@include typo-title;
+		font-weight: 400;
+		font-size: 18px;
+		margin-top: 3em;
+		color: $hs-blue-grey-800;
+	}
+
 	h2, h1 + span {
 		margin-top: 3em;
 		@include typo-headline;

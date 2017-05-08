@@ -62,8 +62,14 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
+    values:
+      hide_intercom_launcher: false
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
       type: posts
     values:
+      hide_intercom_launcher: true
       is_post: true
       layout: blog-post
       author: Ran Heimann

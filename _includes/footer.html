@@ -7,13 +7,20 @@
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">{{ section.label }}</h1>
       <ul class="mdl-mega-footer__link-list">
-    		{% for link in section.links %}
+        {% for link in section.links %}
         <li><a href="{{link.url}}" {% if link.newtab == true %}target="_blank"{% endif %}>{{link.label}}</a></li>
         {% endfor %}
       </ul>
     </div>
     {% endfor %}
 
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <ul class="mdl-mega-footer__link-list social-links">
+      <li><a target="_blank" href="{{site.data.links.social_twitter}}">{% img 'icons/twitter.svg' %}Twitter</a></li>
+      <li><a target="_blank" href="{{site.data.links.social_linkedin}}">{% img 'icons/linkedin.svg' %}LinkedIn</a></li>
+    </ul>
   </div>
 
 </footer>

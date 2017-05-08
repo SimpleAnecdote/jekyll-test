@@ -12,6 +12,9 @@ app_download_ios: https://itunes.apple.com/app/haystack-business-card-reader/id9
 premium_dashboard_url: http://premium.thehaystackapp.com
 webapp_url: http://contacts.thehaystackapp.com/signin
 
+social_twitter: https://twitter.com/thehaystackapp
+social_linkedin: https://www.linkedin.com/company/2253196
+
 unsub_url: mailto:support@thehaystackapp.com?subject=I've unsubscribed from Haystack
 
 privacy_policy: http://files.thehaystackapp.com/legal/privacypolicy.html

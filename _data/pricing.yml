@@ -37,7 +37,7 @@ plans:
     - Export your contacts or sync with your CRM
     - Smart Email Signature
     - Analytics
-    - Premium support
+    - Business level support
   calltoaction: Start your 30 day free trial
   calltoactionurl: "#select-num-users-open"
 
@@ -50,11 +50,11 @@ plans:
   description:
     - "Get additional business features for organizations with more than 100 employees."
   features:
-    - "Everything in Premium, plus"
+    - "Everything in Business, plus"
     - Tailored features to suit your needs
     - Customize your plan
-    - Enterprise support
     - Onboarding assistance for large teams
+    - Enterprise level support
   calltoaction: Contact us
   calltoactionurl: mailto:sales+enterprise@thehaystackapp.com?Subject=Enterprise%20plans%20inquiry&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20Enterprise%20plans.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
 

@@ -22,42 +22,39 @@ plans:
   calltoactionurl: "#branding-tool-open"
 
 - name: premium
-  label: Premium
+  label: for Business
   qualifier: Starting at
   currency: $
   price: 4
   term: month
   description:
-    - "Haystack on steroids."
-    - "Enhance your digital cards experience with extra features & smart tools."
+    - "Haystack on steroids for businesses with up to 100 employees."
   features:
     - "Everything in Free, plus"
-    - Additional social features
-    - Fine tune your card's design
-    - Premium support
-    - Create cards for your whole company
-    - Card templates
-    - Set employee permissions
-    - Export your contacts
+    - Access to the admin dashboard
+    - Create design templates for consistency across your business
+    - Additional social media, design & employee permissions
+    - Export your contacts or sync with your CRM
+    - Smart Email Signature
     - Analytics
-    - Connect with your CRM*
+    - Business level support
   calltoaction: Start your 30 day free trial
   calltoactionurl: "#select-num-users-open"
 
 - name: enterprise
-  label: Enterprise
+  label: for Enterprise
   qualifier: Starting at
   currency: $
-  price: 199
+  price: 99
   term: month
   description:
-    - "Get additional business features for organizations with more than 100 business cards."
+    - "Get additional business features for organizations with more than 100 employees."
   features:
-    - "Everything in Premium, plus"
+    - "Everything in Business, plus"
     - Tailored features to suit your needs
     - Customize your plan
-    - Enterprise support
     - Onboarding assistance for large teams
+    - Enterprise level support
   calltoaction: Contact us
   calltoactionurl: mailto:sales+enterprise@thehaystackapp.com?Subject=Enterprise%20plans%20inquiry&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20Enterprise%20plans.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
 

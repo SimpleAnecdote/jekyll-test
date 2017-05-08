@@ -1,5 +1,5 @@
 - Product
-    + Haystack Premium
+    + Haystack for Business
     + CRM Sync
     + FAQs
     + Pricing

@@ -61,28 +61,28 @@ While other platforms use advertising to generate revenue, Haystack does not. In
 
 
 
-## What's the difference between Premium and Free accounts?
+## What's the difference between Business and Free accounts?
 
-With our Premium account you have an access to a premium dashboard where you have more options to edit the card templates for your brand/business. 
-You also have access to card analytics, email signatures, Export to CRM, onboarding help and premium support. Visit our [pricing page](/pricing) to learn more about the different plans.
+With our Business account you have an access to the Admin Dashboard where you have more options to edit the card templates for your brand/business. 
+You also have access to card analytics, email signatures, Export to CRM, onboarding help and business support. Visit our [pricing page](/pricing) to learn more about the different plans.
 
 
 
 ## Do I get a digital Email Signature as well?
 
-Digital Email Signatures are part of our premium package. [Click here](/pricing) to learn more about the different packages.
+Digital Email Signatures are part of our Business & Enterprise packages. [Click here](/pricing) to learn more about the different packages.
 
 
 
-## Is CRM Auto-Sync part of the Premium package?
+## Is CRM Auto-Sync part of the Business package?
 
-While CRM Sync via CSV export is available on the premium package, the CRM Auto Sync is an add-on that can be added to your Premium account. [Click here](mailto:sales+crm@thehaystackapp.com?Subject=CRM%20inquiry&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A) to learn more about the CRM Auto Sync.
+Yes. Auto-Sync is available for a select number of CRM platforms. For all other CRMs, we have a CSV export feature which connects your Haystack contacts to pretty much everything. [Click here](mailto:sales+crm@thehaystackapp.com?Subject=CRM%20inquiry&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A) to learn more about the CRM Auto Sync.
 
 
 
 ## Are there any hidden fees?
 
-Not at all. If you choose the free plan - it's free forever. And if you choose the Premium one you can cancel anytime. [Click here](/pricing) to learn more about our pricing plans.
+Not at all. If you choose the free plan - it's free forever. And if you choose the Business or Enterprise plans you can cancel anytime. [Click here](/pricing) to learn more about our pricing plans.
 
 
 

@@ -16,4 +16,18 @@ footer.mdl-mega-footer {
 			opacity: 1;
 		}
 	}
+
+	.social-links {
+		a {
+			color: white;
+			// opacity: 1;
+		}
+		a img {
+			width: 24px;
+			height: 24px;
+			margin-right: 4px;
+			margin-bottom: 2px;
+			color: white;
+		}
+	}
 }

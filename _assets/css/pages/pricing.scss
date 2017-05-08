@@ -18,9 +18,9 @@
 		background-color: $hs-blue-grey-50;
 	}
 	.pricing-panels {
-		padding-top: 48px;
+		padding: 48px 0px;
 		@media #{$gt-sm} {
-			padding-top: 96px;			
+			padding: 96px 0px;
 		}
 		> p > a:not(:first-child) {
 			display: none;

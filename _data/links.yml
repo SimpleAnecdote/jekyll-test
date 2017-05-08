@@ -4,6 +4,7 @@
 
 contact_us: mailto:support+website@thehaystackapp.com?Subject=Web%20inquiry&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
 contact_us_sales: mailto:sales+inquiry@thehaystackapp.com?Subject=Web%20inquiry&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
+contact_us_crm: mailto:sales+crm@thehaystackapp.com?Subject=CRM%20sync%20inquiry&Body=Hi%2C%0A%0AWould%20love%20to%20know%20more%20about%20your%20CRM%20and%20Auto%20sync.%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A
 
 app_download_android: https://play.google.com/store/apps/details?id=com.theHaystackApp.haystack
 app_download_ios: https://itunes.apple.com/app/haystack-business-card-reader/id920294144

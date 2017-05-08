@@ -22,25 +22,22 @@ plans:
   calltoactionurl: "#branding-tool-open"
 
 - name: premium
-  label: Premium
+  label: Business
   qualifier: Starting at
   currency: $
   price: 4
   term: month
   description:
-    - "Haystack on steroids."
-    - "Enhance your digital cards experience with extra features & smart tools."
+    - "Haystack on steroids for businesses with up to 100 employees."
   features:
     - "Everything in Free, plus"
-    - Additional social features
-    - Fine tune your card's design
-    - Premium support
-    - Create cards for your whole company
-    - Card templates
-    - Set employee permissions
-    - Export your contacts
+    - Access to the admin dashboard
+    - Create design templates for consistency across your business
+    - Additional social media, design & employee permissions
+    - Export your contacts or sync with your CRM
+    - Smart Email Signature
     - Analytics
-    - Connect with your CRM*
+    - Premium support
   calltoaction: Start your 30 day free trial
   calltoactionurl: "#select-num-users-open"
 
@@ -51,7 +48,7 @@ plans:
   price: 199
   term: month
   description:
-    - "Get additional business features for organizations with more than 100 business cards."
+    - "Get additional business features for organizations with more than 100 employees."
   features:
     - "Everything in Premium, plus"
     - Tailored features to suit your needs

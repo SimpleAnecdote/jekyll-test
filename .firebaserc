@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "haystack-website-dev",
+    "dev": "haystack-website-dev",
+    "staging": "haystack-website-staging",
+    "production": "haystack-website"
+  }
+}

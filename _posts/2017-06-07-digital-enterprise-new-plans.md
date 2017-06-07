@@ -2,7 +2,7 @@
 title: 'News update: Haystack for enterprise is now officially open for business'
 author: Ran Heimann
 description: 'The new enterprise plan offer a set of features and tools tailored to large enterprise clients like  large teams card deployment, CRM sync, e-mail signatures'
-date: '2017-05-22 00:00:00 +1000'
+date: '2017-06-07 00:00:00 +1000'
 category: News and Updates
 tags:
 - product update

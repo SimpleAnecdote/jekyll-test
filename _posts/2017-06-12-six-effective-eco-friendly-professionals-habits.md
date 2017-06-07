@@ -2,7 +2,7 @@
 title: '6 habits of eco-friendly, productive people'
 author: Hayley Ann
 description: 'Being eco-friendly is so much easier to do at home, than it is in the corporate office but we whipped up 6 easy habits you can adopt for yourself tomorrow'
-date: '2017-05-23 00:00:00 +1000'
+date: '2017-06-12 00:00:00 +1000'
 category: Eco-Friendly
 tags:
 - digital business cards

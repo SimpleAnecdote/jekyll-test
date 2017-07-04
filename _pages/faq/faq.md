@@ -18,7 +18,7 @@ And...Haystack cards are made to stand out, so if you want to impress the people
 
 It's totally up to you. Our goal is to eliminate paper cards and create a smarter and more impressive way to share your details (plus being eco-friendly).
 
-Most of our users report back that after sharing their card three times, they can't even think about using paper cards again. However we get that everyone is different and you can always carry few with you "just in case you meet someone who doesn't own a phone"... 
+Most of our users report back that after sharing their card three times, they can't even think about using paper cards again. However we get that everyone is different and you can always carry a few with you "just in case you meet someone who doesn't own a phone"... 
 
 Give it a go and see if you could also let go of paper - [start your free trial here.](/pricing)
 
@@ -63,7 +63,7 @@ While other platforms use advertising to generate revenue, Haystack does not. In
 
 ## What's the difference between Business and Free accounts?
 
-With our Business account you have an access to the Admin Dashboard where you have more options to edit the card templates for your brand/business. 
+With our Business account you have access to the Admin Dashboard where you have more options to edit the card templates for your brand/business. 
 You also have access to card analytics, email signatures, Export to CRM, onboarding help and business support. Visit our [pricing page](/pricing) to learn more about the different plans.
 
 

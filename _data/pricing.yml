@@ -25,10 +25,10 @@ plans:
   label: for Business
   qualifier: Starting at
   currency: $
-  price: 4
+  price: 7.95
   term: month
   description:
-    - "Haystack on steroids for businesses with up to 100 employees."
+    - "Haystack on steroids for modern brands."
   features:
     - "Everything in Free, plus"
     - Access to the admin dashboard
@@ -39,16 +39,16 @@ plans:
     - Analytics
     - Business level support
   calltoaction: Start your 30 day free trial
-  calltoactionurl: "#select-num-users-open"
+  calltoactionurl: "#incremental-pricing-confirmation-open"
 
 - name: enterprise
   label: for Enterprise
   qualifier: Starting at
   currency: $
-  price: 99
+  price: 299
   term: month
   description:
-    - "Get additional business features for organizations with more than 100 employees."
+    - "Additional features designed for onboarding large teams."
   features:
     - "Everything in Business, plus"
     - Tailored features to suit your needs

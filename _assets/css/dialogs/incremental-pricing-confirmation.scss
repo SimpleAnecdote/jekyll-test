@@ -1,0 +1,44 @@
+dialog#incremental-pricing-confirmation {
+	// text-align: center;
+	width: 640px;
+	border-radius: 4px;
+	padding: 0;
+	// padding-top: 48px;
+	// 
+	
+	.text-content {
+		padding: 8px 24px;
+	}
+
+	.text-content h2 {
+		margin-top: 24px;
+	}
+
+	.mdl-dialog__content {
+		padding: 0;
+	}
+
+	// Link
+	.call-to-action {
+		@extend .mdl-button;
+		@extend .mdl-button--primary;
+		@extend .hs-button-raised-primary;
+		font-size: 16px;
+		display: block;
+		height: 56px;
+		line-height: 56px;
+		border: 1px solid $hs-primary-500;
+
+		margin-top: 40px;
+	}
+
+	.call-to-action + p {
+		margin-top: 24px;
+	}
+
+	@media #{$gt-sm} {
+		.text-content { 
+		    padding: 32px 40px;
+		}
+	}
+}

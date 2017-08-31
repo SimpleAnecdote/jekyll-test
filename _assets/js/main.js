@@ -115,6 +115,7 @@
 	registerDialog('app-download');
 	registerDialog('select-num-users');
 	registerDialog('branding-tool');
+	registerDialog('incremental-pricing-confirmation');
 
 })();
 

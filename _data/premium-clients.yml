@@ -14,11 +14,11 @@ premium-clients:
 - label: vodafone
   url: http://www.vodafone.com/
   
-- label: cciq
-  url: https://www.cciq.com.au/
-  
 - label: qut-cea
   url: http://qutcea.com/
+
+- label: cciq
+  url: https://www.cciq.com.au/  
   
 # - label: two-degrees
 #   url: http://2degreesmobile.co.nz/

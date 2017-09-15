@@ -40,7 +40,7 @@ sections:
 - label: Help
   links:
 
-  - label: Support
+  - label: Knowledge Base
     url: /support
     newtab: false
 

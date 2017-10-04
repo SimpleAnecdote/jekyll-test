@@ -17,6 +17,10 @@ footer.mdl-mega-footer {
 		}
 	}
 
+	.mdl-mega-footer__bottom-section + .mdl-mega-footer__bottom-section {
+		padding-top: 0;
+	}
+
 	.social-links {
 		a {
 			color: white;

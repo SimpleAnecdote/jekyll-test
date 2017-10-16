@@ -1,7 +1,7 @@
 ---
 title: Lessons learned from Vodafone's global rebrand - walk the talk
 author: Ran Heimann
-date: '2017-10-06 00:00:00 +1000'
+date: '2017-10-16 00:00:00 +1000'
 ---
 
 Vodafone Group, one of the world's largest telecommunications companies, announced a global brand revamp last week which replaces its brand speech mark with 'The future is exciting. Ready?'

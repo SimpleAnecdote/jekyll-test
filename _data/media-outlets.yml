@@ -26,9 +26,9 @@ media-outlets:
 #   label: Brisbane Times
 #   url: http://www.brisbanetimes.com.au/digital-life/smartphone-apps/brisbanes-haystack-app-may-give-business-cards-the-flick-20141021-1199fp.html
 
-- name: psfk
-  label: PSFK
-  url: http://www.psfk.com/2015/03/haystack-app-paperless-business-cards-networking.html
+# - name: psfk
+#   label: PSFK
+#   url: http://www.psfk.com/2015/03/haystack-app-paperless-business-cards-networking.html
 
 - name: digitalbrisbane
   label: Digital Brisbane

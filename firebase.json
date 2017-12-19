@@ -18,6 +18,12 @@
         "value" : "*"
       }]
       }, {
+      "source" : "/email-signature/**",
+      "headers" : [{
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      }]
+      }, {
       "source" : "**/*.@(jpg|jpeg|gif|png)",
       "headers" : [{
         "key" : "Cache-Control",

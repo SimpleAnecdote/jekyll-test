@@ -1,5 +1,6 @@
 ---
 layout: email-signature-instruction
+priority: 0.0
 ---
 
 **b)** Open the Gmail account you'd like to add the email signature for

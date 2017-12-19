@@ -41,7 +41,7 @@ sections:
   links:
 
   - label: Knowledge Base
-    url: /support
+    url: https://help.thehaystackapp.com/
     newtab: false
 
   - label: Terms & Conditions

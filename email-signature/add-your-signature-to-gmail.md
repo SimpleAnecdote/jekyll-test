@@ -5,7 +5,7 @@ priority: 0.0
 
 **b)** Open the Gmail account you'd like to add the email signature for
 
-**c)** Click the 'cog' button <a href="{{site.url}}{% asset_path email-signature/cog.jpg %}" target="_blank"><img src="{{site.url}}{% asset_path email-signature/cog.jpg %}"></a> button (top right of the screen) and choose '**Settings**'
+**c)** Click the 'cog' <a href="{{site.url}}{% asset_path email-signature/cog.jpg %}" target="_blank"><img src="{{site.url}}{% asset_path email-signature/cog.jpg %}"></a> button (top right of the screen) and choose '**Settings**'
 
 **d)** Scroll down to the '**Signature**' section (in the 'general' tab)
 

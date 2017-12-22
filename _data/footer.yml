@@ -42,7 +42,7 @@ sections:
 
   - label: Knowledge Base
     url: https://help.thehaystackapp.com/
-    newtab: false
+    newtab: true
 
   - label: Terms & Conditions
     url: http://files.thehaystackapp.com/legal/termsandconditions.html

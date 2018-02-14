@@ -3,11 +3,11 @@
 plans:
 
 - name: free
-  label: Forever Free
-  qualifier: Always
-  currency: $
-  price: 0
-  term: month
+  label: For Individuals
+  qualifier: and always will be
+  currency: 
+  price: Free
+  term: 
   description:
     - "Your Haystack starter kit."
     - "Get the basic digital business card experience."
@@ -23,10 +23,10 @@ plans:
 
 - name: premium
   label: for Business
-  qualifier: Starting at
+  qualifier: + $3 per additional user
   currency: $
   price: 7.95
-  term: month
+  term:  / month
   description:
     - "Haystack on steroids for modern brands."
   features:
@@ -43,10 +43,10 @@ plans:
 
 - name: enterprise
   label: for Enterprise
-  qualifier: Starting at
-  currency: $
-  price: 299
-  term: month
+  qualifier: for 100+ users
+  currency: 
+  price: Contact us
+  term: 
   description:
     - "Additional features designed for onboarding large teams."
   features:

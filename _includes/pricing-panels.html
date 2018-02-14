@@ -4,12 +4,12 @@
 		<li class="{{ plan.name }}">
 			<h2>{{ plan.label }}{% img 'pricing/{{plan.name}}-icon.png' %}</h2>
 			<div>
-				<p class="price-qualifier">{{ plan.qualifier }}</p>
 				<ul class="price">
 					<li>{{ plan.currency }}</li>
 					<li>{{ plan.price }}</li>
-					<li>/ {{ plan.term }}</li>
+					<li>{{ plan.term }}</li>
 				</ul>
+				<p class="price-qualifier">{{ plan.qualifier }}</p>
 				{% for section in plan.description %}
 				<p>{{ section }}</p>
 				{% endfor %}

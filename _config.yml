@@ -36,6 +36,7 @@ assets:
   features:
     automatic_img_size: false 
     automatic_img_alt : false
+  digest: true
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,

@@ -11,7 +11,7 @@ priority: 0.0
 
 **e)** '**Paste**' the signature inside the white signature box (press **Ctrl+V** in Windows or **Command &#8984;+V** on Mac inside the white box) 
 
-<a href="{{site.url}}{% asset_path email-signature/white-box.jpg %}" target="_blank"><img src="{{site.url}}{% asset_path email-signature/white-box.jpg %}"></a>
+<a href="{{site.url}}{% asset_path email-signature/signature-box-tick.jpg %}" target="_blank"><img src="{{site.url}}{% asset_path email-signature/signature-box-tick.jpg %}"></a>
 
 **f)** '**check**' the checkbox underneath the signature box (saying 'insert this signature before the quoted text in replies and remove the "--" line that precedes it.')
 

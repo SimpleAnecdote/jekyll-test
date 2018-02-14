@@ -1,4 +1,4 @@
-# Meet the Haystackers
+# Meet the Team
 
 Haystack was started in 2014 by a team of three brothers and a friend who believe that the time for business cards to be disrupted is finally here.
 

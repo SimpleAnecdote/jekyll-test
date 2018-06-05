@@ -6,6 +6,10 @@ links:
   url: /pricing
   newtab: false
 
+- label: Integrations
+  url: https://lp.thehaystackapp.com/integrations
+  newtab: true
+
 - label: FAQs
   url: /faq
   newtab: false

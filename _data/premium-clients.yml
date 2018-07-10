@@ -6,10 +6,10 @@ premium-clients:
   url: https://www.century21.com/
 
 - label: toyota
-  url: https://www.toyota.com.au/
+  url: https://www.toyota.com/
 
-- label: loreal
-  url: https://www.loreal.nz/
+- label: sap
+  url: https://www.sap.com/
 
 - label: vodafone-square
   url: http://www.vodafone.com/
@@ -17,8 +17,8 @@ premium-clients:
 - label: ey
   url: https://www.ey.com/
 
-- label: sap
-  url: https://www.sap.com/
+- label: loreal
+  url: https://www.loreal.com/
 
 - label: remax
   url: https://www.remax.com/

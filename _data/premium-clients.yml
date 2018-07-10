@@ -2,23 +2,58 @@
 
 premium-clients:
 
-- label: verizon
-  url: http://verizonwireless.com/
+- label: century-21
+  url: https://www.century21.com/
+
+- label: toyota
+  url: https://www.toyota.com/
+
+- label: sap
+  url: https://www.sap.com/
+
+- label: vodafone-square
+  url: http://www.vodafone.com/
+
+- label: ey
+  url: https://www.ey.com/
+
+- label: loreal
+  url: https://www.loreal.com/
+
+- label: remax
+  url: https://www.remax.com/
+
+- label: thales
+  url: https://www.thalesgroup.com/
+
+- label: pizza-hut
+  url: https://www.pizzahut.com/
+
+- label: el-al
+  url: https://www.elal.com/
+
+- label: cwt
+  url: https://www.carlsonwagonlit.com/
+
+- label: kw
+  url: http://www.kw.com/
+
+
+
+# - label: verizon
+#   url: http://verizonwireless.com/
   
-- label: shoes-of-prey
-  url: http://shoesofprey.com/
+# - label: shoes-of-prey
+#   url: http://shoesofprey.com/
   
 # - label: mahindra
 #   url: http://www.mahindra.com/
 
-- label: vodafone
-  url: http://www.vodafone.com/
-  
-- label: qut-cea
-  url: http://qutcea.com/
+# - label: qut-cea
+#   url: http://qutcea.com/
 
-- label: cciq
-  url: https://www.cciq.com.au/  
+# - label: cciq
+#   url: https://www.cciq.com.au/  
   
 # - label: two-degrees
 #   url: http://2degreesmobile.co.nz/
@@ -29,8 +64,8 @@ premium-clients:
 # - label: bar-staff-co
 #   url: http://brisbanebarstaffco.com/
   
-- label: deloitte-digital
-  url: http://deloittedigital.com/
+# - label: deloitte-digital
+#   url: http://deloittedigital.com/
   
 # - label: guis
 #   url: http://gentlemenunitedinstyle.com.au/

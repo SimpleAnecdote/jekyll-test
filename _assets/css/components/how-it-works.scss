@@ -89,7 +89,7 @@
 	}
 
 	@media #{$gt-xs} {
-		/* background-attachment: fixed; */
+		background-attachment: fixed;
 		background-size: 512px;
 		section {
 			padding: $section-vertical-padding-big $section-side-padding-big;
@@ -107,7 +107,7 @@
 		background-image: url(image_path('how-it-works/background.jpg'));
 		background-size: cover;
 		section {
-			/* background-attachment: fixed; */
+			background-attachment: fixed;
 			background-position: right ($section-side-padding-big - $background-image-padding) center;
 			height: $section-height;
 			text-align: left;

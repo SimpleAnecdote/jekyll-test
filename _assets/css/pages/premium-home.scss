@@ -3,10 +3,10 @@
 	.image-banner {
 		background-color: #7b6b5c;
 		background-position: 82% 50%;
-		/* background-attachment: fixed; */
+		background-attachment: fixed;
 		background-image: url(image_path('headers/home.jpg'));
-		height: 85vh;
-		max-height: 85vh;
+		height: 78vh;
+		max-height: 78vh;
 
 		.image-banner-content {
 			max-width: 360px;

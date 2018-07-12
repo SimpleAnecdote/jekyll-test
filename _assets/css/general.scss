@@ -3,6 +3,10 @@ html, body, .mdl-layout {
 }
 
 /* Hacking MDL header to be position fixed, but properly scrollable while scrollable */
+.mdl-layout__container {
+	position: static;
+}
+
 .mdl-layout--fixed-header {
 	overflow-y: inherit;
 	overflow-x: inherit;

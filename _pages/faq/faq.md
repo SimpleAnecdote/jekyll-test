@@ -74,9 +74,9 @@ Digital Email Signatures are part of our Business & Enterprise packages. [Click 
 
 
 
-## Is CRM Auto-Sync part of the Business package?
+## Are CRM integrations included in the Business package?
 
-Yes. Auto-Sync is available for a select number of CRM platforms. For all other CRMs, we have a CSV export feature which connects your Haystack contacts to pretty much everything. [Click here](mailto:sales+crm@thehaystackapp.com?Subject=CRM%20inquiry&Body=Hi%2C%0A%0AYour%20message%3A%0A%0AName%3A%0ARole%3A%0ACompany%3A%0APhone%20Number%3A) to learn more about the CRM Auto Sync.
+Yes. Integrations are available for a select number of CRM platforms. For all other CRMs, we have a CSV export feature which connects your Haystack contacts to pretty much everything. [Click here](https://lp.thehaystackapp.com/integrations) to learn more about the CRM integrations.
 
 
 

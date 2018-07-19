@@ -31,10 +31,11 @@ plans:
     - "Haystack on steroids for modern brands."
   features:
     - "Everything in Free, plus"
+    - Vanity URLs
     - Access to the admin dashboard
     - Create design templates for consistency across your business
     - Additional social media, design & employee permissions
-    - Export your contacts or sync with your CRM
+    - Export your contacts or integrate with your CRM
     - Smart Email Signature
     - Analytics
     - Business level support

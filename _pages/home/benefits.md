@@ -11,7 +11,7 @@
 
 -   <i class="material-icons">person</i>
     
-    ### Connecting With Your CRM
+    ### Integrating With Your CRM
 
     Use the app to simply snap a photo of the business cards you receive and sync them directly into the corporate CRM as a new contact or a lead.
 

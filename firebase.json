@@ -5,7 +5,6 @@
   "hosting": {
     "public": "_site",
     "cleanUrls": true,
-    "trailingSlash": false,
     "redirects": [{
       "source" : "/thehaystackapp/*",
       "destination" : "https://thehaystackapp.com",

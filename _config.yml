@@ -74,3 +74,17 @@ defaults:
       is_post: true
       layout: blog-post
       author: Ran Heimann
+
+plugins_dir:
+  - ./_plugins
+  - jekyll-paginate
+  - jekyll-assets
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -10,6 +10,7 @@ ruby RUBY_VERSION
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "3.2.1"
+gem 'wdm', '~> 0.1.1', :install_if => Gem.win_platform?
 # gem 'jekyll-admin', group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.

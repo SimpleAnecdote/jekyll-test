@@ -1,11 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.2)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
     colorator (1.1.0)
     concurrent-ruby (1.1.4)
     extras (0.3.0)
@@ -13,9 +8,6 @@ GEM
     fastimage (2.1.5)
     ffi (1.10.0-x64-mingw32)
     forwardable-extended (2.6.0)
-    i18n (1.5.3)
-      concurrent-ruby (~> 1.0)
-    iniparser (0.1.0)
     jekyll (3.2.1)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -45,24 +37,15 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    logutils (0.6.1)
-    markdown (1.2.0)
-      kramdown (>= 1.5.0)
-      props (>= 1.1.2)
-      textutils (>= 0.10.0)
     mercenary (0.3.6)
-    minitest (5.11.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    props (1.2.0)
-      iniparser (>= 0.1.0)
     rack (1.6.11)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rouge (1.11.1)
     ruby_dep (1.5.0)
-    rubyzip (1.2.2)
     safe_yaml (1.0.4)
     sass (3.7.3)
       sass-listen (~> 4.0.0)
@@ -72,14 +55,7 @@ GEM
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    textutils (1.4.0)
-      activesupport
-      logutils (>= 0.6.1)
-      props (>= 1.1.2)
-      rubyzip (>= 1.0.0)
-    thread_safe (0.3.6)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -88,7 +64,7 @@ DEPENDENCIES
   jekyll (= 3.2.1)
   jekyll-assets
   jekyll-paginate
-  markdown
+  wdm (~> 0.1.1)
 
 RUBY VERSION
    ruby 2.5.3p105
